@@ -69,6 +69,8 @@ cask "alt-tab"
 cask "cork"
 # Web browser
 cask "firefox"
+# Keyboard customiser
+cask "karabiner-elements"
 # Find shortcuts for any installed application
 cask "keyclu"
 # Utility that shows the latest app updates
