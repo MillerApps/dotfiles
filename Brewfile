@@ -1,8 +1,6 @@
 tap "enigmaticdb/super-secret-tap"
 tap "finnvoor/tools"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
@@ -61,8 +59,14 @@ brew "sl"
 brew "speedtest-cli"
 # Metal-powered video upscaling
 brew "finnvoor/tools/fx-upscale"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
+# AirPods companion app
+cask "airbuddy"
+# Menu bar tool to limit maximum charging percentage
+cask "aldente"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # The Homebrew Companion
