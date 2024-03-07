@@ -69,10 +69,32 @@ cask "airbuddy"
 cask "aldente"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+# Application uninstaller
+cask "appcleaner"
+# Chromium based browser
+cask "arc"
+# Multi-track audio editor and recorder
+cask "audacity"
+# Menu bar icon organiser
+cask "bartender"
+# Tool to remove unnecessary files and folders from disk
+cask "cleanmymac"
+# Screen capturing tool
+cask "cleanshot"
 # The Homebrew Companion
 cask "cork"
+# Voice and text chat software
+cask "discord"
+# Downloads videos from different websites
+cask "downie"
+# Productivity app
+cask "dropzone"
 # Web browser
 cask "firefox"
+# Open-source video transcoder
+cask "handbrake"
+# Free and open-source media player
+cask "iina"
 # Keyboard customiser
 cask "karabiner-elements"
 # Find shortcuts for any installed application
@@ -81,11 +103,49 @@ cask "keyclu"
 cask "latest"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Converts and edits video, audio or image files
+cask "permute"
+# HTTP debugging proxy
+cask "proxyman"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
 # System monitor for the menu bar
 cask "stats"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Disposable email client
+cask "tempbox"
+# Git client focusing on power and productivity
+cask "tower"
+# Open-source BitTorrent client
+cask "transmission"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 # Rust-based terminal
 cask "warp"
+# Install and switch between multiple versions of Xcode
+cask "xcodes"
+# Multiplayer code editor
+cask "zed"
+vscode "akamud.vscode-theme-onedark"
+vscode "davidbwaters.macos-modern-theme"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "mechatroner.rainbow-csv"
+vscode "oderwat.indent-rainbow"
+vscode "pkief.material-icon-theme"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "syler.sass-indented"
+vscode "yzhang.markdown-all-in-one"
