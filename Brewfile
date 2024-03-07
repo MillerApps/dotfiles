@@ -89,6 +89,8 @@ cask "discord"
 cask "downie"
 # Productivity app
 cask "dropzone"
+# Desktop client for Ente
+cask "ente"
 # Web browser
 cask "firefox"
 # Open-source video transcoder
@@ -101,18 +103,26 @@ cask "karabiner-elements"
 cask "keyclu"
 # Utility that shows the latest app updates
 cask "latest"
+# Software for Logitech devices
+cask "logi-options-plus"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
 # Converts and edits video, audio or image files
 cask "permute"
+# Customise and maintain app icons
+cask "pictogram"
 # HTTP debugging proxy
 cask "proxyman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Video chat, voice call and instant messaging application
+cask "skype"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
