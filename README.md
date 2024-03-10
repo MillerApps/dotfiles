@@ -1,9 +1,15 @@
 # New Machine Setup
 Steps to make a new machine easier to setup
 
-
+## Sign into iCloud and enable documents to be synced.
 ## Insatll HomeBrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+## Add brew to PATH for zsh
+```
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 ### Then pass in the Brewfile location...
 ```
