@@ -1,4 +1,6 @@
 # New Machine Setup
+> Note: For anyone suggesting to use Ansible, this setup works for my needs. I don't require all the options provided by Ansible, nor do I want to do the extra setup.
+
 Steps to make a new machine easier to setup
 
 ## Sign into iCloud and enable documents to be synced.
