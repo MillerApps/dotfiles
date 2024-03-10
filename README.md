@@ -2,6 +2,7 @@
 Steps to make a new machine easier to setup
 
 ## Sign into iCloud and enable documents to be synced.
+## Run the script found in the script folder, or follow the manual process below.
 ## Insatll HomeBrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
