@@ -1,5 +1,4 @@
 tap "enigmaticdb/super-secret-tap"
-tap "finnvoor/tools"
 tap "homebrew/bundle"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
@@ -17,8 +16,14 @@ brew "bat"
 brew "bison"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Library for command-line editing
+brew "readline"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # HTTP/2 C Library
 brew "libnghttp2"
+# Emacs dependency management
+brew "cask"
 # Ruby environment tool
 brew "chruby"
 # Modern, maintained replacement for ls
@@ -37,10 +42,6 @@ brew "git"
 brew "libffi"
 # YAML Parser
 brew "libyaml"
-# Library for command-line editing
-brew "readline"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Keep your Mac's application settings in sync
 brew "mackup"
 # Mac App Store command-line interface
@@ -57,8 +58,6 @@ brew "ruby-install"
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
-# Metal-powered video upscaling
-brew "finnvoor/tools/fx-upscale"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
