@@ -95,6 +95,8 @@ cask "ente"
 cask "firefox"
 # Open-source video transcoder
 cask "handbrake"
+# Automated organisation
+cask "hazel"
 # Free and open-source media player
 cask "iina"
 # Keyboard customiser
@@ -148,14 +150,17 @@ cask "xcodes"
 # Multiplayer code editor
 cask "zed"
 vscode "akamud.vscode-theme-onedark"
+vscode "catppuccin.catppuccin-vsc"
 vscode "davidbwaters.macos-modern-theme"
 vscode "esbenp.prettier-vscode"
 vscode "github.copilot"
 vscode "github.copilot-chat"
+vscode "liviuschera.noctis"
 vscode "mechatroner.rainbow-csv"
 vscode "oderwat.indent-rainbow"
 vscode "pkief.material-icon-theme"
 vscode "shd101wyy.markdown-preview-enhanced"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "syler.sass-indented"
+vscode "tonka3000.raycast"
 vscode "yzhang.markdown-all-in-one"
