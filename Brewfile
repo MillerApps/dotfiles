@@ -19,8 +19,6 @@ brew "bison"
 brew "gettext"
 # HTTP/2 C Library
 brew "libnghttp2"
-# Emacs dependency management
-brew "cask"
 # Ruby environment tool
 brew "chruby"
 # Modern, maintained replacement for ls
