@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Navigate to directory
-# cd /Users/tylermiller/New-Machine/
+cd /Users/tylermiller/New-Machine/
 
 # Run the brew bundle dump
 brew bundle dump --force
