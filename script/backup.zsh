@@ -4,7 +4,7 @@
 cd /Users/tylermiller/New-Machine/
 
 # Run the brew bundle dump
-brew bundle dump --force
+brew bundle dump --describe --force
 
 # Run Mackup
 mackup backup --force
