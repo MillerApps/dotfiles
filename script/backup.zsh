@@ -4,13 +4,13 @@
 cd /Users/tylermiller/New-Machine/
 
 # Run the brew bundle dump
-brew bundle dump --describe --force
+/opt/homebrew/bin/brew bundle dump --describe --force
 
 # Run Mackup
-mackup backup --force
-mackup uninstall --force
+/opt/homebrew/bin/mackup backup --force
+/opt/homebrew/bin/mackup uninstall --force
 
 # Git
-git add Brewfile
-git commit -m "Auto-update Brewfile"
-git push
+/opt/homebrew/bin/git add Brewfile
+/opt/homebrew/bin/git commit -m "Auto-update Brewfile"
+/opt/homebrew/bin/git push
