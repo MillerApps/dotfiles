@@ -106,6 +106,8 @@ cask "iina"
 cask "karabiner-elements"
 # Find shortcuts for any installed application
 cask "keyclu"
+# Utility that shows the latest app updates
+cask "latest"
 # Software for Logitech devices
 cask "logi-options-plus"
 # Tool to control external monitor brightness & volume
