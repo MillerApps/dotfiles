@@ -20,6 +20,8 @@ brew "bison"
 brew "gettext"
 # Library for command-line editing
 brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # HTTP/2 C Library
@@ -42,6 +44,8 @@ brew "gh"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Improved top (interactive process viewer)
+brew "htop"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
@@ -88,6 +92,8 @@ cask "cleanshot"
 cask "cork"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Downloads videos from different websites
 cask "downie"
 # Productivity app
