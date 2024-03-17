@@ -20,13 +20,16 @@ fi
 # Get timestamp of last wallpaper change
 last_change_timestamp=$(cat "$timestamp_file")
 
-# Get current modification time of desktop wallpaper
-current_timestamp=$(stat -f "%m" "$(osascript -e 'tell application "Finder" to get desktop picture as POSIX file')" 2>/dev/null)
+# Get path of current desktop wallpaper using osascript
+wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)')
+echo "Wallpaper path: $wallpaper_path"
+
+# Current modification time of desktop wallpaper
+current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null)
 
 # Check if wallpaper has been changed recently
 if [ "$last_change_timestamp" != "$current_timestamp" ]; then
     # Rename the wallpaper to Desktop.png
-    wallpaper_path=$(osascript -e 'tell application "Finder" to get desktop picture as POSIX file')
     new_wallpaper_path=$(dirname "$wallpaper_path")/Desktop.png
     mv "$wallpaper_path" "$new_wallpaper_path"
 
@@ -43,7 +46,6 @@ if [ "$last_change_timestamp" != "$current_timestamp" ]; then
 fi
 
 # Update brew formulas and casks
-/opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade
 /opt/homebrew/bin/brew upgrade --cask --greedy
 
 # Brew cleanup
