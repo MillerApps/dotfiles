@@ -39,6 +39,11 @@ if [ "$last_change_timestamp" != "$current_timestamp" ]; then
     # Update timestamp of last wallpaper change
     echo "$current_timestamp" > "$timestamp_file"
 
+    # Git commit for last_wallpaper_change.txt update
+    /opt/homebrew/bin/git add "$timestamp_file"
+    /opt/homebrew/bin/git commit -m "Update last_wallpaper_change.txt"
+    /opt/homebrew/bin/git push
+
     # Git commit for wallpaper change
     /opt/homebrew/bin/git add Desktop.png
     /opt/homebrew/bin/git commit -m "Update desktop wallpaper"
