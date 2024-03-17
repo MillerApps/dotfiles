@@ -21,33 +21,37 @@ fi
 last_change_timestamp=$(cat "$timestamp_file")
 
 # Get path of current desktop wallpaper using osascript
-wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)')
-echo "Wallpaper path: $wallpaper_path"
+wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)' 2>/dev/null)
 
-# Current modification time of desktop wallpaper
-current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null)
+if [ -z "$wallpaper_path" ]; then
+    echo "No wallpaper change detected."
+else
+    echo "Wallpaper path: $wallpaper_path"
+    # Current modification time of desktop wallpaper
+    current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null)
 
-# Check if wallpaper has been changed recently
-if [ "$last_change_timestamp" != "$current_timestamp" ]; then
-    # Rename the wallpaper to Desktop.png
-    new_wallpaper_path=$(dirname "$wallpaper_path")/Desktop.png
-    mv "$wallpaper_path" "$new_wallpaper_path"
+    # Check if wallpaper has been changed recently
+    if [ "$last_change_timestamp" != "$current_timestamp" ]; then
+        # Rename the wallpaper to Desktop.png
+        new_wallpaper_path=$(dirname "$wallpaper_path")/Desktop.png
+        mv "$wallpaper_path" "$new_wallpaper_path"
 
-    # Copy the renamed desktop wallpaper to your backup repository
-    cp "$new_wallpaper_path" "/Users/tylermiller/New-Machine/"
+        # Copy the renamed desktop wallpaper to your backup repository
+        cp "$new_wallpaper_path" "/Users/tylermiller/New-Machine/"
 
-    # Update timestamp of last wallpaper change
-    echo "$current_timestamp" > "$timestamp_file"
+        # Update timestamp of last wallpaper change
+        echo "$current_timestamp" > "$timestamp_file"
 
-    # Git commit for last_wallpaper_change.txt update
-    /opt/homebrew/bin/git add "$timestamp_file"
-    /opt/homebrew/bin/git commit -m "Update last_wallpaper_change.txt"
-    /opt/homebrew/bin/git push
+        # Git commit for last_wallpaper_change.txt update
+        /opt/homebrew/bin/git add "$timestamp_file"
+        /opt/homebrew/bin/git commit -m "Update last_wallpaper_change.txt"
+        /opt/homebrew/bin/git push
 
-    # Git commit for wallpaper change
-    /opt/homebrew/bin/git add Desktop.png
-    /opt/homebrew/bin/git commit -m "Update desktop wallpaper"
-    /opt/homebrew/bin/git push
+        # Git commit for wallpaper change
+        /opt/homebrew/bin/git add Desktop.png
+        /opt/homebrew/bin/git commit -m "Update desktop wallpaper"
+        /opt/homebrew/bin/git push
+    fi
 fi
 
 # Update brew formulas and casks
