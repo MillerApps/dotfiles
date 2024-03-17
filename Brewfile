@@ -6,6 +6,8 @@ brew "highway"
 brew "xz"
 # New file format for still image compression
 brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Mozilla CA certificate store
 brew "ca-certificates"
 # Cryptography and SSL/TLS Toolkit
@@ -26,12 +28,16 @@ brew "sqlite"
 brew "python@3.12"
 # HTTP/2 C Library
 brew "libnghttp2"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # Parser generator tool and incremental parsing library
 brew "tree-sitter"
 # Emacs dependency management
 brew "cask"
 # Ruby environment tool
 brew "chruby"
+# AV1 decoder targeted to be small and fast
+brew "dav1d"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream audio and video
@@ -50,6 +56,8 @@ brew "htop"
 brew "libffi"
 # YAML Parser
 brew "libyaml"
+# Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit"
 # Keep your Mac's application settings in sync
 brew "mackup"
 # Mac App Store command-line interface
@@ -167,7 +175,6 @@ mas "Bakery", id: 1575220747
 mas "Bluebird", id: 1478757472
 mas "Boom 3D", id: 1233048948
 mas "Calcbot", id: 931657367
-mas "Canva", id: 897446215
 mas "CARROT Weather", id: 993487541
 mas "CloudMounter", id: 1130254674
 mas "Compressor", id: 424390742
@@ -203,8 +210,29 @@ mas "Refined GitHub", id: 1519867270
 mas "SVGShaper", id: 1566140414
 mas "Taio", id: 1527036273
 mas "TestFlight", id: 899247664
-mas "Tot", id: 1491071483
 mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
 mas "Xcode", id: 497799835
+vscode "akamud.vscode-theme-onedark"
+vscode "catppuccin.catppuccin-vsc"
+vscode "davidbwaters.macos-modern-theme"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "liviuschera.noctis"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-server"
+vscode "oderwat.indent-rainbow"
+vscode "pkief.material-icon-theme"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "syler.sass-indented"
+vscode "tonka3000.raycast"
+vscode "yzhang.markdown-all-in-one"
