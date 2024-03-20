@@ -39,7 +39,7 @@ else
 
         # Rename the wallpaper to Desktop.png
         new_wallpaper_path=$backup_directory/Desktop.png
-        mv "$backup_directory/$(basname $wallpaper_path)" "$new_wallpaper_path"
+        mv "$backup_directory/$(basename $wallpaper_path)" "$new_wallpaper_path"
         
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$timestamp_file"
