@@ -122,8 +122,6 @@ cask "iina"
 cask "karabiner-elements"
 # Find shortcuts for any installed application
 cask "keyclu"
-# Utility that shows the latest app updates
-cask "latest"
 # Software for Logitech devices
 cask "logi-options-plus"
 # Tool to control external monitor brightness & volume
@@ -216,3 +214,29 @@ mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
 mas "Xcode", id: 497799835
+vscode "1yib.rust-bundle"
+vscode "akamud.vscode-theme-onedark"
+vscode "bierner.markdown-preview-github-styles"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "dustypomerleau.rust-syntax"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-server"
+vscode "oderwat.indent-rainbow"
+vscode "rust-lang.rust-analyzer"
+vscode "serayuzgur.crates"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "syler.sass-indented"
+vscode "tamasfe.even-better-toml"
+vscode "tonka3000.raycast"
+vscode "yzhang.markdown-all-in-one"
