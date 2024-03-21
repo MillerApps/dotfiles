@@ -70,6 +70,8 @@ brew "pngquant"
 brew "powerlevel10k"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
+# Rust toolchain installer
+brew "rustup-init"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -214,24 +216,3 @@ mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
 mas "Xcode", id: 497799835
-vscode "akamud.vscode-theme-onedark"
-vscode "bierner.markdown-preview-github-styles"
-vscode "catppuccin.catppuccin-vsc"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "esbenp.prettier-vscode"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "mechatroner.rainbow-csv"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode-remote.vscode-remote-extensionpack"
-vscode "ms-vscode.remote-explorer"
-vscode "ms-vscode.remote-server"
-vscode "oderwat.indent-rainbow"
-vscode "shd101wyy.markdown-preview-enhanced"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "syler.sass-indented"
-vscode "tonka3000.raycast"
-vscode "yzhang.markdown-all-in-one"
