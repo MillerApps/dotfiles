@@ -1,5 +1,6 @@
 tap "enigmaticdb/super-secret-tap"
 tap "homebrew/bundle"
+tap "jesseduffield/lazygit"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
@@ -56,8 +57,12 @@ brew "htop"
 brew "libffi"
 # YAML Parser
 brew "libyaml"
+# Powerful, lightweight programming language
+brew "lua"
 # Just-In-Time Compiler (JIT) for the Lua programming language
 brew "luajit"
+# Package manager for the Lua programming language
+brew "luarocks"
 # Keep your Mac's application settings in sync
 brew "mackup"
 # Mac App Store command-line interface
@@ -76,6 +81,10 @@ brew "rustup-init"
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# A simple terminal UI for git commands, written in Go
+brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -214,29 +223,3 @@ mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
 mas "Xcode", id: 497799835
-vscode "1yib.rust-bundle"
-vscode "akamud.vscode-theme-onedark"
-vscode "bierner.markdown-preview-github-styles"
-vscode "catppuccin.catppuccin-vsc"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "dustypomerleau.rust-syntax"
-vscode "esbenp.prettier-vscode"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "mechatroner.rainbow-csv"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode-remote.vscode-remote-extensionpack"
-vscode "ms-vscode.remote-explorer"
-vscode "ms-vscode.remote-server"
-vscode "oderwat.indent-rainbow"
-vscode "rust-lang.rust-analyzer"
-vscode "serayuzgur.crates"
-vscode "shd101wyy.markdown-preview-enhanced"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "syler.sass-indented"
-vscode "tamasfe.even-better-toml"
-vscode "tonka3000.raycast"
-vscode "yzhang.markdown-all-in-one"
