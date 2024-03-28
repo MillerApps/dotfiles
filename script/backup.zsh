@@ -44,8 +44,11 @@ else
     fi
 fi
 
-# Run the brew bundle dump
-/opt/homebrew/bin/brew bundle dump --describe --force
+# Check if there are any changes to Brewfile before dumping
+if ! /opt/homebrew/bin/brew bundle check --describe >/dev/null 2>&1; then
+    # Run the brew bundle dump
+    /opt/homebrew/bin/brew bundle dump --describe --force
+fi
 
 # Run Mackup
 /opt/homebrew/bin/mackup backup --force
