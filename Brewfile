@@ -1,5 +1,7 @@
 tap "enigmaticdb/super-secret-tap"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
 tap "jesseduffield/lazygit"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
@@ -117,10 +119,14 @@ cask "docker"
 cask "downie"
 # Productivity app
 cask "dropzone"
-# Desktop client for Ente
+# Desktop client for Ente Photos
 cask "ente"
 # Web browser
 cask "firefox"
+# Developer targeted fonts with a high number of glyphs
+cask "font-meslo-lg-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-roboto-mono-nerd-font"
 # Open-source video transcoder
 cask "handbrake"
 # Automated organisation
