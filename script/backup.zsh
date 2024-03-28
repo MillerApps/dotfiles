@@ -13,8 +13,6 @@ if [ ! -f "$timestamp_file" ]; then
 
     # Git commit for creation of last_wallpaper_change.txt file
     /opt/homebrew/bin/git add "$timestamp_file"
-    /opt/homebrew/bin/git commit -m "Create last_wallpaper_change.txt for tracking wallpaper changes"
-    /opt/homebrew/bin/git push
 fi
 
 # Get timestamp of last wallpaper change
@@ -43,26 +41,8 @@ else
         
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$timestamp_file"
-
-        # Git commit for last_wallpaper_change.txt update
-        /opt/homebrew/bin/git add "$timestamp_file"
-        /opt/homebrew/bin/git commit -m "Update last_wallpaper_change.txt"
-        /opt/homebrew/bin/git push
-
-        # Git commit for wallpaper change
-        /opt/homebrew/bin/git add Desktop.png
-        /opt/homebrew/bin/git commit -m "Update desktop wallpaper"
-        /opt/homebrew/bin/git push
     fi
 fi
-
-# Update brew formulas and casks
-/opt/homebrew/bin/brew update
-/opt/homebrew/bin/brew upgrade
-/opt/homebrew/bin/brew upgrade --cask --greedy
-
-# Brew cleanup
-/opt/homebrew/bin/brew cleanup --prune=all
 
 # Run the brew bundle dump
 /opt/homebrew/bin/brew bundle dump --describe --force
@@ -72,6 +52,6 @@ fi
 /opt/homebrew/bin/mackup uninstall --force
 
 # Git coomit for Brewfile
-/opt/homebrew/bin/git add Brewfile
-/opt/homebrew/bin/git commit -m "Auto-update Brewfile"
+/opt/homebrew/bin/git add .
+/opt/homebrew/bin/git commit -m "Auto-update"
 /opt/homebrew/bin/git push
