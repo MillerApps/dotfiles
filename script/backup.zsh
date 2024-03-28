@@ -55,6 +55,9 @@ fi
 /opt/homebrew/bin/mackup uninstall --force
 
 # Git coomit for Brewfile
-/opt/homebrew/bin/git add .
-/opt/homebrew/bin/git commit -m "Auto-update"
-/opt/homebrew/bin/git push
+if /opt/homebrew/bin/git status --porcelain | grep .; then
+    /opt/homebrew/bin/git commit -m "Auto-update"
+    /opt/homebrew/bin/git push
+else
+    echo "No changes to commit."
+fi
