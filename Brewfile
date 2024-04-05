@@ -53,6 +53,8 @@ brew "gh"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Improved top (interactive process viewer)
 brew "htop"
 # Portable Foreign Function Interface library
@@ -139,6 +141,8 @@ cask "iina"
 cask "karabiner-elements"
 # Find shortcuts for any installed application
 cask "keyclu"
+# App to manage software development and track bugs
+cask "linear-linear"
 # Software for Logitech devices
 cask "logi-options-plus"
 # Tool to control external monitor brightness & volume
@@ -151,6 +155,8 @@ cask "onyx"
 cask "permute"
 # Customise and maintain app icons
 cask "pictogram"
+# Client for Proton Mail and Proton Calendar
+cask "proton-mail"
 # HTTP debugging proxy
 cask "proxyman"
 # Control your tools with a few keystrokes
@@ -231,3 +237,34 @@ mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
 mas "Xcode", id: 497799835
+vscode "1yib.rust-bundle"
+vscode "akamud.vscode-theme-onedark"
+vscode "bierner.markdown-preview-github-styles"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "codeium.codeium"
+vscode "dustypomerleau.rust-syntax"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "golang.go"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-server"
+vscode "oderwat.indent-rainbow"
+vscode "rust-lang.rust-analyzer"
+vscode "serayuzgur.crates"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "sumneko.lua"
+vscode "syler.sass-indented"
+vscode "tamasfe.even-better-toml"
+vscode "tonka3000.raycast"
+vscode "yzhang.markdown-all-in-one"
