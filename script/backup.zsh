@@ -53,7 +53,7 @@ fi
 
 # Git coomit for Brewfile
 if /opt/homebrew/bin/git status --porcelain | grep .; then
-    /opt/homebrew/bin/git .
+    /opt/homebrew/bin/git add .
     /opt/homebrew/bin/git commit -m "Auto-update"
     /opt/homebrew/bin/git push
 else
