@@ -58,3 +58,7 @@ mackup restore --force && mackup uninstall --force
 
 As of writing, this is the best way, as it is somewhat broken on macOS 14, due to broken symlinks.
 https://github.com/lra/mackup/issues/1924#issuecomment-1756330534
+
+### Restore SSH keys from 1password
+
+[Export](https://developer.1password.com/docs/ssh/manage-keys/#export-an-ssh-key) ssh keys from 1password and place them in ~/.ssh
