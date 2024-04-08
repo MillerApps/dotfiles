@@ -29,8 +29,6 @@ mackup uninstall --force
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 # Set scroll as traditional instead of natural
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
-# set dock size
-defaults write com.apple.dock "tilesize" -int "40" && killall Dock
 # set pathbar
 defaults write com.apple.finder "ShowPathbar" -bool "true"
 # set searchpath
@@ -43,6 +41,9 @@ defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
 defaults write com.apple.finder FXArrangeGroupViewBy -string Kind
 # Restart Finder
 killall Finder
+
+# Set up the dock
+sh $(dirname "$0")/dock.zsh
 
 # Get the absolute path to the image
 IMAGE_PATH="${HOME}/dotfiles/Desktop.png"

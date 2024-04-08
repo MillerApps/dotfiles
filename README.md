@@ -12,8 +12,9 @@ Steps to make a new machine easier to setup
 
 1. cd to the script directory.
 2. Make sure make the script executable with `chmod u+x setup-machine.zsh` then run it with `./setup-machine.zsh`
+3. Make sure that the `dock.zsh` script is executable with `chmod u+x dock.zsh`
 
-3. The same can be for the backup script `chmod u+x backup.zsh`
+4. The same can be for the backup script `chmod u+x backup.zsh`
    Then with the backup script you add it as a cron job.
 
 ## Install HomeBrew
