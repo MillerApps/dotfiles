@@ -6,9 +6,17 @@ Steps to make a new machine easier to setup
 
 ## Sign into iCloud and enable documents to be synced.
 
+## Clone this repo
+
 ## Run the script found in the script folder, or follow the manual process below.
 
-## Insatll HomeBrew
+1. cd to the script directory.
+2. Make sure make the script executable with `chmod u+x setup-machine.zsh` then run it with `./setup-machine.zsh`
+
+3. The same can be for the backup script `chmod u+x backup.zsh`
+   Then with the backup script you add it as a cron job.
+
+## Install HomeBrew
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
