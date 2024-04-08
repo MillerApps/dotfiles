@@ -31,7 +31,7 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false && kill
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 # Get the absolute path to the image
-IMAGE_PATH="${HOME}/New-Machine/Desktop.png"
+IMAGE_PATH="${HOME}/dotfiles/Desktop.png"
 
 # AppleScript command to set the desktop background
 osascript <<EOF

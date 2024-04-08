@@ -1,11 +1,11 @@
 #!/bin/zsh
 
 # Navigate to directory
-cd /Users/tylermiller/New-Machine/
+cd /Users/tylermiller/dotfiles/
 
 # Wallpaper backup
 # Path to store the timestamp of the last wallpaper change
-timestamp_file="/Users/tylermiller/New-Machine/last_wallpaper_change.txt"
+timestamp_file="/Users/tylermiller/dotfiles/last_wallpaper_change.txt"
 
 # Create the timestamp file if it doesn't exist
 if [ ! -f "$timestamp_file" ]; then
@@ -21,7 +21,7 @@ last_change_timestamp=$(cat "$timestamp_file")
 # Get path of current desktop wallpaper using osascript
 wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)' 2>/dev/null)
 
-backup_directory="/Users/tylermiller/New-Machine/"
+backup_directory="/Users/tylermiller/dotfiles/"
 
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."
