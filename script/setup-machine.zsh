@@ -24,11 +24,25 @@ echo "engine = icloud" >> $MACKUP_CONFIG_PATH
 mackup restore --force
 mackup uninstall --force
 
-# Set scroll as traditional instead of natural
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false && killall Finder
-
+# Customize macOS defaults
 # Set to dark mode
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
+# Set scroll as traditional instead of natural
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# set dock size
+defaults write com.apple.dock "tilesize" -int "40" && killall Dock
+# set pathbar
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+# set searchpath
+defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" 
+# set sidebar icons size
+defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "3"
+# show drives
+defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
+# set sort order desktop
+defaults write com.apple.finder FXArrangeGroupViewBy -string Kind
+# Restart Finder
+killall Finder
 
 # Get the absolute path to the image
 IMAGE_PATH="${HOME}/dotfiles/Desktop.png"
