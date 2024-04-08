@@ -41,6 +41,8 @@ brew "cask"
 brew "chruby"
 # AV1 decoder targeted to be small and fast
 brew "dav1d"
+# Tool for managing dock items
+brew "dockutil"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream audio and video
@@ -130,7 +132,11 @@ cask "font-jetbrains-mono-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 # Developer targeted fonts with a high number of glyphs
+cask "font-monaspace-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-roboto-mono-nerd-font"
+# Tools to protect your emails and files
+cask "gpg-suite"
 # Open-source video transcoder
 cask "handbrake"
 # Automated organisation
@@ -189,6 +195,8 @@ cask "warp"
 cask "xcodes"
 # Multiplayer code editor
 cask "zed"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "A Companion for SwiftUI", id: 1485436674
 mas "Accelerate", id: 1459809092
