@@ -5,6 +5,8 @@
 
 # set dock size
 defaults write com.apple.dock "tilesize" -int "40"
+# set show recent apps
+defaults write com.apple.dock "show-recents" -bool "false"
 
 # check if dockutil is installed
 # this should be installed via homebrew durning 
