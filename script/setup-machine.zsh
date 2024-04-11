@@ -59,3 +59,8 @@ tell application "System Events"
     end repeat
 end tell
 EOF
+
+# Set up touch id sudo for terminal
+SUDO_PATH="/private/etc/pam.d/sudo"
+touch $SUDO_PATH
+echo "auth       sufficient    pam_tid.so" >> $SUDO_PATH
