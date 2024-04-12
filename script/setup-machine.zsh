@@ -64,6 +64,8 @@ EOF
 SUDO_PATH="/private/etc/pam.d/sudo" # path to the sudo file, this correct on newer macos versions
 # check if user wants to enable touch id
 read -p "Enable touch id for sudo in terminal? (y/n): " -n 1 -r
+# add new line as a separator
+echo ""
 if [ $REPLY == "yes" ] || [ $REPLY == "y" ]; then
     echo "Enabling touch id for sudo in terminal"
     echo "A backup of the original file will be created at $SUDO_PATH.bak"
