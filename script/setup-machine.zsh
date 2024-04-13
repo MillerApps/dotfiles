@@ -9,14 +9,14 @@ if  ! command brew -v; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     echo "Homebrew is already installed"
+fi
     # Brewfile location
     # This assumes that the dotfiles repo has been cloned to /Users/tylermiller/dotfiles
     BREWFILE_LOCATION="/Users/tylermiller/dotfiles/Brewfile"
 
     # Install applications from Brewfile
     brew bundle --file "$BREWFILE_LOCATION"
-fi
-
+    
 # Mackup should be installed by homebrew before hitting this point 
 # Create a new Mackup config file
 MACKUP_CONFIG_PATH="$HOME/.mackup.cfg"
