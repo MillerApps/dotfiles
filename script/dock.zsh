@@ -14,8 +14,9 @@ defaults write com.apple.dock "show-recents" -bool "false"
 if ! command -v dockutil &> /dev/null
 then
     echo "dockutil could not be found"
-    # however if it si not installed it will exit the script
-    exit
+    # Inatsll dockutil
+    brew install dockutil
+    echo "dockutil installed"
 fi
 
 # Setup dock
