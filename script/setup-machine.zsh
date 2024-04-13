@@ -67,10 +67,12 @@ EOF
 # Set up touch id sudo for terminal
 SUDO_PATH="/private/etc/pam.d/sudo" # path to the sudo file, this correct on newer macos versions
 # check if user wants to enable touch id
-read -p "Enable touch id for sudo in terminal? (y/n): " -n 1 -r
+echo "Enable touch id for sudo in terminal? (y/n): " REPLY
+read REPLY
 # add new line as a separator
 echo ""
-if [ $REPLY == "yes" ] || [ $REPLY == "y" ]; then
+# Uses regex to match y or Y or yes or Yes
+if [[ $REPLY =~ ^[Yy]es$ ]] || [[ $REPLY =~ ^[Yy]$ ]]; then 
     echo "Enabling touch id for sudo in terminal"
     echo "A backup of the original file will be created at $SUDO_PATH.bak"
     # enable touch id
