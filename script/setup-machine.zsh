@@ -10,12 +10,11 @@ if  ! command brew -v; then
 else
     echo "Homebrew is already installed"
 fi
-    # Brewfile location
-    # This assumes that the dotfiles repo has been cloned to /Users/tylermiller/dotfiles
-    BREWFILE_LOCATION="/Users/tylermiller/dotfiles/Brewfile"
-
-    # Install applications from Brewfile
-    brew bundle --file "$BREWFILE_LOCATION"
+# Brewfile location
+# This assumes that the dotfiles repo has been cloned to /Users/tylermiller/dotfiles
+BREWFILE_LOCATION="/Users/tylermiller/dotfiles/Brewfile"
+# Install applications from Brewfile
+brew bundle --file "$BREWFILE_LOCATION"
     
 # Mackup should be installed by homebrew before hitting this point 
 # Create a new Mackup config file
