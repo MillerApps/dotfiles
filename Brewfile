@@ -93,6 +93,8 @@ brew "rustup-init"
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Fish-like fast/unobtrusive autosuggestions for zsh
