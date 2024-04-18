@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+# Makes sure the home brew paths are always correct and avalible to the enviorment.
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+
 # Navigate to directory
 cd /Users/tylermiller/dotfiles/
 
@@ -12,7 +16,7 @@ if [ ! -f "$timestamp_file" ]; then
     touch "$timestamp_file"
 
     # Git commit for creation of last_wallpaper_change.txt file
-    /opt/homebrew/bin/git add "$timestamp_file"
+    git add "$timestamp_file"
 fi
 
 # Get timestamp of last wallpaper change
@@ -45,17 +49,17 @@ else
 fi
 
 # Run the brew bundle dump
-/opt/homebrew/bin/brew bundle dump --describe --force
+brew bundle dump --describe --force && echo "DUMPING SUCCESSFUL"
 
 # Run Mackup
-/opt/homebrew/bin/mackup backup --force
-/opt/homebrew/bin/mackup uninstall --force
+mackup backup --force
+mackup uninstall --force
 
 # Git coomit for Brewfile
-if /opt/homebrew/bin/git status --porcelain | grep .; then
-    /opt/homebrew/bin/git add .
-    /opt/homebrew/bin/git commit -m "Auto-update"
-    /opt/homebrew/bin/git push
+if git status --porcelain | grep .; then
+    git add .
+    git commit -m "Auto-update"
+    git push
 else
     echo "No changes to commit."
 fi
