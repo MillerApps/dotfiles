@@ -67,6 +67,8 @@ brew "htop"
 brew "libffi"
 # YAML Parser
 brew "libyaml"
+# Next-gen compiler infrastructure
+brew "llvm@17"
 # Powerful, lightweight programming language
 brew "lua"
 # Just-In-Time Compiler (JIT) for the Lua programming language
@@ -91,8 +93,8 @@ brew "rustup-init"
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
@@ -159,8 +161,6 @@ cask "iterm2"
 cask "karabiner-elements"
 # Find shortcuts for any installed application
 cask "keyclu"
-# Utility that shows the latest app updates
-cask "latest"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Software for Logitech devices
