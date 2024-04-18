@@ -44,11 +44,8 @@ else
     fi
 fi
 
-# Create the logs directory if it doesn't exist
-mkdir -p /Users/tylermiller/logs
-
 # Run the brew bundle dump
-/opt/homebrew/bin/brew bundle dump --describe --force > /Users/tylermiller/logs/brew_dump_log.txt 2>&1
+/opt/homebrew/bin/brew bundle dump --describe --force
 
 # Run Mackup
 /opt/homebrew/bin/mackup backup --force
