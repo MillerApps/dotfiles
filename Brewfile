@@ -43,10 +43,14 @@ brew "chruby"
 brew "dav1d"
 # Tool for managing dock items
 brew "dockutil"
+# Command-line tool to interact with exercism.io
+brew "exercism"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GNU database manager
 brew "gdbm"
 # GitHub command-line tool
@@ -89,6 +93,10 @@ brew "sl"
 brew "speedtest-cli"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
@@ -137,16 +145,22 @@ cask "font-monaspace-nerd-font"
 cask "font-roboto-mono-nerd-font"
 # Tools to protect your emails and files
 cask "gpg-suite"
+# Open Source Multimedia Framework
+cask "gstreamer-runtime"
 # Open-source video transcoder
 cask "handbrake"
 # Automated organisation
 cask "hazel"
 # Free and open-source media player
 cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Keyboard customiser
 cask "karabiner-elements"
 # Find shortcuts for any installed application
 cask "keyclu"
+# Utility that shows the latest app updates
+cask "latest"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Software for Logitech devices
@@ -185,12 +199,16 @@ cask "tempbox"
 cask "tower"
 # Open-source BitTorrent client
 cask "transmission"
+# Virtual machines UI using QEMU
+cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Rust-based terminal
 cask "warp"
+# Compatibility layer to run Windows applications
+cask "wine-stable"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"
 # Multiplayer code editor
