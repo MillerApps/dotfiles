@@ -38,14 +38,14 @@ else
         # Rename the wallpaper to Desktop.png
         new_wallpaper_path=$backup_directory/Desktop.png
         mv "$backup_directory/$(basename $wallpaper_path)" "$new_wallpaper_path"
-        
+
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$timestamp_file"
     fi
 fi
 
 # Run the brew bundle dump
-/opt/homebrew/bin/brew bundle dump --describe --force
+/opt/homebrew/bin/brew bundle dump --describe --force > /Users/tylermiller/logs/brew_dump_log.txt 2>&1
 
 # Run Mackup
 /opt/homebrew/bin/mackup backup --force
