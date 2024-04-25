@@ -59,6 +59,8 @@ brew "gh"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Render markdown on the CLI
+brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Improved top (interactive process viewer)
@@ -97,6 +99,8 @@ brew "speedtest-cli"
 brew "thefuck"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
