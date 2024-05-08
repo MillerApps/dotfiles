@@ -125,6 +125,8 @@ cask "arc"
 cask "audacity"
 # Menu bar icon organiser
 cask "bartender"
+# Utility improving 3rd party mouse performance and functionalities
+cask "bettermouse"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -169,8 +171,8 @@ cask "karabiner-elements"
 cask "keyclu"
 # App to manage software development and track bugs
 cask "linear-linear"
-# Software for Logitech devices
-cask "logi-options-plus"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -294,9 +296,11 @@ vscode "oderwat.indent-rainbow"
 vscode "rust-lang.rust-analyzer"
 vscode "serayuzgur.crates"
 vscode "shd101wyy.markdown-preview-enhanced"
+vscode "sswg.swift-lang"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "sumneko.lua"
 vscode "syler.sass-indented"
 vscode "tamasfe.even-better-toml"
 vscode "tonka3000.raycast"
+vscode "vadimcn.vscode-lldb"
 vscode "yzhang.markdown-all-in-one"
