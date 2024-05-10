@@ -163,8 +163,6 @@ cask "handbrake"
 cask "hazel"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Keyboard customiser
 cask "karabiner-elements"
 # Find shortcuts for any installed application
@@ -183,6 +181,8 @@ cask "onyx"
 cask "permute"
 # Customise and maintain app icons
 cask "pictogram"
+# Home media server
+cask "plex-media-server"
 # Client for Proton Mail and Proton Calendar
 cask "proton-mail"
 # HTTP debugging proxy
@@ -215,6 +215,8 @@ cask "visual-studio-code"
 cask "vlc"
 # Rust-based terminal
 cask "warp"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Compatibility layer to run Windows applications
 cask "wine-stable"
 # Install and switch between multiple versions of Xcode
