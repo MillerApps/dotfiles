@@ -29,6 +29,8 @@ brew "readline"
 brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
+# Decentralized dependency manager for Cocoa
+brew "carthage"
 # HTTP/2 C Library
 brew "libnghttp2"
 # Validating, recursive, caching DNS resolver
@@ -95,6 +97,10 @@ brew "rustup-init"
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Formatting tool for reformatting Swift code
+brew "swiftformat"
+# Swift code generator for assets, storyboards, Localizable.strings, etc.
+brew "swiftgen"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Feature-rich command-line audio/video downloader
@@ -163,6 +169,8 @@ cask "handbrake"
 cask "hazel"
 # Free and open-source media player
 cask "iina"
+# Jellyfin desktop client
+cask "jellyfin-media-player"
 # Keyboard customiser
 cask "karabiner-elements"
 # Find shortcuts for any installed application
@@ -173,6 +181,8 @@ cask "linear-linear"
 cask "microsoft-auto-update"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# VPN client for secure internet access and private browsing
+cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
