@@ -1,6 +1,4 @@
-tap "enigmaticdb/super-secret-tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
@@ -137,8 +135,6 @@ cask "bettermouse"
 cask "cleanmymac"
 # Screen capturing tool
 cask "cleanshot"
-# The Homebrew Companion
-cask "cork"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
