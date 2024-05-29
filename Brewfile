@@ -19,6 +19,8 @@ brew "libgit2"
 brew "bat"
 # Parser generator
 brew "bison"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
 # Library for command-line editing
@@ -63,8 +65,6 @@ brew "git"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Improved top (interactive process viewer)
-brew "htop"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
