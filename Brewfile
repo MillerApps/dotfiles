@@ -131,6 +131,8 @@ cask "audacity"
 cask "bartender"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
@@ -183,6 +185,8 @@ cask "nordvpn"
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# WebKit based web browser
+cask "orion"
 # Converts and edits video, audio or image files
 cask "permute"
 # Customise and maintain app icons
@@ -209,6 +213,8 @@ cask "stats"
 cask "telegram"
 # Disposable email client
 cask "tempbox"
+# Web browser focusing on security
+cask "tor-browser"
 # Git client focusing on power and productivity
 cask "tower"
 # Open-source BitTorrent client
