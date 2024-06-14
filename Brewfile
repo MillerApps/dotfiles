@@ -149,13 +149,9 @@ cask "dropzone"
 cask "ente"
 # Web browser
 cask "firefox"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-monaspace-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-roboto-mono-nerd-font"
 # Tools to protect your emails and files
 cask "gpg-suite"
