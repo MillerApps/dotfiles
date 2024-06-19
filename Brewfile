@@ -177,6 +177,8 @@ cask "microsoft-auto-update"
 cask "monitorcontrol"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
