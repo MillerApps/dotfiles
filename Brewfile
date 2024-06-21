@@ -167,8 +167,6 @@ cask "iina"
 cask "jellyfin-media-player"
 # Keyboard customiser
 cask "karabiner-elements"
-# Find shortcuts for any installed application
-cask "keyclu"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Provides updates to various Microsoft products
@@ -189,8 +187,6 @@ cask "orion"
 cask "permute"
 # Customise and maintain app icons
 cask "pictogram"
-# Home media server
-cask "plex-media-server"
 # Client for Proton Mail and Proton Calendar
 cask "proton-mail"
 # HTTP debugging proxy
