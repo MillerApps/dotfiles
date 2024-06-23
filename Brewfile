@@ -173,6 +173,8 @@ cask "linear-linear"
 cask "microsoft-auto-update"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# VPN client
+cask "mullvadvpn"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Open-source software for live streaming and screen recording
@@ -191,6 +193,8 @@ cask "pictogram"
 cask "proton-mail"
 # HTTP debugging proxy
 cask "proxyman"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
