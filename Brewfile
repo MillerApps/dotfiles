@@ -199,6 +199,8 @@ cask "qbittorrent"
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Instant messaging application focusing on security
+cask "signal"
 # Video chat, voice call and instant messaging application
 cask "skype"
 # Team communication and collaboration software
