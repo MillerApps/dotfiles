@@ -175,8 +175,6 @@ cask "microsoft-auto-update"
 cask "monitorcontrol"
 # VPN client
 cask "mullvadvpn"
-# VPN client for secure internet access and private browsing
-cask "nordvpn"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -227,6 +225,8 @@ cask "vlc"
 cask "vmware-fusion"
 # Rust-based terminal
 cask "warp"
+# Terminal emulator
+cask "wave"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Compatibility layer to run Windows applications
