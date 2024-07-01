@@ -65,6 +65,8 @@ brew "git"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "iperf3"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
@@ -163,8 +165,6 @@ cask "handbrake"
 cask "hazel"
 # Free and open-source media player
 cask "iina"
-# Jellyfin desktop client
-cask "jellyfin-media-player"
 # Keyboard customiser
 cask "karabiner-elements"
 # App to manage software development and track bugs
@@ -264,6 +264,7 @@ mas "Gifski", id: 1351639930
 mas "GlanceCam", id: 1360797896
 mas "Hush", id: 1544743900
 mas "Ice Cubes", id: 6444915884
+mas "Infuse", id: 1136220934
 mas "JSONPeep", id: 1458969831
 mas "Keka", id: 470158793
 mas "Keynote", id: 409183694
