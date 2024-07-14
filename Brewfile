@@ -9,6 +9,8 @@ brew "xz"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# ARP scanning and fingerprinting tool
+brew "arp-scan"
 # Mozilla CA certificate store
 brew "ca-certificates"
 # Cryptography and SSL/TLS Toolkit
@@ -85,6 +87,8 @@ brew "mackup"
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Port scanning utility for large networks
+brew "nmap"
 # PNG image optimizing utility
 brew "pngquant"
 # Theme for zsh
