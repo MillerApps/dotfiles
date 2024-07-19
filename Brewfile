@@ -1,3 +1,4 @@
+tap "ameshkov/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
@@ -98,7 +99,7 @@ brew "powerlevel10k"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Rust toolchain installer
-brew "rustup-init"
+brew "rustup-init", link: true
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -117,6 +118,8 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Simple command-line utility to make DNS lookups using any protocol
+brew "ameshkov/tap/dnslookup"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
@@ -249,6 +252,7 @@ mas "1Password for Safari", id: 1569813296
 mas "A Companion for SwiftUI", id: 1485436674
 mas "Accelerate", id: 1459809092
 mas "AdBlock", id: 1402042596
+mas "AdGuard Home", id: 1543143740
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
 mas "Bakery", id: 1575220747
