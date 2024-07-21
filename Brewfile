@@ -16,8 +16,6 @@ brew "arp-scan"
 brew "ca-certificates"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Parser generator
@@ -50,6 +48,8 @@ brew "dav1d"
 brew "dockutil"
 # Command-line tool to interact with exercism.io
 brew "exercism"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream audio and video
@@ -60,8 +60,6 @@ brew "fzf"
 brew "gdbm"
 # GitHub command-line tool
 brew "gh"
-# Highest-quality GIF encoder based on pngquant
-brew "gifski"
 # Distributed revision control system
 brew "git"
 # Render markdown on the CLI
@@ -118,8 +116,6 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Simple command-line utility to make DNS lookups using any protocol
-brew "ameshkov/tap/dnslookup"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 # Password manager that keeps all passwords secure behind one password
@@ -216,6 +212,8 @@ cask "slack"
 cask "spotify"
 # System monitor for the menu bar
 cask "stats"
+# Mesh VPN based on WireGuard
+cask "tailscale"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Disposable email client
@@ -293,7 +291,6 @@ mas "Prime Video", id: 545519333
 mas "QR Capture", id: 1369524274
 mas "Refined GitHub", id: 1519867270
 mas "SVGShaper", id: 1566140414
-mas "Tailscale", id: 1475387142
 mas "Taio", id: 1527036273
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
@@ -305,7 +302,6 @@ vscode "akamud.vscode-theme-onedark"
 vscode "bierner.markdown-preview-github-styles"
 vscode "catppuccin.catppuccin-vsc"
 vscode "catppuccin.catppuccin-vsc-icons"
-vscode "codeium.codeium"
 vscode "dustypomerleau.rust-syntax"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
