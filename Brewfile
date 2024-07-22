@@ -190,8 +190,6 @@ cask "onyx"
 cask "orion"
 # Converts and edits video, audio or image files
 cask "permute"
-# Customise and maintain app icons
-cask "pictogram"
 # Client for Proton Mail and Proton Calendar
 cask "proton-mail"
 # HTTP debugging proxy
