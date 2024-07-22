@@ -204,8 +204,6 @@ cask "raycast"
 cask "sf-symbols"
 # Instant messaging application focusing on security
 cask "signal"
-# Video chat, voice call and instant messaging application
-cask "skype"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
