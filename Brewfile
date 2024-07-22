@@ -220,8 +220,6 @@ cask "tempbox"
 cask "tor-browser"
 # Git client focusing on power and productivity
 cask "tower"
-# Open-source BitTorrent client
-cask "transmission"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
