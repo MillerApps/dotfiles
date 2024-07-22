@@ -97,7 +97,7 @@ brew "powerlevel10k"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Rust toolchain installer
-brew "rustup-init", link: true
+brew "rustup", link: true
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -305,6 +305,7 @@ vscode "catppuccin.catppuccin-vsc-icons"
 vscode "dustypomerleau.rust-syntax"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
+vscode "ginfuru.ginfuru-vscode-jekyll-syntax"
 vscode "golang.go"
 vscode "matthewpi.caddyfile-support"
 vscode "mechatroner.rainbow-csv"
