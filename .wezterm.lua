@@ -86,6 +86,10 @@ config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = true
 
 config.colors = {
+	-- Cursor --
+	cursor_bg = "#F5A97F",
+	cursor_border = "#C6A0F6",
+	cursor_fg = "#ED8796",
 	tab_bar = {
 		-- The color of the strip that goes along the top of the window
 		-- (does not apply when fancy tab bar is in use)
@@ -160,6 +164,7 @@ config.colors = {
 }
 
 -- Cursor
-config.default_cursor_style = "SteadyBar"
+config.default_cursor_style = "BlinkingBlock"
+config.cursor_blink_rate = 450
 
 return config
