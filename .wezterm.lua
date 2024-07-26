@@ -5,6 +5,15 @@ local act = wezterm.action
 -- Holds the configuration
 local config = wezterm.config_builder()
 
+-- SSH --
+config.ssh_domains = {
+	{
+		name = "lab",
+		remote_address = "192.168.0.16",
+		username = "root",
+	},
+}
+
 -- Remap copymode key binds --
 if wezterm.gui then
 	-- Initialize key_tables if it doesn't exist
@@ -87,9 +96,9 @@ config.use_fancy_tab_bar = true
 
 config.colors = {
 	-- Cursor --
-	cursor_bg = "#F5A97F",
-	cursor_border = "#C6A0F6",
-	cursor_fg = "#ED8796",
+	cursor_bg = "rgba(245, 169, 127, 0.1)",
+	cursor_border = "rgba(198, 160, 246, 0.1)",
+	cursor_fg = "rgba(237, 135, 150, 0.1)",
 	tab_bar = {
 		-- The color of the strip that goes along the top of the window
 		-- (does not apply when fancy tab bar is in use)
