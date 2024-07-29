@@ -55,6 +55,8 @@ brew "libgit2"
 brew "eza"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Create thumbnails for your video files
+brew "ffmpegthumbnailer"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU database manager
@@ -69,6 +71,8 @@ brew "glow"
 brew "go"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
@@ -93,6 +97,8 @@ brew "neovim"
 brew "nmap"
 # PNG image optimizing utility
 brew "pngquant"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Theme for zsh
 brew "powerlevel10k"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
@@ -109,6 +115,10 @@ brew "swiftformat"
 brew "swiftgen"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
