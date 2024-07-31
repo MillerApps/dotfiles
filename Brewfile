@@ -157,6 +157,8 @@ cask "brave-browser"
 cask "cleanmymac"
 # Screen capturing tool
 cask "cleanshot"
+# Server and cloud storage browser
+cask "cyberduck"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
@@ -185,6 +187,8 @@ cask "hazel"
 cask "iina"
 # Keyboard customiser
 cask "karabiner-elements"
+# GPU-based terminal emulator
+cask "kitty"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Provides updates to various Microsoft products
