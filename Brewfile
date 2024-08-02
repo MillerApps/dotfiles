@@ -69,6 +69,8 @@ brew "git"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Directory/file & DNS busting tool written in Go
+brew "gobuster"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
@@ -169,6 +171,8 @@ cask "downie"
 cask "dropzone"
 # Desktop client for Ente Photos
 cask "ente"
+# Desktop client for Ente Auth
+cask "ente-auth"
 # Web browser
 cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
@@ -235,6 +239,10 @@ cask "tempbox"
 cask "tor-browser"
 # Git client focusing on power and productivity
 cask "tower"
+# Virtual machines UI using QEMU
+cask "utm"
+# Virtualizer for x86 and arm64 hardware
+cask "virtualbox@beta"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
