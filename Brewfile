@@ -213,6 +213,8 @@ cask "orion"
 cask "permute"
 # Client for Proton Mail and Proton Calendar
 cask "proton-mail"
+# Desktop client for Proton Pass
+cask "proton-pass"
 # HTTP debugging proxy
 cask "proxyman"
 # Peer to peer Bitorrent client
@@ -249,8 +251,6 @@ cask "visual-studio-code"
 cask "vlc"
 # Create, manage, and run virtual machines
 cask "vmware-fusion"
-# Rust-based terminal
-cask "warp"
 # Terminal emulator
 cask "wave"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
@@ -277,7 +277,6 @@ mas "Bluebird", id: 1478757472
 mas "Boom 3D", id: 1233048948
 mas "Calcbot", id: 931657367
 mas "CARROT Weather", id: 993487541
-mas "CloudMounter", id: 1130254674
 mas "Compressor", id: 424390742
 mas "Cubox", id: 1113361350
 mas "Cubox for Safari", id: 1550721541
