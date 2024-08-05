@@ -211,6 +211,8 @@ cask "onyx"
 cask "orion"
 # Converts and edits video, audio or image files
 cask "permute"
+# Client for Proton Drive
+cask "proton-drive"
 # Client for Proton Mail and Proton Calendar
 cask "proton-mail"
 # Desktop client for Proton Pass
