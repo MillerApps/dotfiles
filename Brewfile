@@ -155,6 +155,8 @@ cask "bartender"
 cask "bettermouse"
 # Web browser focusing on privacy
 cask "brave-browser"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Tool to remove unnecessary files and folders from disk
 cask "cleanmymac"
 # Screen capturing tool
