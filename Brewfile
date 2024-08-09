@@ -219,6 +219,8 @@ cask "proton-drive"
 cask "proton-mail"
 # Desktop client for Proton Pass
 cask "proton-pass"
+# VPN client focusing on security
+cask "protonvpn"
 # HTTP debugging proxy
 cask "proxyman"
 # Peer to peer Bitorrent client
