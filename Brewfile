@@ -312,6 +312,7 @@ mas "PayPal Honey", id: 1472777122
 mas "Petrify", id: 1451177988
 mas "Pixelmator Pro", id: 1289583905
 mas "Prime Video", id: 545519333
+mas "Proton Pass for Safari", id: 6502835663
 mas "QR Capture", id: 1369524274
 mas "Refined GitHub", id: 1519867270
 mas "SVGShaper", id: 1566140414
