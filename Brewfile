@@ -276,6 +276,9 @@ mas "A Companion for SwiftUI", id: 1485436674
 mas "Accelerate", id: 1459809092
 mas "AdBlock", id: 1402042596
 mas "AdGuard Home", id: 1543143740
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
 mas "Bakery", id: 1575220747
