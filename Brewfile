@@ -235,6 +235,8 @@ cask "signal"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Free, open-source, and completely encrypted notes app
+cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
 # Mesh VPN based on WireGuard
