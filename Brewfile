@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "librespeed/tap"
+tap "zen-browser/browser", "https://github.com/zen-browser/desktop.git"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
@@ -271,6 +272,8 @@ cask "wireshark"
 cask "xcodes"
 # Multiplayer code editor
 cask "zed"
+# Beautifully designed, privacy-focused browser packed with awesome features
+cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
