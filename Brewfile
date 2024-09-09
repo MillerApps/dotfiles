@@ -292,6 +292,7 @@ mas "Boom 3D", id: 1233048948
 mas "Calcbot", id: 931657367
 mas "CARROT Weather", id: 993487541
 mas "Compressor", id: 424390742
+mas "CrystalFetch", id: 6454431289
 mas "Cubox", id: 1113361350
 mas "Cubox for Safari", id: 1550721541
 mas "Dark Reader for Safari", id: 1438243180
