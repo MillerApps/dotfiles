@@ -272,7 +272,7 @@ cask "wireshark"
 cask "xcodes"
 # Multiplayer code editor
 cask "zed"
-# Beautifully designed, privacy-focused browser packed with awesome features
+# Gecko based web browser
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
