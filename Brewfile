@@ -330,7 +330,6 @@ mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
-mas "Xcode", id: 497799835
 vscode "1yib.rust-bundle"
 vscode "akamud.vscode-theme-onedark"
 vscode "bierner.markdown-preview-github-styles"
