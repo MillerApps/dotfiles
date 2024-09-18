@@ -208,8 +208,6 @@ cask "mullvadvpn"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Verify system files structure, run miscellaneous maintenance and more
-cask "onyx"
 # WebKit based web browser
 cask "orion"
 # Converts and edits video, audio or image files
@@ -330,6 +328,7 @@ mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
 mas "Wallaroo", id: 1630565980
+mas "Xcode", id: 497799835
 vscode "1yib.rust-bundle"
 vscode "akamud.vscode-theme-onedark"
 vscode "bierner.markdown-preview-github-styles"
