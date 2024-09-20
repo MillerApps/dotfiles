@@ -208,8 +208,6 @@ cask "mullvadvpn"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# WebKit based web browser
-cask "orion"
 # Converts and edits video, audio or image files
 cask "permute"
 # Client for Proton Drive
@@ -250,8 +248,6 @@ cask "tor-browser"
 cask "tower"
 # Virtual machines UI using QEMU
 cask "utm"
-# Virtualizer for x86 and arm64 hardware
-cask "virtualbox@beta"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
