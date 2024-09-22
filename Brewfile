@@ -192,6 +192,8 @@ cask "handbrake"
 cask "hazel"
 # Free and open-source media player
 cask "iina"
+# Menu bar manager
+cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
 # GPU-based terminal emulator
@@ -208,6 +210,8 @@ cask "mullvadvpn"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# WebKit based web browser
+cask "orion"
 # Converts and edits video, audio or image files
 cask "permute"
 # Client for Proton Drive
@@ -295,7 +299,6 @@ mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "Ducky", id: 1525505933
 mas "Final Cut Pro", id: 424389933
 mas "Folder Tidy", id: 486626129
-mas "GarageBand", id: 682658836
 mas "Gifox", id: 1461845568
 mas "Gifski", id: 1351639930
 mas "GlanceCam", id: 1360797896
@@ -312,7 +315,6 @@ mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PayPal Honey", id: 1472777122
-mas "Petrify", id: 1451177988
 mas "Pixelmator Pro", id: 1289583905
 mas "Prime Video", id: 545519333
 mas "Proton Pass for Safari", id: 6502835663
@@ -323,7 +325,6 @@ mas "Taio", id: 1527036273
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 6475134617
-mas "Wallaroo", id: 1630565980
 mas "Xcode", id: 497799835
 vscode "1yib.rust-bundle"
 vscode "akamud.vscode-theme-onedark"
