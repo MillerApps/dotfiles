@@ -50,6 +50,8 @@ brew "dav1d"
 brew "dockutil"
 # Command-line tool to interact with exercism.io
 brew "exercism"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
 # Modern, maintained replacement for ls
