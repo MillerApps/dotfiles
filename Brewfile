@@ -208,6 +208,8 @@ cask "microsoft-auto-update"
 cask "monitorcontrol"
 # VPN client
 cask "mullvadvpn"
+# Privacy-focused note taking app
+cask "notesnook"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
