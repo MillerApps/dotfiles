@@ -14,6 +14,12 @@ brew "jpeg-xl"
 brew "aom"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
+# Automatic configure script builder
+brew "autoconf"
+# Collection of over 500 reusable autoconf macros
+brew "autoconf-archive"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
 # Mozilla CA certificate store
 brew "ca-certificates"
 # Cryptography and SSL/TLS Toolkit
@@ -42,8 +48,12 @@ brew "unbound"
 brew "tree-sitter"
 # Emacs dependency management
 brew "cask"
+# Object-file caching compiler wrapper
+brew "ccache"
 # Ruby environment tool
 brew "chruby"
+# Cross-platform make
+brew "cmake"
 # AV1 decoder targeted to be small and fast
 brew "dav1d"
 # Tool for managing dock items
@@ -96,10 +106,16 @@ brew "mackup"
 brew "mas"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# Netwide Assembler (NASM) is an 80x86 assembler
+brew "nasm"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Small build system for use with gyp or CMake
+brew "ninja"
 # Port scanning utility for large networks
 brew "nmap"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # PNG image optimizing utility
 brew "pngquant"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -152,6 +168,8 @@ cask "appcleaner"
 cask "arc"
 # Multi-track audio editor and recorder
 cask "audacity"
+# 3D model slicing software for 3D printers, maintained by Bambu Lab
+cask "bambu-studio"
 # Menu bar icon organiser
 cask "bartender"
 # Utility improving 3rd party mouse performance and functionalities
@@ -278,59 +296,6 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "1Password for Safari", id: 1569813296
-mas "A Companion for SwiftUI", id: 1485436674
-mas "Accelerate", id: 1459809092
-mas "AdBlock", id: 1402042596
-mas "AdGuard Home", id: 1543143740
-mas "Affinity Designer 2", id: 1616831348
-mas "Affinity Photo 2", id: 1616822987
-mas "Affinity Publisher 2", id: 1606941598
-mas "Amphetamine", id: 937984704
-mas "Apple Configurator", id: 1037126344
-mas "Bakery", id: 1575220747
-mas "Bluebird", id: 1478757472
-mas "Boom 3D", id: 1233048948
-mas "Calcbot", id: 931657367
-mas "CARROT Weather", id: 993487541
-mas "com.kagimacOS.Kagi-Search", id: 1622835804
-mas "Compressor", id: 424390742
-mas "CrystalFetch", id: 6454431289
-mas "Cubox", id: 1113361350
-mas "Cubox for Safari", id: 1550721541
-mas "Dark Reader for Safari", id: 1438243180
-mas "Developer", id: 640199958
-mas "DuckDuckGo Privacy for Safari", id: 1482920575
-mas "Ducky", id: 1525505933
-mas "Final Cut Pro", id: 424389933
-mas "Folder Tidy", id: 486626129
-mas "Gifox", id: 1461845568
-mas "Gifski", id: 1351639930
-mas "GlanceCam", id: 1360797896
-mas "Hush", id: 1544743900
-mas "Ice Cubes", id: 6444915884
-mas "Infuse", id: 1136220934
-mas "JSONPeep", id: 1458969831
-mas "Keka", id: 470158793
-mas "Keynote", id: 409183694
-mas "Mactracker", id: 430255202
-mas "Messenger", id: 1480068668
-mas "Microsoft Outlook", id: 985367838
-mas "Motion", id: 434290957
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "PayPal Honey", id: 1472777122
-mas "Pixelmator Pro", id: 1289583905
-mas "Prime Video", id: 545519333
-mas "Proton Pass for Safari", id: 6502835663
-mas "QR Capture", id: 1369524274
-mas "Refined GitHub", id: 1519867270
-mas "SVGShaper", id: 1566140414
-mas "Taio", id: 1527036273
-mas "TestFlight", id: 899247664
-mas "Transmit", id: 1436522307
-mas "Unsqueeze", id: 6475134617
-mas "Xcode", id: 497799835
 vscode "1yib.rust-bundle"
 vscode "akamud.vscode-theme-onedark"
 vscode "bierner.markdown-preview-github-styles"
