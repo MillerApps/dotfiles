@@ -66,6 +66,8 @@ brew "exiftool"
 brew "libgit2"
 # Modern, maintained replacement for ls
 brew "eza"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@76"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Create thumbnails for your video files
@@ -254,6 +256,8 @@ cask "qbittorrent"
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# 3D CAD software
+cask "shapr3d"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
@@ -274,6 +278,8 @@ cask "tempbox"
 cask "tor-browser"
 # Git client focusing on power and productivity
 cask "tower"
+# 3D printer and slicing GUI
+cask "ultimaker-cura"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
