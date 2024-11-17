@@ -116,8 +116,8 @@ brew "neovim"
 brew "ninja"
 # Port scanning utility for large networks
 brew "nmap"
-# Manage compile and link flags for libraries
-brew "pkg-config"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # PNG image optimizing utility
 brew "pngquant"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -170,6 +170,8 @@ cask "appcleaner"
 cask "arc"
 # Multi-track audio editor and recorder
 cask "audacity"
+# Integrated CAD, CAM, CAE, and PCB software
+cask "autodesk-fusion"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
 cask "bambu-studio"
 # Menu bar icon organiser
