@@ -170,8 +170,6 @@ cask "appcleaner"
 cask "arc"
 # Multi-track audio editor and recorder
 cask "audacity"
-# Integrated CAD, CAM, CAE, and PCB software
-cask "autodesk-fusion"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
 cask "bambu-studio"
 # Menu bar icon organiser
