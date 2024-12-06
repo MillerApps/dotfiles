@@ -184,6 +184,8 @@ cask "chatgpt"
 cask "cleanmymac"
 # Screen capturing tool
 cask "cleanshot"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Voice and text chat software
