@@ -1,15 +1,26 @@
 # Fonts
 font-family = 'MonaspiceKr Nerd Font Mono'
 font-size = 20
+window-title-font-family = 'MonaspiceKr Nerd Font Mono'
 
 # Themeing
 theme = catppuccin-mocha
 background-opacity = 0.8
+# Cursor
+cursor-style = block
+shell-integration-features = no-cursor
+cursor-opacity = .60
+cursor-color = #fab387
 
 # MacOS
-macos-titlebar-style = hidden
+macos-titlebar-style = tabs
 macos-window-shadow = false
-macos-option-as-alt =  left
+macos-option-as-alt = true
+# Cursor manipulation
+keybind = cmd+right=text:\x05
+keybind = cmd+left=text:\x01
+keybind = alt+left=esc:b
+keybind = alt+right=esc:f
 
 # Close
 confirm-close-surface = false
