@@ -280,8 +280,6 @@ cask "tempbox"
 cask "tor-browser"
 # Git client focusing on power and productivity
 cask "tower"
-# 3D printer and slicing GUI
-cask "ultimaker-cura"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
