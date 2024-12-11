@@ -17,11 +17,11 @@ cursor-color = #fab387
 #custom-shader = shaders/starfield-colors.glsl
 #custom-shader = shaders/smoke-and-ghost.glsl
 #custom-shader = shaders/retro-terminal.glsl
-custom-shader = shaders/bloom.glsl
+#custom-shader = shaders/bloom.glsl
 #custom-shader = shaders/negative.glsl
 #custom-shader = shaders/just-snow.glsl
 #custom-shader = shaders/gradient-background.glsl
-#custom-shader = shaders/cubes.glsl
+custom-shader = shaders/cubes.glsl
 #custom-shader = shaders/crt.glsl
 
 
