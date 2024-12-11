@@ -11,6 +11,19 @@ cursor-style = block
 shell-integration-features = no-cursor
 cursor-opacity = .60
 cursor-color = #fab387
+# Shader
+#custom-shader = ghostty-shaders/animated-gradient-shader.glsl
+#custom-shader = ghostty-shaders/tft.glsl
+#custom-shader = ghostty-shaders/starfield-colors.glsl
+#custom-shader = ghostty-shaders/smoke-and-ghost.glsl
+#custom-shader = ghostty-shaders/retro-terminal.glsl
+custom-shader = ghostty-shaders/bloom.glsl
+#custom-shader = ghostty-shaders/negative.glsl
+#custom-shader = ghostty-shaders/just-snow.glsl
+#custom-shader = ghostty-shaders/gradient-background.glsl
+#custom-shader = ghostty/ghostty-shaders/cubes.glsl
+#custom-shader = ghostty/ghostty-shaders/crt.glsl
+
 
 # MacOS
 macos-titlebar-style = tabs
