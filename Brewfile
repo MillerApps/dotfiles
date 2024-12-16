@@ -220,8 +220,6 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
-# GPU-based terminal emulator
-cask "kitty"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Provides updates to various Microsoft products
@@ -290,8 +288,6 @@ cask "vlc"
 cask "vmware-fusion"
 # Terminal emulator
 cask "wave"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
 # Compatibility layer to run Windows applications
 cask "wine-stable"
 # Network protocol analyzer
