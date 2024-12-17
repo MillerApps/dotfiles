@@ -34,6 +34,8 @@ keybind = cmd+right=text:\x05
 keybind = cmd+left=text:\x01
 keybind = alt+left=esc:b
 keybind = alt+right=esc:f
+# Selection
+# TODO
 
 # Close
 confirm-close-surface = false
@@ -41,3 +43,8 @@ confirm-close-surface = false
 # Window size
 window-height = 50
 window-width = 220
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = true
