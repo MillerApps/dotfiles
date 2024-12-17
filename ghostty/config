@@ -35,7 +35,11 @@ keybind = cmd+left=text:\x01
 keybind = alt+left=esc:b
 keybind = alt+right=esc:f
 # Selection
-# TODO
+#keybind = 
+# Deletion
+keybind = cmd+delete=text:\x0b
+keybind = cmd+backspace=text:\x15
+keybind = opt+delete=esc:d
 
 # Close
 confirm-close-surface = false
