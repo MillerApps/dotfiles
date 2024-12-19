@@ -35,7 +35,6 @@ keybind = cmd+left=text:\x01
 keybind = alt+left=esc:b
 keybind = alt+right=esc:f
 # Selection
-#keybind = 
 # Deletion
 keybind = cmd+delete=text:\x0b
 keybind = cmd+backspace=text:\x15
