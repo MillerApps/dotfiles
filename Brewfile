@@ -206,6 +206,8 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-monaspace-nerd-font"
 cask "font-roboto-mono-nerd-font"
+# Xcode extension for GitHub Copilot
+cask "github-copilot-for-xcode"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Open Source Multimedia Framework
@@ -256,8 +258,6 @@ cask "qbittorrent"
 cask "raycast"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
-# 3D CAD software
-cask "shapr3d"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
