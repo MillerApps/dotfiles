@@ -124,6 +124,8 @@ brew "pngquant"
 brew "poppler"
 # Theme for zsh
 brew "powerlevel10k"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Rust toolchain installer
@@ -343,6 +345,7 @@ mas "Prime Video", id: 545519333
 mas "Proton Pass for Safari", id: 6502835663
 mas "QR Capture", id: 1369524274
 mas "Refined GitHub", id: 1519867270
+mas "Shapr3D", id: 1091675654
 mas "SVGShaper", id: 1566140414
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
