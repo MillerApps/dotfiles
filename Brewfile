@@ -86,6 +86,8 @@ brew "glow"
 brew "go"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
