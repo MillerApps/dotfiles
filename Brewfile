@@ -210,6 +210,8 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-monaspace-nerd-font"
 cask "font-roboto-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Xcode extension for GitHub Copilot
 cask "github-copilot-for-xcode"
 # Tools to protect your emails and files
