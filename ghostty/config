@@ -6,11 +6,17 @@ window-title-font-family = 'MonaspiceKr Nerd Font Mono'
 # Themeing
 theme = catppuccin-mocha
 background-opacity = 0.8
+# Window padding
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
 # Cursor
 cursor-style = block
 shell-integration-features = no-cursor
 cursor-opacity = .60
 cursor-color = #fab387
+# Mouse - to me is a subset of cursor
+mouse-hide-while-typing = true
 # Shader
 #custom-shader = shaders/animated-gradient-shader.glsl
 #custom-shader = shaders/tft.glsl
