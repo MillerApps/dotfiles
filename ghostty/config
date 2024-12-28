@@ -29,12 +29,6 @@ custom-shader = shaders/cubes.glsl
 macos-titlebar-style = tabs
 macos-window-shadow = false
 macos-option-as-alt = true
-# Cursor manipulation
-keybind = cmd+right=text:\x05
-keybind = cmd+left=text:\x01
-keybind = alt+left=esc:b
-keybind = alt+right=esc:f
-# Selection
 # Deletion
 keybind = cmd+delete=text:\x0b
 keybind = cmd+backspace=text:\x15
