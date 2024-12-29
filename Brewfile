@@ -327,6 +327,7 @@ mas "Cubox for Safari", id: 1550721541
 mas "Dark Reader for Safari", id: 1438243180
 mas "Developer", id: 640199958
 mas "Ducky", id: 1525505933
+mas "ExcalidrawZ", id: 6636493997
 mas "Final Cut Pro", id: 424389933
 mas "Folder Tidy", id: 486626129
 mas "Gifox", id: 1461845568
