@@ -1,6 +1,8 @@
 # New Machine Setup
 
-> Note: Although this is called dotfiles there are no actual dotfiles in this repo, they are saved and backed up via iCloud.
+> [!Note] 
+> Although this is called dotfiles there are no actual dotfiles in this repo, they are saved and backed up via iCloud.
+> Might go under a rewrite to intergrate Nix.
 
 Steps to make a new machine easier to setup
 
