@@ -112,6 +112,8 @@ brew "mas"
 brew "mtr"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Small build system for use with gyp or CMake
