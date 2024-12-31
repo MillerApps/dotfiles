@@ -11,42 +11,10 @@ else
     echo "Homebrew is already installed"
 fi
 # Brewfile location
-# This assumes that the dotfiles repo has been cloned to /Users/tylermiller/dotfiles
-BREWFILE_LOCATION="/Users/tylermiller/dotfiles/Brewfile"
+# This assumes that the dotfiles repo has been cloned to ~/dotfiles
+BREWFILE_LOCATION="~/dotfiles/Brewfile"
 # Install applications from Brewfile
 brew bundle --file "$BREWFILE_LOCATION"
-    
-# Mackup should be installed by homebrew before hitting this point 
-# Create a new Mackup config file
-MACKUP_CONFIG_PATH="$HOME/.mackup.cfg"
-
-echo "[storage]" > $MACKUP_CONFIG_PATH
-echo "engine = icloud" >> $MACKUP_CONFIG_PATH
-
-# Restore Mackup settings
-mackup restore --force
-mackup uninstall --force
-
-# Customize macOS defaults
-# Set to dark mode
-osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
-# Set scroll as traditional instead of natural
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
-# set pathbar
-defaults write com.apple.finder "ShowPathbar" -bool "true"
-# set searchpath
-defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf" 
-# set sidebar icons size
-defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "3"
-# show drives
-defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
-# set sort order desktop
-defaults write com.apple.finder FXArrangeGroupViewBy -string Kind
-# Restart Finder
-killall Finder
-
-# Set up the dock
-sh $(dirname "$0")/dock.zsh
 
 # Get the absolute path to the image
 IMAGE_PATH="${HOME}/dotfiles/Desktop.png"
