@@ -19,8 +19,13 @@
   home.stateVersion = "24.11";
 
   home.file = {
-    ".zshrc".source = toString ./dotfiles/.zshrc;
-    ".config/ghostty".source = toString ./ghostty;
+    ".zshrc".source = ~/dotfiles/.zshrc;
+    ".config/ghostty".source = ~/dotfiles/ghostty;
+    ".p10k.zsh".source = ~/dotfiles/.p10k.zsh;
+    ".config/yazi".source = ~/dotfiles/yazi;
+    ".config/karabiner".source = ~/dotfiles/karabiner;
+    ".wezterm.lua".source = ~/dotfiles/.wezterm.lua;
+    ".oh-my-zsh".source = ~/dotfiles/.oh-my-zsh;
   };
 
   # Let Home Manager install and manage itself.
