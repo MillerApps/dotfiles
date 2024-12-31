@@ -20,7 +20,7 @@
 
   home.file = {
     ".zshrc".source = toString ./dotfiles/.zshrc;
-    ".config/ghostty".source = toString ./dotfiles/ghostty;
+    ".config/ghostty".source = toString ./ghostty;
   };
 
   # Let Home Manager install and manage itself.
