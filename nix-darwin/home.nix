@@ -18,6 +18,11 @@
   # changes in each release.
   home.stateVersion = "24.11";
 
+  home.file = {
+    ".zshrc".source = ~/dotfiles/.zshrc;
+    ".config/ghostty".source = ~/dotfiles/ghostty;
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
