@@ -39,20 +39,3 @@ tell application "System Events"
 end tell
 EOF
 
-# Set up touch id sudo for terminal
-SUDO_PATH="/private/etc/pam.d/sudo" # path to the sudo file, this correct on newer macos versions
-# check if user wants to enable touch id
-echo "Enable touch id for sudo in terminal? (y/n): " REPLY
-read REPLY
-# add new line as a separator
-echo ""
-# Uses regex to match y or Y or yes or Yes
-if [[ $REPLY =~ ^[Yy]es$ ]] || [[ $REPLY =~ ^[Yy]$ ]]; then 
-    echo "Enabling touch id for sudo in terminal"
-    echo "A backup of the original file will be created at $SUDO_PATH.bak"
-    # enable touch id
-    sudo sed -i.bak '2s;^;auth       sufficient    pam_tid.so\n;' $SUDO_PATH
-    echo "Touch id for sudo in terminal enabled"
-else
-    echo "Touch id for sudo in terminal was not enabled"
-fi
