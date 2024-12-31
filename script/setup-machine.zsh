@@ -10,6 +10,14 @@ if  ! command brew -v; then
 else
     echo "Homebrew is already installed"
 fi
+
+# Install Nix
+if ! command nix --help; then
+    sh <(curl -L https://nixos.org/nix/install)
+    else
+        echo "Nix is already installed!"
+fi
+
 # Brewfile location
 # This assumes that the dotfiles repo has been cloned to ~/dotfiles
 BREWFILE_LOCATION="~/dotfiles/Brewfile"
