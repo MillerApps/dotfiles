@@ -9,6 +9,6 @@
     ```sh
     sh <(curl -L https://nixos.org/nix/install)
     ```
+2. Install [nix-darwin](https://github.com/LnL7/nix-darwin) see, the installation instructions at the link. Use the flake section.
 
-    ```
     ```
