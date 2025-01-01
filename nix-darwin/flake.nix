@@ -7,9 +7,10 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew }:
     let
       configuration = { pkgs, ... }: {
         # List packages installed in system profile. To search by name, run:
@@ -32,6 +33,96 @@
           pkgs.lua
           pkgs.go
         ];
+
+        # Homebrew
+        homebrew = {
+          enable = true;
+          taps = [
+            { 
+              name = "zen-browser/browser"; 
+              clone_target = "https://github.com/zen-browser/desktop.git"; 
+            }
+          ];
+          brews = [
+            "mas"
+          ];
+          masApps = {
+            "ExcalidrawZ" = 6636493997;
+            "Infuse" = 1136220934;
+            "Amphetamine" = 937984704;
+            "Final Cut Pro" = 424389933;
+            "Keka" = 470158793;
+          };
+          # Must have apps
+          casks = [
+            # AirPods companion app
+            "airbuddy"
+            # Menu bar tool to limit maximum charging percentage
+            "aldente"
+            # Enable Windows-like alt-tab
+            "alt-tab"
+            # Application uninstaller
+            "appcleaner"
+            # 3D model slicing software for 3D printers, maintained by Bambu Lab
+            "bambu-studio"
+            # Utility improving 3rd party mouse performance and functionalities
+            "bettermouse"
+            # OpenAI's official ChatGPT desktop app 
+            "chatgpt"
+            # Screen capturing tool
+            "cleanshot"
+            # Server and cloud storage browser
+            "cyberduck"
+            # Productivity app
+            "dropzone"
+            # Desktop client for Ente Photos
+            "ente"
+            # Desktop client for Ente Auth
+            "ente-auth"
+            "font-jetbrains-mono-nerd-font"
+            "font-meslo-lg-nerd-font"
+            "font-monaspace-nerd-font"
+            "font-roboto-mono-nerd-font"
+            # Automated organisation
+            "hazel"
+            # Free and open-source media player
+            "iina"
+            # Menu bar manager
+            "jordanbaird-ice"
+            # Keyboard customiser
+            "karabiner-elements"
+            # Tool to control external monitor brightness & volume
+            "monitorcontrol"
+            # VPN client
+            "mullvadvpn"
+            # Knowledge base that works on top of a local folder of plain text Markdown files
+            "obsidian"
+            # Client for Proton Drive
+            "proton-drive"
+            # Client for Proton Mail and Proton Calendar
+            "proton-mail"
+            # Desktop client for Proton Pass
+            "proton-pass"
+            # VPN client focusing on security
+            "protonvpn"
+            # Control your tools with a few keystrokes
+            "raycast"
+            # Instant messaging application focusing on security
+            "signal"
+            # Music streaming service
+            "spotify"
+            # System monitor for the menu bar
+            "stats"
+            # Mesh VPN based on WireGuard
+            "tailscale"
+            # Web browser focusing on security
+            "tor-browser"
+            # Multiplayer code editor
+            "zed"
+            # Gecko based web browser
+            "zen-browser"
+          ];
+        };
 
         users.users.tylermiller.home = "/Users/tylermiller";
         
@@ -123,6 +214,7 @@
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
+
       };
     in
     {
@@ -136,6 +228,17 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.tylermiller = import ./home.nix;       
+          }
+          nix-homebrew.darwinModules.nix-homebrew {
+          nix-homebrew = {
+            enable = true;
+            # Apple Silicon Only
+            enableRosetta = true;
+            # User owning the Homebrew prefix
+            user = "tylermiller";
+
+            autoMigrate = true;
+            };
           }
         ];
       };
