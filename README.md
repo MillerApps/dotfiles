@@ -1,11 +1,27 @@
 ![nix-darwin-flake](nix-darwin-flake.png)
 
-# Nix-Darwin, Nix-Home-Manager, & homebrew are used to manage my macOS system.
-# This is will act as a guide to help me remember how to set up my system. (or anyone else who wants to use it)
+# Nix-Darwin, Nix-Home-Manager, & Homebrew
+
+This repository serves as a guide for setting up and managing my macOS system using Nix-Darwin, Nix Home Manager, and Homebrew. 
+It is designed for personal reference but can also be useful to others interested in a similar setup.
+
+How it works:
+- The Nix package manager is used as the primary way to handle needed clitools, lanaues, and apps.
+- Nix-Darwin sets up the system based on the flake.nix and the correlating files in the nix-darwin directory.
+- Nix-Home-Manager hooks into Nix-Darwin to handle the .config files and othr .files in the home directory.
+- Homebrew is used to install macOS apps and fonts. This is handled by Nix-Darwin's homebrew module. Homebrew is also installed via [Nix-Homebrew](https://github.com/zhaofengli/nix-homebrew).
 
 > [!NOTE]
 > This is a first round at intergrating nix-darwin, nix-home-manager, and homebrew. This is a work in progress and will be updated as I learn more.
 > If you have any tips or know of a better way to do something, please let me know.
+
+## Table of Contents
+- [Introduction](#nix-darwin-nix-home-manager--homebrew)
+- [Install Guide for Nix-Darwin](#install-guide-for-nix-darwin)
+  - [Install Nix Package Manager](#install-nix-package-manager)
+  - [Clone Repository](#clone-repository)
+  - [Install Nix-Darwin](#install-nix-darwin)
+  - [Apply Configuration](#apply-configuration)
 
 ## Install Guide for Nix-Darwin
 
