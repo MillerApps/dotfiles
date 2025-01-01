@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+# setup backup_directory path
+BACKUP_DIR=~/dotfiles
+# Create directory if needed otherwise, silently exit without error
+mkdir -p "BACKUP_DIR"
+
 # Makes sure the home brew paths are always correct and avalible to the enviorment.
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
@@ -9,7 +14,7 @@ cd /Users/tylermiller/dotfiles/
 
 # Wallpaper backup
 # Path to store the timestamp of the last wallpaper change
-timestamp_file="/Users/tylermiller/dotfiles/last_wallpaper_change.txt"
+timestamp_file="$BACKUP_DIR/last_wallpaper_change.txt"
 
 # Create the timestamp file if it doesn't exist
 if [ ! -f "$timestamp_file" ]; then
@@ -25,8 +30,6 @@ last_change_timestamp=$(cat "$timestamp_file")
 # Get path of current desktop wallpaper using osascript
 wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)' 2>/dev/null)
 
-backup_directory="/Users/tylermiller/dotfiles/"
-
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."
 else
@@ -37,11 +40,11 @@ else
     # Check if wallpaper has been changed recently
     if [ "$last_change_timestamp" != "$current_timestamp" ]; then
         # Copy orginal file to repo
-        cp "$wallpaper_path" "$backup_directory"
+        cp "$wallpaper_path" "$BACKUP_DIR"
 
         # Rename the wallpaper to Desktop.png
-        new_wallpaper_path=$backup_directory/Desktop.png
-        mv "$backup_directory/$(basename $wallpaper_path)" "$new_wallpaper_path"
+        new_wallpaper_path=$BACKUP_DIR/Desktop.png
+        mv "$BACKUP_DIR/$(basename $wallpaper_path)" "$new_wallpaper_path"
 
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$timestamp_file"
@@ -51,11 +54,7 @@ fi
 # Run the brew bundle dump
 brew bundle dump --describe --force && echo "DUMPING SUCCESSFUL"
 
-# Run Mackup
-mackup backup --force
-mackup uninstall --force
-
-# Git coomit for Brewfile
+# Git commit for Brewfile
 if git status --porcelain | grep .; then
     git add .
     git commit -m "Auto-update"
