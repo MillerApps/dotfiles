@@ -25,7 +25,7 @@
     ".config/yazi".source = ../yazi;
     ".config/karabiner".source = ../karabiner;
     ".wezterm.lua".source = ../.wezterm.lua;
-    # ".oh-my-zsh".source = ~/dotfiles/.oh-my-zsh;
+    ".oh-my-zsh".source = ../.oh-my-zsh;
   };
 
   # Let Home Manager install and manage itself.
