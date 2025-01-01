@@ -26,6 +26,13 @@
     ".config/karabiner".source = ../karabiner;
     ".wezterm.lua".source = ../.wezterm.lua;
   };
+  
+  programs.neovim = {
+    enable = true;
+    # Needed for 3rd/image to work
+    extraLuaPackages = ps: [ ps.magick ];
+    extraPackages = [ pkgs.imagemagick ];
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
