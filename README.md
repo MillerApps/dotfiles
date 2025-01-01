@@ -17,11 +17,39 @@ How it works:
 
 ## Table of Contents
 - [Introduction](#nix-darwin-nix-home-manager--homebrew)
+- [Nix Language Overview](#nix-language-overview)
 - [Install Guide for Nix-Darwin](#install-guide-for-nix-darwin)
   - [Install Nix Package Manager](#install-nix-package-manager)
   - [Clone Repository](#clone-repository)
   - [Install Nix-Darwin](#install-nix-darwin)
   - [Apply Configuration](#apply-configuration)
+
+## Nix Language Overview
+
+The Nix language is a domain-specific, declarative, and functional language designed for defining derivations—precise descriptions of how existing files or inputs are used to generate new ones.
+
+> [!Tip]
+> For a beginner-friendly introduction, visit the [Introduction to Nix Language](https://nix.dev/tutorials/nix-language).
+
+Language Features realvent to this setup:
+
+> [!Note]
+> Will be upadated as I learn more. Possiblely some examples.
+
+| Example | Description |
+|---------|-------------|
+| `"hello world"` | A basic string |
+| `# Comment` | Simple comment |
+| `true`, `false` | Boolean values |
+| `[ 1 2 3 ]` | A list |
+| `{ x = 1; y = 2; }` | An attribute set |
+| `"${pkgs.vim}/bin/vim"` | String interpolation |
+| `{ inherit pkgs; }` | Inherit keyword |
+| `import ./file.nix` | Import a Nix file |
+| `{ ... }` | Ellipsis (ignored arguments) |
+| `~/.config` | Home directory path |
+| `./relative/path` | Relative path |
+| `{ config, pkgs, ... }: { }` | Basic configuration |
 
 ## Install Guide for Nix-Darwin
 
