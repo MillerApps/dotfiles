@@ -1,4 +1,5 @@
 # nix-darwin, nix-home-manager, & homebrew
+![nix-darwin-flake](nix-darwin-flake.png)
 
 > [!NOTE]
 > This is a first round at intergrating nix-darwin, nix-home-manager, and homebrew. This is a work in progress and will be updated as I learn more.
