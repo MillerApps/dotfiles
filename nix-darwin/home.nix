@@ -2,7 +2,7 @@
 # do with my dotfiles
 { config, pkgs, ... }:
 
-{
+  {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "tylermiller";
@@ -26,14 +26,21 @@
     ".config/karabiner".source = ../karabiner;
     ".wezterm.lua".source = ../.wezterm.lua;
   };
-  
-  programs.neovim = {
-    enable = true;
-    # Needed for 3rd/image to work
-    extraLuaPackages = ps: [ ps.magick ];
-    extraPackages = [ pkgs.imagemagick ];
+
+  programs = {
+    neovim = {
+      enable = true;
+      # Needed for 3rd/image to work
+      extraLuaPackages = ps: [ ps.magick ];
+      extraPackages = [ pkgs.imagemagick ];
+    };
+    git = {
+      enable = true;
+      userName = "MillerApps";
+      userEmail = "tylermiller4.github@proton.me";
+    };
   };
 
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
-}
+    # Let Home Manager install and manage itself.
+    programs.home-manager.enable = true;
+  }
