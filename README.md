@@ -133,3 +133,12 @@ A collection of modular files that define specific aspects of the system or user
 - `flake.nix` references `./modules` and other configuration files to build the overall system and user setup.
 - The `modules/default.nix` file ensures that all relevant modules in the modules directory are included automatically.
 - This structure allows for a clear separation of concerns, making configurations easier to manage and extend.
+
+## Resources - learning
+
+- [Home Manager Options Reference](https://nix-community.github.io/home-manager/options.xhtml) - Comprehensive list of Home Manager options
+- [Nix Language Tutorial](https://nix.dev/tutorials/nix-language) - Beginner-friendly introduction to the Nix language
+- [Nix Language Manual](https://nix.dev/manual/nix/2.24/language/) - Official Nix language documentation
+- [Nix Packages Search](https://search.nixos.org/packages) - Search for packages in Nixpkgs
+- [My Nixos](https://mynixos.com/) - Has useful search for docs and packages
+- [Vimjoyer youtube](https://www.youtube.com/watch?v=a67Sv4Mbxmc&list=PLko9chwSoP-15ZtZxu64k_CuTzXrFpxPE) - Great video series on nix and nixos
