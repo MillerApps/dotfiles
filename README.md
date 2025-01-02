@@ -25,7 +25,8 @@ How it works:
   - [Apply Configuration](#apply-configuration)
 - [Nix-Darwin Directory Structure](#nix-darwin-directory-structure)
   - [Explanation of the Structure](#explanation-of-the-structure)
-	- [How It Works](#how-it-works)
+	- [How It Works](#how-it-works
+- [Resources - learning](#resources---learning)
 
 ## Nix Language Overview
 
