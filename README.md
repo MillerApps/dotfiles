@@ -91,17 +91,17 @@ darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook
 
 The nix-darwin directory is structured as follows:
 
-
-📁 nix-darwin
-├── 🔒 flake.lock
-├── ⚙️ flake.nix
-├── ⚙️ home.nix
-└── 📁 modules
-    ├── ⚙️ default.nix
-    ├── ⚙️ homebrew.nix
-    ├── ⚙️ macos.nix
-    └── ⚙️ zsh.nix
-
+```bash
+ nix-darwin
+├──  flake.lock
+├──  flake.nix
+├──  home.nix
+└──  modules
+    ├──  default.nix
+    ├──  homebrew.nix
+    ├──  macos.nix
+    └──  zsh.nix
+```
 
 > [!IMPORTANT]
 > The modules directory splits the config into modular files, which form the overall Nix-Darwin configuration.
