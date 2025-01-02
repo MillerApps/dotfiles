@@ -21,6 +21,8 @@
     };
     # Must have apps
     casks = [
+      # Termial
+      "ghostty"
       # AirPods companion app
       "airbuddy"
       # Menu bar tool to limit maximum charging percentage
