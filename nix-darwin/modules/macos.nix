@@ -32,6 +32,11 @@
         NewWindowTargetPath = "file:///Users/${config.users.users.tylermiller.name}/";
         NewWindowTarget = "PfHm";
       };
+      "com.apple.WindowManager" = {
+        # Disable stage manager
+        EnableStanardClickToShowDesktop = false;
+        GloballyEnabled = false;
+      };
     };
   };
 }
