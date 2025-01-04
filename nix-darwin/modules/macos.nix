@@ -37,6 +37,18 @@
         EnableStanardClickToShowDesktop = false;
         GloballyEnabled = false;
       };
+      "com.apple.symbolichotkeys" = {
+        AppleSymbolicHotKeys = {
+          # Disable spotlight hotkey
+          "64" = {
+            enabled = false;
+          };
+        };
+      };
     };
   };
+  system.activationScripts.postUserActivation.text = ''
+    # Following line should allow us to avoid a logout/login cycle
+    /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+    '';
 }
