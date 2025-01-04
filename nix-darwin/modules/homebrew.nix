@@ -11,6 +11,8 @@
     ];
     brews = [
       "mas"
+      "tabiew"
+      "otree"
     ];
     masApps = {
       "ExcalidrawZ" = 6636493997;

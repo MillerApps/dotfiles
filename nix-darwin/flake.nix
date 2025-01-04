@@ -16,22 +16,23 @@
       configuration = { pkgs, config, ... }: {
         # List packages installed in system profile. To search by name, run:
         # $ nix-env -qaP | grep wget
-        environment.systemPackages = [
-          pkgs.neovim
-          pkgs.git
-          pkgs.lazygit
-          pkgs.bat
-          pkgs.btop
-          pkgs.eza
-          pkgs.gh
-          pkgs.fzf
-          pkgs.yazi
-          pkgs.zoxide
-          pkgs.thefuck
-          pkgs.zsh-autosuggestions
-          pkgs.zsh-syntax-highlighting
-          pkgs.lua
-          pkgs.go
+        environment.systemPackages =  with pkgs; [
+          neovim
+          git
+          lazygit
+          bat
+          btop
+          eza
+          gh
+          fzf
+          yazi
+          zoxide
+          thefuck
+          zsh-autosuggestions
+          zsh-syntax-highlighting
+          lua
+          go
+          serpl
         ];
 
         users.users.tylermiller.home = "/Users/tylermiller";
