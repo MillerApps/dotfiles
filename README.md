@@ -143,3 +143,6 @@ A collection of modular files that define specific aspects of the system or user
 - [Nix Packages Search](https://search.nixos.org/packages) - Search for packages in Nixpkgs
 - [My Nixos](https://mynixos.com/) - Has useful search for docs and packages
 - [Vimjoyer youtube](https://www.youtube.com/watch?v=a67Sv4Mbxmc&list=PLko9chwSoP-15ZtZxu64k_CuTzXrFpxPE) - Great video series on nix and nixos
+- [Nix Glossary](https://nix.dev/manual/nix/2.18/glossary#gloss-derivation) - Nix glossary of terms
+- [Nix Fllakes](https://nix.dev/manual/nix/2.18/command-ref/new-cli/nix3-flake) - Nix Flakes docs
+- [Activate Your Preferences](https://medium.com/@zmre/nix-darwin-quick-tip-activate-your-preferences-f69942a93236) - Quick tip on activating preferences
