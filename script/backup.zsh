@@ -52,7 +52,7 @@ else
 fi
 
 # Run the brew bundle dump
-brew bundle dump --describe --force && echo "DUMPING SUCCESSFUL"
+brew bundle dump --describe --force --no-restart && echo "DUMPING SUCCESSFUL"
 
 # Git commit for Brewfile
 if git status --porcelain | grep .; then
