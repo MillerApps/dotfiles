@@ -50,5 +50,20 @@
   system.activationScripts.postUserActivation.text = ''
     # Following line should allow us to avoid a logout/login cycle
     /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+
+    # Get the absolute path to the image, whhich is 2 directories back from this file
+    IMAGE_PATH="$(dirname "$(dirname "$(pwd)")")/Desktop.png"
+
+    # AppleScript command to set the desktop background
+    osascript <<EOF
+    tell application "System Events"
+    set desktopCount to count of desktops
+    repeat with desktopNumber from 1 to desktopCount
+    tell desktop desktopNumber
+    set picture to "$IMAGE_PATH"
+    end tell
+    end repeat
+    end tell
+    EOF
     '';
 }
