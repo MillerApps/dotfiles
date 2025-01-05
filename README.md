@@ -25,7 +25,8 @@ How it works:
   - [Apply Configuration](#apply-configuration)
 - [Nix-Darwin Directory Structure](#nix-darwin-directory-structure)
   - [Explanation of the Structure](#explanation-of-the-structure)
-	- [How It Works](#how-it-works
+	- [How It Works](#how-it-works)
+- [Script/backup](#scripts)
 - [Resources - learning](#resources---learning)
 
 ## Nix Language Overview
@@ -134,6 +135,26 @@ A collection of modular files that define specific aspects of the system or user
 - `flake.nix` references `./modules` and other configuration files to build the overall system and user setup.
 - The `modules/default.nix` file ensures that all relevant modules in the modules directory are included automatically.
 - This structure allows for a clear separation of concerns, making configurations easier to manage and extend.
+
+## Scripts
+
+Inside the script foledr is an optional minimual backup script. Its only functionality is to perform a brew bundle dump and to make a backup of the current wallpaper if it has 
+changed.Why brew bundle dump? Well simply in case I forgot to add the new app into `homebrew.nix`, this way I'm covered in case of a device failiure as well.
+
+### How its used
+Setup cron with the following:
+```sh
+crontab -e
+```
+
+Then use the following:
+
+```cron
+0 13 * * 1 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.luuuuuuu/cronjob
+0 13 * * 3 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<ntfy-url>/cronjob
+0 13 * * 5 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<ntfy-url>/cronjob
+0 13 * * 7 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<ntfy-url>/cronjob
+```
 
 ## Resources - learning
 
