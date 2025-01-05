@@ -150,7 +150,7 @@ crontab -e
 Then use the following:
 
 ```cron
-0 13 * * 1 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.luuuuuuu/cronjob
+0 13 * * 1 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<nfty-url>/cronjob
 0 13 * * 3 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<ntfy-url>/cronjob
 0 13 * * 5 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<ntfy-url>/cronjob
 0 13 * * 7 /Users/tylermiller/dotfiles/script/backup.zsh && curl -H ta:smiley -d "Backup complete" https://ntfy.<ntfy-url>/cronjob || curl -H ta:worried -d "Something went wrong" https://ntfy.<ntfy-url>/cronjob
