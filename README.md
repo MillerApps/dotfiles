@@ -139,7 +139,7 @@ A collection of modular files that define specific aspects of the system or user
 ## Scripts
 
 Inside the script directory is an optional minimal backup script. Its only functionality is to perform a brew bundle dump and to make a backup of the current wallpaper if it has 
-changed. 
+changed.    
 **Why brew bundle dump?** Well simply in case I forgot to add the new app into `homebrew.nix`, this way I'm covered in case of a device failiure as well.
 
 ### How its used
