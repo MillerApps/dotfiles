@@ -50,7 +50,6 @@
         serpl
         nixd
         alejandra
-        rip
         ripgrep
       ];
 

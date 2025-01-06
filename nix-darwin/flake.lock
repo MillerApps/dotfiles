@@ -40,11 +40,11 @@
     "neovim-config": {
       "flake": false,
       "locked": {
-        "lastModified": 1736156979,
-        "narHash": "sha256-5IGs4X98UxWnXxgzXharF0gi1E0JHF7J3LlcCXE+x3U=",
+        "lastModified": 1736198596,
+        "narHash": "sha256-oG2ULTOu9YRdiFIsxI8vFo9K9TAGkcCwSGBNYGgbWQ0=",
         "owner": "millerapps",
         "repo": "yoink.nvim",
-        "rev": "f36ab9d11b0d5ee2c1b7a2eee46738f9c428317d",
+        "rev": "c7ade85a7a04805066603bb2298517f9f9bfbfe9",
         "type": "github"
       },
       "original": {
@@ -142,11 +142,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1736010017,
-        "narHash": "sha256-pMttboU4LraZezi3tc7NiHODd4eKziFRb2a4s4WO8Ms=",
+        "lastModified": 1736042175,
+        "narHash": "sha256-jdd5UWtLVrNEW8K6u5sy5upNAFmF3S4Y+OIeToqJ1X8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a1945f760a8fe019a4d753808de424dcd4e5b3cf",
+        "rev": "bf689c40d035239a489de5997a4da5352434632e",
         "type": "github"
       },
       "original": {
