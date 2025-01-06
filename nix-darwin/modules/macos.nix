@@ -52,7 +52,8 @@
     /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
     # Get the absolute path to the image, whhich is 2 directories back from this file
-    IMAGE_PATH="$(dirname "$(dirname "$(pwd)")")/Desktop.png"
+    IMAGE_PATH="$HOME/dotfiles/Desktop.png"
+    echo "Setting desktop background to image at: $IMAGE_PATH"
 
     # AppleScript command to set the desktop background
     # https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_lexical_conventions.html#//apple_ref/doc/uid/TP40000983-CH214-SW1
