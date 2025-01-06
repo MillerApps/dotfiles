@@ -37,6 +37,7 @@
           lua
           go
           serpl
+          nixd
         ];
 
         users.users.tylermiller.home = "/Users/tylermiller";
