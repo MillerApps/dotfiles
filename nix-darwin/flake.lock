@@ -55,6 +55,22 @@
         "type": "github"
       }
     },
+    "neovim-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1735437278,
+        "narHash": "sha256-zDJNQaRgAOQBZevdFSR9Wq4GTin4Qw7pdr6aSo5I2/c=",
+        "owner": "millerapps",
+        "repo": "yoink.nvim",
+        "rev": "e0ce8f06616f3ac01aa127b11b271577182fe5f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "millerapps",
+        "repo": "yoink.nvim",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -162,6 +178,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "neovim-config": "neovim-config",
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_3"

@@ -55,15 +55,13 @@
     IMAGE_PATH="$(dirname "$(dirname "$(pwd)")")/Desktop.png"
 
     # AppleScript command to set the desktop background
-    osascript <<EOF
+    # https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_lexical_conventions.html#//apple_ref/doc/uid/TP40000983-CH214-SW1
+    # https://www.reddit.com/r/mac/comments/ncujqi/an_applescript_to_change_all_of_your_desktops/
+    osascript -e '
     tell application "System Events"
-    set desktopCount to count of desktops
-    repeat with desktopNumber from 1 to desktopCount
-    tell desktop desktopNumber
-    set picture to "$IMAGE_PATH"
-    end tell
-    end repeat
-    end tell
-    EOF
+        tell current desktop
+            set picture to "'"$IMAGE_PATH"'"
+        end tell
+    end tell'
     '';
 }
