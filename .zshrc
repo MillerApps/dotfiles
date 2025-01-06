@@ -48,6 +48,10 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ls='eza --color=always --icons -a'
 # Nvim alias for development of config
 alias nvim-Yoink='NVIM_APPNAME="nvim-Yoink" nvim'
+# Nix-darwin
+alias drb='darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook'
+# Nix flake
+alias nfu='nix flake update'
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
