@@ -1,6 +1,6 @@
 # The file that will provide home manager wtf to
 # do with my dotfiles
-{ config, pkgs, ... }:
+{ config, neovim-config, pkgs, ... }:
 
   {
   # Home Manager needs a bit of information about you and the
@@ -25,6 +25,7 @@
     ".config/yazi".source = ../yazi;
     ".config/karabiner".source = ../karabiner;
     ".wezterm.lua".source = ../.wezterm.lua;
+    ".config/nvim".source = neovim-config;
   };
 
   programs = {

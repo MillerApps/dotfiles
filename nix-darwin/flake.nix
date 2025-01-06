@@ -68,7 +68,8 @@
           home-manager.darwinModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.tylermiller = import ./home.nix;       
+            home-manager.users.tylermiller = import ./home.nix;
+            home-manager.extraSpecialArgs = { inherit neovim-config; };
           }
           nix-homebrew.darwinModules.nix-homebrew {
             nix-homebrew = {
