@@ -47,7 +47,7 @@ Language Features realvent to this setup:
 | `# Comment` | Simple comment |
 | `true`, `false` | Boolean values |
 | `[ 1 2 3 ]` | A list |
-| `{ x = 1; y = 2; }` | An attribute set |
+| `{ x = 1; y = 2; }` | An attribute set, nearly everything is a set |
 | `"${pkgs.vim}/bin/vim"` | String interpolation |
 | `{ inherit pkgs; }` | Inherit keyword |
 | `import ./file.nix` | Import a Nix file |
