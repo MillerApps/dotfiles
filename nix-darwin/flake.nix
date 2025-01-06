@@ -40,6 +40,7 @@
         eza
         gh
         fzf
+        glow
         yazi
         zoxide
         thefuck
