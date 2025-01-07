@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   # Macos settings
   security.pam.enableSudoTouchIdAuth = true;
   system.defaults = {
@@ -37,11 +40,24 @@
         EnableStanardClickToShowDesktop = false;
         GloballyEnabled = false;
       };
+      # useful link for reference: https://gist.github.com/jimratliff/227088cc936065598bedfd91c360334e
       "com.apple.symbolichotkeys" = {
         AppleSymbolicHotKeys = {
           # Disable spotlight hotkey
           "64" = {
             enabled = false;
+          };
+          # set nottification hotkey to F19
+          # 163 is the id for the notification center
+          "163" = {
+            enabled = true;
+            value = {
+              # 65535 is the prefix the keys F1-F24 or whatever it reaches
+              # 80 is the keycode for F19
+              # 0 means no modifiers i.e no shift, control, option, command
+              parameters = [65535 80 0];
+              type = "standard";
+            };
           };
         };
       };
@@ -64,5 +80,5 @@
             set picture to "'"$IMAGE_PATH"'"
         end tell
     end tell'
-    '';
+  '';
 }
