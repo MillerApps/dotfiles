@@ -379,6 +379,28 @@ The easier way would be to use this handy chart from [jimratliff on GitHub](http
 | VolumeDown | | 65535 | 073 | Independent |
 | VolumeUp | | 65535 | 072 | Independent |
 
+Or you can use the following method:
+
+1. Open Keyboard in System Preferences. system preferences > Keyboard (> Shortcuts) 
+2. Then change settings for what you wish to find the symbolic hotkey IDs for.
+3. Use the folowing Sequence of commands to get all the information you need:
+```sh
+# 1. Dump current symbolic hotkey mappings
+defaults read com.apple.symbolichotkeys > before.plist
+
+# 2. Dump updated symbolic hotkey mappings
+defaults read com.apple.symbolichotkeys > after.plist
+
+# 3. Compare plists to identify the Symbolic Hotkey ID and its parameter values
+diff before.plist after.plist
+```
+
+This process captures:
+  - Symbolic Hotkey ID (e.g., "163")
+  - Parameter array (keycode, modifiers)
+  - Type (e.g., "standard")
+  - Enabled state
+The diff will show the complete symbolic hotkey definition for the modified System Shortcut.
 
 ## Nix Configuration Example
 
