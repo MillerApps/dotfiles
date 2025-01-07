@@ -400,7 +400,7 @@ This process captures:
   - Parameter array (keycode, modifiers)
   - Type (e.g., "standard")
   - Enabled state
-The diff will show the complete symbolic hotkey definition for the modified System Shortcut.
+  - The diff will show the complete symbolic hotkey definition for the modified System Shortcut.
 
 ## Nix Configuration Example
 
