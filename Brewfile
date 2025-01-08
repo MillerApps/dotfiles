@@ -64,8 +64,6 @@ brew "ffmpeg"
 brew "ffmpegthumbnailer"
 # GNU database manager
 brew "gdbm"
-# Render markdown on the CLI
-brew "glow"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
@@ -104,8 +102,6 @@ brew "pngquant"
 brew "poppler"
 # Theme for zsh
 brew "powerlevel10k"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Rust toolchain installer
@@ -120,6 +116,8 @@ brew "swiftformat"
 brew "swiftgen"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
+# Official tldr client written in Rust
+brew "tlrc"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
 # Feature-rich command-line audio/video downloader
@@ -156,8 +154,6 @@ cask "chatgpt"
 cask "cleanmymac"
 # Screen capturing tool
 cask "cleanshot"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Voice and text chat software
