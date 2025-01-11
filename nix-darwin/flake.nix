@@ -35,6 +35,7 @@
         neovim
         git
         lazygit
+        lazydocker
         bat
         btop
         eza
