@@ -56,6 +56,8 @@ brew "dav1d"
 brew "exercism"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # C/C++ and Java libraries for Unicode and globalization
 brew "icu4c@76"
 # Play, record, convert, and stream audio and video
@@ -88,8 +90,6 @@ brew "mas"
 brew "mtr"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Small build system for use with gyp or CMake
 brew "ninja"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
@@ -116,6 +116,8 @@ brew "swiftformat"
 brew "swiftgen"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
+# General purpose fuzzy finder TUI
+brew "television"
 # Official tldr client written in Rust
 brew "tlrc"
 # Command-line unarchiving tools supporting multiple formats
@@ -192,6 +194,8 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+# Use Vim in input fields and non input fields
+cask "kindavim"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Multi-platform web browser
@@ -268,3 +272,50 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "1Password for Safari", id: 1569813296
+mas "A Companion for SwiftUI", id: 1485436674
+mas "Accelerate", id: 1459809092
+mas "AdBlock", id: 1402042596
+mas "AdGuard Home", id: 1543143740
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
+mas "Amphetamine", id: 937984704
+mas "Apple Configurator", id: 1037126344
+mas "Boom 3D", id: 1233048948
+mas "CARROT Weather", id: 993487541
+mas "Compressor", id: 424390742
+mas "CrystalFetch", id: 6454431289
+mas "Cubox", id: 1113361350
+mas "Cubox for Safari", id: 1550721541
+mas "Dark Reader for Safari", id: 1438243180
+mas "Developer", id: 640199958
+mas "Ducky", id: 1525505933
+mas "ExcalidrawZ", id: 6636493997
+mas "Final Cut Pro", id: 424389933
+mas "Folder Tidy", id: 486626129
+mas "Gifox", id: 1461845568
+mas "Gifski", id: 1351639930
+mas "GlanceCam", id: 1360797896
+mas "Hush", id: 1544743900
+mas "Ice Cubes", id: 6444915884
+mas "Infuse", id: 1136220934
+mas "JSONPeep", id: 1458969831
+mas "Kagi for Safari", id: 1622835804
+mas "Keka", id: 470158793
+mas "Keynote", id: 409183694
+mas "Mactracker", id: 430255202
+mas "Messenger", id: 1480068668
+mas "Microsoft Outlook", id: 985367838
+mas "Motion", id: 434290957
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 1289583905
+mas "Prime Video", id: 545519333
+mas "Proton Pass for Safari", id: 6502835663
+mas "QR Capture", id: 1369524274
+mas "Refined GitHub", id: 1519867270
+mas "Shapr3D", id: 1091675654
+mas "TestFlight", id: 899247664
+mas "Transmit", id: 1436522307
+mas "Xcode", id: 497799835
