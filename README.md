@@ -89,7 +89,12 @@ nix-shell -p git --run "git clone https://github.com/MillerApps/dotfiles.git ~/d
 > [!NOTE]
 > This installs nix-darwin using the flake feature of nix. This is the recommended way to install nix-darwin.
 > This also assumes you cloned the repo to `~/dotfiles`
-    
+ 
+We also need to install the Xcode command line tools:
+```sh
+xcode-select --install
+```
+
 ```sh
 nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
 ```
