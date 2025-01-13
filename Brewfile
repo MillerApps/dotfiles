@@ -1,4 +1,5 @@
 tap "ameshkov/tap"
+tap "charmbracelet/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
@@ -122,8 +123,12 @@ brew "television"
 brew "tlrc"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Your CLI home video recorder
+brew "vhs"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Generate images of code and terminal output.
+brew "charmbracelet/tap/freeze"
 # Command-line client for LibreSpeed
 brew "librespeed/tap/librespeed-cli"
 # Password manager that keeps all passwords secure behind one password
@@ -252,8 +257,6 @@ cask "tor-browser"
 cask "tower"
 # Virtual machines UI using QEMU
 cask "utm"
-# Open-source code editor
-cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Create, manage, and run virtual machines
