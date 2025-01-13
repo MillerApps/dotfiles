@@ -8,6 +8,10 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     neovim-config = {
       url = "github:millerapps/yoink.nvim"; # This pulls my neovim config
       flake = false;
@@ -21,6 +25,7 @@
     home-manager,
     nix-homebrew,
     neovim-config,
+    spicetify-nix,
     ...
   }: let
     modules = import ./modules;
@@ -54,6 +59,9 @@
         alejandra
         ripgrep
       ];
+
+      # Allow unfree packages
+      nixpkgs.config.allowUnfree = true;
 
       users.users.tylermiller.home = "/Users/tylermiller";
 
@@ -90,7 +98,12 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.tylermiller = import ./home.nix;
-          home-manager.extraSpecialArgs = {inherit neovim-config;};
+          home-manager.extraSpecialArgs = {
+            inherit
+              neovim-config
+              spicetify-nix
+              ;
+          };
         }
         nix-homebrew.darwinModules.nix-homebrew
         {

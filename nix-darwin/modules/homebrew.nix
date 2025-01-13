@@ -1,12 +1,15 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
   # Homebrew
   homebrew = {
     enable = true;
     taps = [
-      { 
-        name = "zen-browser/browser"; 
-        clone_target = "https://github.com/zen-browser/desktop.git"; 
+      {
+        name = "zen-browser/browser";
+        clone_target = "https://github.com/zen-browser/desktop.git";
       }
     ];
     brews = [
@@ -37,7 +40,7 @@
       "bambu-studio"
       # Utility improving 3rd party mouse performance and functionalities
       "bettermouse"
-      # OpenAI's official ChatGPT desktop app 
+      # OpenAI's official ChatGPT desktop app
       "chatgpt"
       # Screen capturing tool
       "cleanshot"
@@ -79,8 +82,6 @@
       "raycast"
       # Instant messaging application focusing on security
       "signal"
-      # Music streaming service
-      "spotify"
       # System monitor for the menu bar
       "stats"
       # Mesh VPN based on WireGuard

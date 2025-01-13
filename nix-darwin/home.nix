@@ -1,8 +1,16 @@
 # The file that will provide home manager wtf to
 # do with my dotfiles
-{ config, neovim-config, pkgs, ... }:
+{
+  config,
+  neovim-config,
+  pkgs,
+  spicetify-nix,
+  ...
+}: {
+  imports = [
+    spicetify-nix.homeManagerModules.default
+  ];
 
-  {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "tylermiller";
@@ -32,16 +40,26 @@
     neovim = {
       enable = true;
       # Needed for 3rd/image to work
-      extraLuaPackages = ps: [ ps.magick ];
-      extraPackages = [ pkgs.imagemagick ];
+      extraLuaPackages = ps: [ps.magick];
+      extraPackages = [pkgs.imagemagick];
     };
     git = {
       enable = true;
       userName = "MillerApps";
       userEmail = "tylermiller4.github@proton.me";
     };
+    spicetify = let
+      spicePkgs = spicetify-nix.legacyPackages.${pkgs.system};
+    in {
+      enable = true;
+      enabledExtensions = with spicePkgs.extensions; [
+        trashbin
+      ];
+      theme = spicePkgs.themes.catppuccin;
+      colorScheme = "mocha";
+    };
   };
 
-    # Let Home Manager install and manage itself.
-    programs.home-manager.enable = true;
-  }
+  # Let Home Manager install and manage itself.
+  programs.home-manager.enable = true;
+}
