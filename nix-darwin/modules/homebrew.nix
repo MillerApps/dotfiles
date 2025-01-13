@@ -6,12 +6,6 @@
   # Homebrew
   homebrew = {
     enable = true;
-    taps = [
-      {
-        name = "zen-browser/browser";
-        clone_target = "https://github.com/zen-browser/desktop.git";
-      }
-    ];
     brews = [
       "mas"
       "tabiew"
