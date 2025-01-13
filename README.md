@@ -75,7 +75,7 @@ sh <(curl -L https://nixos.org/nix/install)
 ```
 2. Clone the repo to your home directory:
 ```sh
-nix run nixpkgs#git -- clone https://github.com/MillerApps/dotfiles.git ~/dotfiles
+nix-shell -p git --run "git clone https://github.com/MillerApps/dotfiles.git ~/dotfiles"
 ```
 > [!NOTE]
 > This will:
