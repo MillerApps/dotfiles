@@ -58,6 +58,8 @@
         nixd
         alejandra
         ripgrep
+        zsh-powerlevel10k
+        oh-my-zsh
       ];
 
       # Allow unfree packages
