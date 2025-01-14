@@ -436,6 +436,6 @@ This process captures:
 - [My Nixos](https://mynixos.com/) - Has useful search for docs and packages
 - [Vimjoyer youtube](https://www.youtube.com/watch?v=a67Sv4Mbxmc&list=PLko9chwSoP-15ZtZxu64k_CuTzXrFpxPE) - Great video series on nix and nixos
 - [Nix Glossary](https://nix.dev/manual/nix/2.18/glossary#gloss-derivation) - Nix glossary of terms
-- [Nix Fllakes](https://nix.dev/manual/nix/2.18/command-ref/new-cli/nix3-flake) - Nix Flakes docs
+- [Nix Flakes](https://nix.dev/manual/nix/2.18/command-ref/new-cli/nix3-flake) - Nix Flakes docs
 - [Activate Your Preferences](https://medium.com/@zmre/nix-darwin-quick-tip-activate-your-preferences-f69942a93236) - Quick tip on activating preferences
 - [Apple keycodes chart - info](https://gist.github.com/jimratliff/227088cc936065598bedfd91c360334e) - Apple keycodes
