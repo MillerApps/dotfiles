@@ -54,6 +54,9 @@
       enable = true;
       enabledExtensions = with spicePkgs.extensions; [
         trashbin
+        history
+        fullAppDisplay
+        shuffle
       ];
       theme = spicePkgs.themes.catppuccin;
       colorScheme = "mocha";
