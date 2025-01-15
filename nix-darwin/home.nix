@@ -7,10 +7,6 @@
   spicetify-nix,
   ...
 }: {
-  imports = [
-    spicetify-nix.homeManagerModules.default
-  ];
-
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "tylermiller";
@@ -57,6 +53,9 @@
         history
         fullAppDisplay
         shuffle
+      ];
+      enabledCustomApps = with spicePkgs.apps; [
+        marketplace
       ];
       theme = spicePkgs.themes.catppuccin;
       colorScheme = "mocha";

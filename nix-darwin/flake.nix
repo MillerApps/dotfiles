@@ -106,6 +106,9 @@
               spicetify-nix
               ;
           };
+          home-manager.sharedModules = [
+            spicetify-nix.homeManagerModules.default
+          ];
         }
         nix-homebrew.darwinModules.nix-homebrew
         {
