@@ -2,7 +2,8 @@
   <img alt="repo size" src="https://img.shields.io/github/repo-size/millerapps/dotfiles?color=fab387&labelColor=303446&style=for-the-badge&logo=github&logoColor=fab387" />
   <img alt="nixos-unstable" src="https://img.shields.io/badge/Nix-nixpkgs.unstable-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=91D7E3" />
   <img alt="nix-darwin" src="https://img.shields.io/badge/Nix-Darwin-blue.svg?style=for-the-badge&labelColor=30344i6&logo=NixOS&logoColor=white&color=f2cdcd" />
-  <img alt="homebrew" src="https://img.shields.io/badge/Homebrew-3.2.0-blue.svg?style=for-the-badge&labelColor=303446&logo=Homebrew&logoColor=white&color=ff9a8d" />
+  <img alt="homebrew" src="https://img.shields.io/badge/Homebrew-macOS-blue.svg?style=for-the-badge&labelColor=303446&logo=Homebrew&logoColor=white&color=iwa6e3a1" />
+  <img alt="nix-home-manager" src="https://img.shields.io/badge/Nix-Home_Manager-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=eba0ac" />
 </div>
 
 <br />
@@ -280,6 +281,9 @@ Prefix: 65535 (0xFFFF) for all function keys
 
 The easier way would be to use this handy chart from [jimratliff on GitHub](https://gist.github.com/jimratliff/227088cc936065598bedfd91c360334e):
 
+<details>
+<summary>Keyboard Mapping Reference</summary>
+
 | Keyboard Label | Character | ASCII code (Parameter #1) | Mac Virtual Key Code (Parameter #2) | Layout dependence |
 |---------------|-----------|-------------------------|-----------------------------------|------------------|
 | 0 | 0 | 48 | 029 | ANSI-US |
@@ -395,6 +399,7 @@ The easier way would be to use this handy chart from [jimratliff on GitHub](http
 | UpArrow | | 65535 | 126 | Independent |
 | VolumeDown | | 65535 | 073 | Independent |
 | VolumeUp | | 65535 | 072 | Independent |
+</details>
 
 Or you can use the following method:
 
