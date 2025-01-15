@@ -101,8 +101,6 @@ brew "pkgconf"
 brew "pngquant"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Theme for zsh
-brew "powerlevel10k"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Rust toolchain installer
@@ -239,8 +237,6 @@ cask "sf-symbols"
 cask "signal"
 # Team communication and collaboration software
 cask "slack"
-# Music streaming service
-cask "spotify"
 # Free, open-source, and completely encrypted notes app
 cask "standard-notes"
 # System monitor for the menu bar

@@ -1,4 +1,16 @@
-![nix-darwin-flake](nix-darwin-flake.png)
+<div align="center">
+  <img alt="repo size" src="https://img.shields.io/github/repo-size/millerapps/dotfiles?color=fab387&labelColor=303446&style=for-the-badge&logo=github&logoColor=fab387" />
+  <img alt="nixos-unstable" src="https://img.shields.io/badge/Nix-nixpkgs.unstable-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=91D7E3" />
+  <img alt="nix-darwin" src="https://img.shields.io/badge/Nix-Darwin-blue.svg?style=for-the-badge&labelColor=30344i6&logo=NixOS&logoColor=white&color=f2cdcd" />
+  <img alt="homebrew" src="https://img.shields.io/badge/Homebrew-3.2.0-blue.svg?style=for-the-badge&labelColor=303446&logo=Homebrew&logoColor=white&color=ff9a8d" />
+</div>
+
+<br />
+
+<div align="center">
+  <img alt="nix-darwin-flake" src="nix-darwin-flake.png" />
+</div>
+<br />
 
 # Nix-Darwin, Nix-Home-Manager, & Homebrew
 
