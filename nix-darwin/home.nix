@@ -60,6 +60,12 @@
       theme = spicePkgs.themes.text;
       colorScheme = "CatppuccinMocha";
     };
+    gh = {
+      enable = true;
+      extensions = [
+        pkgs.gh-markdown-preview
+      ];
+    };
   };
 
   # Let Home Manager install and manage itself.
