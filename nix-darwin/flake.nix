@@ -3,125 +3,45 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nix-darwin.url = "github:LnL7/nix-darwin";
-    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+
+    nix-darwin = {
+      url = "github:LnL7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nix-homebrew = {
+      url = "github:zhaofengli/nix-homebrew";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        nix-darwin.follows = "darwin";
+      };
+    };
+
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     neovim-config = {
       url = "github:millerapps/yoink.nvim"; # This pulls my neovim config
       flake = false;
     };
   };
 
-  outputs = inputs @ {
-    self,
-    nix-darwin,
-    nixpkgs,
-    home-manager,
-    nix-homebrew,
-    neovim-config,
-    spicetify-nix,
-    ...
-  }: let
-    modules = import ./modules;
-    configuration = {
-      pkgs,
-      config,
-      ...
-    }: {
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-      environment.systemPackages = with pkgs; [
-        neovim
-        git
-        lazygit
-        lazydocker
-        bat
-        btop
-        eza
-        gh
-        fzf
-        glow
-        yazi
-        zoxide
-        thefuck
-        zsh-autosuggestions
-        zsh-syntax-highlighting
-        lua
-        go
-        serpl
-        nixd
-        alejandra
-        ripgrep
-        zsh-powerlevel10k
-        oh-my-zsh
-      ];
-
-      # Allow unfree packages
-      nixpkgs.config.allowUnfree = true;
-
-      users.users.tylermiller.home = "/Users/tylermiller";
-
-      # Necessary for using flakes on this system.
-      nix.settings.experimental-features = "nix-command flakes";
-
-      # Enable alternative shell support in nix-darwin.
-      # programs.fish.enable = true;
-
-      # Set Git commit hash for darwin-version.
-      system.configurationRevision = self.rev or self.dirtyRev or null;
-
-      # Used for backwards compatibility, please read the changelog before changing.
-      # $ darwin-rebuild changelog
-      system.stateVersion = 5;
-
-      # The platform the configuration will be used on.
-      nixpkgs.hostPlatform = "aarch64-darwin";
-
-      nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
-    };
-  in {
+  outputs = inputs: {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#macbook
-    darwinConfigurations."macbook" = nix-darwin.lib.darwinSystem {
-      modules = [
-        configuration
-        modules.homebrew
-        modules.macos
-        modules.zsh
-        # home-manager as a module
-        home-manager.darwinModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.tylermiller = import ./home.nix;
-          home-manager.extraSpecialArgs = {
-            inherit
-              neovim-config
-              spicetify-nix
-              ;
-          };
-          home-manager.sharedModules = [
-            spicetify-nix.homeManagerModules.default
-          ];
-        }
-        nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            # Apple Silicon Only
-            enableRosetta = true;
-            # User owning the Homebrew prefix
-            user = "tylermiller";
+    darwinConfigurations."macbook" = inputs.nix-darwin.lib.darwinSystem {
+      specialArgs = { inherit inputs; };
 
-            autoMigrate = true;
-          };
-        }
+      modules = [
+        ./modules/default.nix
+        ./home/default.nix
       ];
     };
   };

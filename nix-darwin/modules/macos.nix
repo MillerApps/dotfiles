@@ -1,33 +1,42 @@
 {
   config,
-  pkgs,
   ...
-}: {
+}:
+{
   # Macos settings
   security.pam.enableSudoTouchIdAuth = true;
   system.defaults = {
-    dock.persistent-apps = [
-      "/Applications/Zen Browser.app"
-      "/Applications/Proton Mail.app"
-      "/Applications/Signal.app"
-      "/Applications/Ghostty.app"
-    ];
-    NSGlobalDomain.AppleInterfaceStyle = "Dark";
-    dock.minimize-to-application = true;
-    dock.persistent-others = [
-      # From what i saw on https://mynixos.com/nix-darwin/option/system.defaults.dock.persistent-others
-      # this should not be Necessary ~/Downloads/ should work but nope
-      "/Users/tylermiller/Downloads/"
-    ];
-    dock.show-recents = false;
-    dock.tilesize = 50;
+    dock = {
+      persistent-apps = [
+        "/Applications/Zen Browser.app"
+        "/Applications/Proton Mail.app"
+        "/Applications/Signal.app"
+        "/Applications/Ghostty.app"
+      ];
+      minimize-to-application = true;
+      persistent-others = [
+        # From what i saw on https://mynixos.com/nix-darwin/option/system.defaults.dock.persistent-others
+        # this should not be Necessary ~/Downloads/ should work but nope
+        "/Users/tylermiller/Downloads/"
+      ];
+      show-recents = false;
+      tilesize = 50;
+    };
+
+    NSGlobalDomain = {
+      AppleInterfaceStyle = "Dark";
+      "com.apple.swipescrolldirection" = false;
+    };
+
     trackpad.TrackpadRightClick = true;
-    NSGlobalDomain."com.apple.swipescrolldirection" = false;
-    finder.FXDefaultSearchScope = "SCcf";
-    finder.ShowExternalHardDrivesOnDesktop = true;
-    finder.ShowHardDrivesOnDesktop = true;
-    finder.ShowMountedServersOnDesktop = true;
-    finder.ShowPathbar = true;
+
+    finder = {
+      FXDefaultSearchScope = "SCcf";
+      ShowExternalHardDrivesOnDesktop = true;
+      ShowHardDrivesOnDesktop = true;
+      ShowMountedServersOnDesktop = true;
+      ShowPathbar = true;
+    };
 
     CustomUserPreferences = {
       "com.apple.finder" = {
@@ -55,7 +64,11 @@
               # 65535 is the prefix the keys F1-F24 or whatever it reaches
               # 80 is the keycode for F19
               # 0 means no modifiers i.e no shift, control, option, command
-              parameters = [65535 80 0];
+              parameters = [
+                65535
+                80
+                0
+              ];
               type = "standard";
             };
           };
@@ -63,7 +76,11 @@
           "27" = {
             enabled = true;
             value = {
-              parameters = [65535 48 1966080];
+              parameters = [
+                65535
+                48
+                1966080
+              ];
               type = "standard";
             };
           };
@@ -71,6 +88,7 @@
       };
     };
   };
+
   system.activationScripts.postUserActivation.text = ''
     # Following line should allow us to avoid a logout/login cycle
     /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
