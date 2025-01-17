@@ -447,3 +447,4 @@ This process captures:
 - [Nix Flakes](https://nix.dev/manual/nix/2.18/command-ref/new-cli/nix3-flake) - Nix Flakes docs
 - [Activate Your Preferences](https://medium.com/@zmre/nix-darwin-quick-tip-activate-your-preferences-f69942a93236) - Quick tip on activating preferences
 - [Apple keycodes chart - info](https://gist.github.com/jimratliff/227088cc936065598bedfd91c360334e) - Apple keycodes
+- [Nix Witch](https://isabelroses.com/blog/tag/nix) - isabelroses (Nix Witch) blog on nix; very helpful if you reach out as well.
