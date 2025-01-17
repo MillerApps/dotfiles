@@ -18,7 +18,7 @@
       url = "github:zhaofengli/nix-homebrew";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        # nix-darwin.follows = "darwin";
+        nix-darwin.follows = "nix-darwin";
       };
     };
 
