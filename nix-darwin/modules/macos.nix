@@ -1,8 +1,4 @@
-{
-  config,
-  ...
-}:
-{
+{config, ...}: {
   # Macos settings
   security.pam.enableSudoTouchIdAuth = true;
   system.defaults = {
@@ -93,8 +89,8 @@
     # Following line should allow us to avoid a logout/login cycle
     /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
-    # Get the absolute path to the image, whhich is 2 directories back from this file
-    IMAGE_PATH="$HOME/dotfiles/Desktop.png"
+    # Get the absolute path to the image
+    IMAGE_PATH="$HOME/dotfiles/wallpaper/Desktop.png"
     echo "Setting desktop background to image at: $IMAGE_PATH"
 
     # AppleScript command to set the desktop background
