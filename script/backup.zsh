@@ -1,20 +1,23 @@
 #!/bin/zsh
 
 # setup backup_directory path
-BACKUP_DIR=~/dotfiles
+BASE_BACKUP_DIR=~/dotfiles
+BREW_BACKUP_DIR=$BASE_BACKUP_DIR/brew
+WALLPAPER_BACKUP_DIR=$BASE_BACKUP_DIR/wallpaper
+
 # Create directory if needed otherwise, silently exit without error
-mkdir -p "BACKUP_DIR"
+mkdir -p "$WALLPAPER_BACKUP_DIR" "$BREW_BACKUP_DIR"
 
 # Makes sure the home brew paths are always correct and avalible to the enviorment.
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
 # Navigate to directory
-cd /Users/tylermiller/dotfiles/
+cd "$BASE_BACKUP_DIR" || exit 1
 
 # Wallpaper backup
 # Path to store the timestamp of the last wallpaper change
-timestamp_file="$BACKUP_DIR/last_wallpaper_change.txt"
+timestamp_file="$WALLPAPER_BACKUP_DIR/last_wallpaper_change.txt"
 
 # Create the timestamp file if it doesn't exist
 if [ ! -f "$timestamp_file" ]; then
@@ -40,11 +43,11 @@ else
     # Check if wallpaper has been changed recently
     if [ "$last_change_timestamp" != "$current_timestamp" ]; then
         # Copy orginal file to repo
-        cp "$wallpaper_path" "$BACKUP_DIR"
+        cp "$wallpaper_path" "$WALLPAPER_BACKUP_DIR"
 
         # Rename the wallpaper to Desktop.png
-        new_wallpaper_path=$BACKUP_DIR/Desktop.png
-        mv "$BACKUP_DIR/$(basename $wallpaper_path)" "$new_wallpaper_path"
+        new_wallpaper_path=$WALLPAPER_BACKUP_DIR/Desktop.png
+        mv "$WALLPAPER_BACKUP_DIR/$(basename $wallpaper_path)" "$new_wallpaper_path"
 
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$timestamp_file"
@@ -52,9 +55,10 @@ else
 fi
 
 # Run the brew bundle dump
-brew bundle dump --describe --force --no-restart && echo "DUMPING SUCCESSFUL"
+cd "$BREW_BACKUP_DIR" && brew bundle dump --describe --force --no-restart && echo "DUMPING SUCCESSFUL"
 
 # Git commit for Brewfile
+cd "$BASE_BACKUP_DIR" || exit 1
 if git status --porcelain | grep .; then
     git add .
     git commit -m "Auto-update"
