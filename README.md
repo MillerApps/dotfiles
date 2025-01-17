@@ -9,7 +9,7 @@
 <br />
 
 <div align="center">
-  <img alt="nix-darwin-flake" src="nix-darwin-flake.png" />
+  <img alt="nix-darwin-flake" src="/imgs/nix-darwin-flake.png" />
 </div>
 <br />
 
@@ -119,7 +119,7 @@ darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook
 
 The nix-darwin directory is structured as follows:
 
-![Directory Structure](dir-structure.png)
+![Directory Structure](/imgs/dir-structure.png)
 
 
 > The modules directory splits the config into modular files, which form the overall Nix-Darwin configuration.
