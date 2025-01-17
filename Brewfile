@@ -271,7 +271,6 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "1Password for Safari", id: 1569813296
 mas "A Companion for SwiftUI", id: 1485436674
 mas "Accelerate", id: 1459809092
 mas "AdBlock", id: 1402042596

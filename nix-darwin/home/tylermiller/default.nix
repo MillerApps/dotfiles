@@ -77,8 +77,8 @@ in {
     };
     gh = {
       enable = true;
-      extensions = [
-        pkgs.gh-markdown-preview
+      extensions = with pkgs; [
+        gh-markdown-preview
       ];
     };
   };
