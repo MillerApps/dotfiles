@@ -18,7 +18,7 @@
       url = "github:zhaofengli/nix-homebrew";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        nix-darwin.follows = "darwin";
+        # nix-darwin.follows = "darwin";
       };
     };
 
@@ -37,7 +37,7 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#macbook
     darwinConfigurations."macbook" = inputs.nix-darwin.lib.darwinSystem {
-      specialArgs = { inherit inputs; };
+      specialArgs = {inherit inputs;};
 
       modules = [
         ./modules/default.nix
