@@ -1,0 +1,35 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          👋 Hello and welcome to my dotfiles repository!
+          
+          Thanks for opening your first issue. Since dotfiles are quite personal, I appreciate your interest and feedback.
+          Please include in your issue:
+          - Which part of the configuration you're referring to (Nix, macOS, homebrew, etc.)
+          - A clear description of the problem or suggestion
+          - Your system details if relevant (OS version, Nix version, etc.)
+          - Any error messages or logs if applicable
+          
+          Thanks for helping make these dotfiles better! 🙌
+        pr-message: |
+          🎉 Thanks for your first PR to my dotfiles!
+          
+          I'm always excited to see how others improve or adapt these configurations. To help with the review:
+          - Please describe what your changes accomplish
+          - Mention which systems/setups you've tested this with
+          - If you're adding new tools or configurations, explain why they're useful
+          - Ensure any Nix expressions or scripts are properly formatted
+          
+          Really appreciate you taking the time to contribute to my dotfiles! 💻 ✨
