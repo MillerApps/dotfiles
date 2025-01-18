@@ -13,6 +13,7 @@ jobs:
     - uses: DeterminateSystems/nix-installer-action@main
     - uses: DeterminateSystems/magic-nix-cache-action@main
     - name: Build Darwin Configuration
+      working-directory: ./nix-darwin  # Ensure we're in the right directory
       run: |
         nix build .#darwinConfigurations.macbook.system
         ./result/sw/bin/darwin-rebuild check --flake .#macbook
