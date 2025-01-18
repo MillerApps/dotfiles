@@ -12,4 +12,4 @@ jobs:
       name: Spellcheck
       with:
         source_files: README.md
-        task_name: spellcheck
+        task_name: spell_check
