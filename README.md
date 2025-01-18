@@ -19,13 +19,13 @@ This repository serves as a guide for setting up and managing my macOS system us
 It is designed for personal reference but can also be useful to others interested in a similar setup.
 
 How it works:
-- The Nix package manager is used as the primary way to handle needed clitools, lanaues, and apps.
+- The Nix package manager is used as the primary way to handle needed clitools, Languages, and apps.
 - Nix-Darwin sets up the system based on the flake.nix and the correlating files in the nix-darwin directory.
-- Nix-Home-Manager hooks into Nix-Darwin to handle the .config files and othr .files in the home directory.
+- Nix-Home-Manager hooks into Nix-Darwin to handle the .config files and other .files in the home directory.
 - Homebrew is used to install macOS apps and fonts. This is handled by Nix-Darwin's homebrew module. Homebrew is also installed via [Nix-Homebrew](https://github.com/zhaofengli/nix-homebrew).
 
 > [!NOTE]
-> This is a first round at intergrating nix-darwin, nix-home-manager, and homebrew. This is a work in progress and will be updated as I learn more.
+> This is a first round at integrating nix-darwin, nix-home-manager, and homebrew. This is a work in progress and will be updated as I learn more.
 > If you have any tips or know of a better way to do something, please let me know.
 
 ## Table of Contents
@@ -57,10 +57,10 @@ The Nix language is a domain-specific, declarative, and functional language desi
 > [!Tip]
 > For a beginner-friendly introduction, visit the [Introduction to Nix Language](https://nix.dev/tutorials/nix-language).
 
-Language Features realvent to this setup:
+Language Features relevant to this setup:
 
 > [!Note]
-> Will be upadated as I learn more. Possiblely some examples.
+> Will be updated as I learn more. Possibly some more examples.
 
 | Example | Description |
 |---------|-------------|
@@ -97,7 +97,7 @@ nix-shell -p git --run "git clone https://github.com/MillerApps/dotfiles.git ~/d
 > •	Create a dotfiles directory in your home folder
 > •	Place all repository contents in ~/dotfiles
 
-3. Install [nix-darwin](https://github.com/LnL7/nix-darwin) for full detatils see, the installation instructions at the link. Use the flake section.
+3. Install [nix-darwin](https://github.com/LnL7/nix-darwin) for full details see, the installation instructions at the link. Use the flake section.
     
 > [!NOTE]
 > This installs nix-darwin using the flake feature of nix. This is the recommended way to install nix-darwin.
@@ -123,7 +123,7 @@ The nix-darwin directory is structured as follows:
 
 
 > The modules directory splits the config into modular files, which form the overall Nix-Darwin configuration.
-> `default.nix` is the contianer for all modules. This is automatically sourced by nix-darwin when importing `./modules` in `flake.nix`.
+> `default.nix` is the container for all modules. This is automatically sourced by nix-darwin when importing `./modules` in `flake.nix`.
 
 ### Explanation of the Structure
 ### TODO: finish adding the explanation for new changes.
@@ -157,7 +157,7 @@ A collection of modular files that define specific aspects of the system or user
 
 Inside the script directory is an optional minimal backup script. Its only functionality is to perform a brew bundle dump and to make a backup of the current wallpaper if it has 
 changed.    
-**Why brew bundle dump?** Well simply in case I forgot to add the new app into `homebrew.nix`, this way I'm covered in case of a device failiure as well.
+**Why brew bundle dump?** Well simply in case I forgot to add the new app into `homebrew.nix`, this way I'm covered in case of a device failure as well.
 
 ### How its used
 Setup cron with the following:
@@ -396,7 +396,7 @@ Or you can use the following method:
 
 1. Open Keyboard in System Preferences. system preferences > Keyboard (> Shortcuts) 
 2. Then change settings for what you wish to find the symbolic hotkey IDs for.
-3. Use the folowing Sequence of commands to get all the information you need:
+3. Use the following Sequence of commands to get all the information you need:
 ```sh
 # 1. Dump current symbolic hotkey mappings
 defaults read com.apple.symbolichotkeys > before.plist
