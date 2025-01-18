@@ -10,4 +10,5 @@ jobs:
     - uses: actions/checkout@v3
     - uses: rojopolis/spellcheck-github-actions@v0
       name: Spellcheck
-      source_files: README.md
+      with:
+        source_files: README.md
