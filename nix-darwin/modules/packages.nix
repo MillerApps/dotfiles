@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   nixpkgs = {
     # set our hostplatform
     hostPlatform = "aarch64-darwin";
@@ -34,5 +33,6 @@
     ripgrep
     zsh-powerlevel10k
     oh-my-zsh
+    just
   ];
 }
