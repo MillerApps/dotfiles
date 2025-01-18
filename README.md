@@ -81,41 +81,72 @@ Language Features relevant to this setup:
 ## Install Guide for Nix-Darwin
 
 > [!IMPORTANT]
-> The Nix package manager is required to install nix-darwin. If you have not installed Nix, please follow the instructions below.
+> The Nix package manager is required to install nix-darwin. If you have not installed Nix, follow the instructions below.
 
-1. Install [Nix package manager](https://nixos.org/download/#nix-install-macos) using the following command:
-```sh
-sh <(curl -L https://nixos.org/nix/install)
-```
-2. Clone the repo to your home directory:
-```sh
-nix-shell -p git --run "git clone https://github.com/MillerApps/dotfiles.git ~/dotfiles"
-```
+1. **Install the Nix package manager**  
+   Run the following command to install Nix:
+   ```sh
+   sh <(curl -L https://nixos.org/nix/install)
+   ```
+
+2. **Clone the repository using a temporary Git installation**  
+   If Git is not installed, you can use a temporary version provided by Nix:
+   ```sh
+   nix-shell -p git --run "git clone https://github.com/MillerApps/dotfiles.git ~/dotfiles"
+   ```
 > [!NOTE]
 > This will:
-> •	Temporarily use Git
-> •	Clone your repository
-> •	Create a dotfiles directory in your home folder
-> •	Place all repository contents in ~/dotfiles
+> - Temporarily use Git from Nix
+> - Clone your repository
+> - Create a `dotfiles` directory in your home folder
+> - Place all repository contents in `~/dotfiles`
 
-3. Install [nix-darwin](https://github.com/LnL7/nix-darwin) for full details see, the installation instructions at the link. Use the flake section.
+3. **Use `just` temporarily to manage system commands**  
+   If `just` is not installed, you can run it temporarily with Nix:
+   ```sh
+   nix-shell -p just
+   ```
+
+4. **Bootstrap nix-darwin**
+
+[nix-darwin](https://github.com/LnL7/nix-darwin) for full details see, the installation instructions at the link. Use the flake section.
     
 > [!NOTE]
 > This installs nix-darwin using the flake feature of nix. This is the recommended way to install nix-darwin.
 > This also assumes you cloned the repo to `~/dotfiles`
- 
-We also need to install the Xcode command line tools:
-```sh
-xcode-select --install
-```
 
-```sh
-nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
-```
-4. Apply the configuration:
-```sh
-darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook
-```
+
+   Use the Justfile target for `bootstrap`, or directly run:
+   ```sh
+   xcode-select --install
+   nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
+   ```
+
+5. **Rebuild and apply the configuration**  
+   Use the Justfile target for `switch`, or directly run:
+   ```sh
+   darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook
+   ```
+
+> [!NOTE]
+> These are the commands available in the Justfile. You can run them using `just <command>`.
+> Which will be available permanently after step 5, from within the dotfiles directory.
+
+<details>
+<summary><b>Click to view Justfile commands</b></summary>
+
+- `switch`: Switch to the current flake configuration
+- `bootstrap`: Bootstrap nix-darwin and install Xcode Command Line Tools
+- `clean`: Remove unused store entries
+- `clean-all`: Remove all unused store entries, including old generations
+- `update`: Update flake inputs
+- `check`: Verify configuration
+- `rollback`: Rollback to the previous generation
+- `generations`: Show system generations and available rollback targets
+- `build`: Build configuration without switching
+
+</details>
+
 ## Nix-Darwin directory structure
 
 The nix-darwin directory is structured as follows:

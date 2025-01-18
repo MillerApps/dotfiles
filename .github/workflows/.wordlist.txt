@@ -64,3 +64,4 @@ xcode
 youtube
 zsh
 crontab
+justfile
