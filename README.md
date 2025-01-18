@@ -1,8 +1,9 @@
 <div align="center">
   <img alt="repo size" src="https://img.shields.io/github/repo-size/millerapps/dotfiles?color=fab387&labelColor=303446&style=for-the-badge&logo=github&logoColor=fab387" />
+  <img alt="darwin-build" src="https://img.shields.io/github/actions/workflow/status/millerapps/dotfiles/validatenix.yml?branch=main&label=Darwin%20Build&style=for-the-badge&labelColor=1e1e2e&color=a6e3a1&logo=github-actions&logoColor=a6e3a1&successColor=a6e3a1&failColor=f38ba8" />
   <img alt="nixos-unstable" src="https://img.shields.io/badge/Nix-nixpkgs.unstable-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=91D7E3" />
   <img alt="nix-darwin" src="https://img.shields.io/badge/Nix-Darwin-blue.svg?style=for-the-badge&labelColor=30344i6&logo=NixOS&logoColor=white&color=f2cdcd" />
-  <img alt="homebrew" src="https://img.shields.io/badge/Homebrew-macOS-blue.svg?style=for-the-badge&labelColor=303446&logo=Homebrew&logoColor=white&color=iwa6e3a1" />
+  <img alt="homebrew" src="https://img.shields.io/badge/Homebrew-macOS-blue.svg?style=for-the-badge&labelColor=1e1e2e&logo=Homebrew&logoColor=white&color=cba6f7" />
   <img alt="nix-home-manager" src="https://img.shields.io/badge/Nix-Home_Manager-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=eba0ac" />
 </div>
 
