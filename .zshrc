@@ -48,10 +48,6 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ls='eza --color=always --icons -a'
 # Nvim alias for development of config
 alias nvim-Yoink='NVIM_APPNAME="nvim-Yoink" nvim'
-# Nix-darwin
-alias drb='darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook'
-# Nix flake
-alias nfu='nix flake update'
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
@@ -93,6 +89,8 @@ _fzf_comprun() {
   esac
 }
 
+eval "$(atuin init zsh)"
+
 # Adds syntax highlighting to zsh
 # source ${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -118,19 +116,15 @@ function yy() {
 }
 # End Yazi
 
-# Beter history
-# history setup
-HISTFILE=$HOME/.zhistory
-SAVEHIST=1000
-HISTSIZE=999
-setopt share_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt hist_verify
 
-# completion using arrow keys (based on history)
-bindkey '^[[A' history-search-backward
-bindkey '^[[B' history-search-forward
+# setopt share_history
+# setopt hist_expire_dups_first
+# setopt hist_ignore_dups
+# setopt hist_verify
+#
+# # completion using arrow keys (based on history)
+# bindkey '^[[A' history-search-backward
+# bindkey '^[[B' history-search-forward
 
 source $POWERLEVEL10K/powerlevel10k.zsh-theme
 
