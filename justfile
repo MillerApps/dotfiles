@@ -20,7 +20,7 @@ clean-all:
 
 # Update flake inputs
 update:
-    nix flake update ~/dotfiles/nix-darwin
+    cd nix-darwin && nix flake update
 
 # Verify configuration
 check:
