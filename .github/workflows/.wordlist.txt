@@ -65,3 +65,13 @@ youtube
 zsh
 crontab
 justfile
+Trackpad
+autosuggestions
+fzf
+lazygit
+lua
+nixPath
+nixpkgs
+powerlevel
+stateVersion
+sudo
