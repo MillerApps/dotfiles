@@ -1,8 +1,4 @@
-{
-  pkgs,
-  ...
-}:
-{
+{pkgs, ...}: {
   # Enable zsh via nix-darwin
   # For more information on configuring Zsh in nix-darwin, see:
   # https://daiderd.com/nix-darwin/manual/index.html#opt-programs.zsh.interactiveShellInit
@@ -20,6 +16,8 @@
       if [ -f "${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
         source "${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
       fi
+
+
     '';
 
     variables = {

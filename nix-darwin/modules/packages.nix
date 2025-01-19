@@ -34,5 +34,6 @@
     zsh-powerlevel10k
     oh-my-zsh
     just
+    atuin
   ];
 }
