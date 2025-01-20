@@ -61,7 +61,7 @@ cd "$BREW_BACKUP_DIR" && brew bundle dump --describe --force --no-restart && ech
 cd "$BASE_BACKUP_DIR" || exit 1
 if git status --porcelain | grep .; then
     git add .
-    git commit -m "Auto-update"
+    git commit -m "chore: Auto-update"
     git push
 else
     echo "No changes to commit."
