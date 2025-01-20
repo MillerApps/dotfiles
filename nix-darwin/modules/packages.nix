@@ -35,5 +35,6 @@
     oh-my-zsh
     just
     atuin
+    tree-sitter
   ];
 }
