@@ -41,7 +41,7 @@ in {
       ".config/yazi".source = self + "/../yazi";
       ".config/karabiner".source = self + "/../karabiner";
       ".wezterm.lua".source = self + "/../.wezterm.lua";
-      ".config/nvim".source = inputs.neovim-config;
+      ".config/nvim".source = self + "/../nvim";
     };
   };
 

@@ -26,11 +26,6 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    neovim-config = {
-      url = "github:millerapps/yoink.nvim"; # This pulls my neovim config
-      flake = false;
-    };
   };
 
   outputs = inputs: {
