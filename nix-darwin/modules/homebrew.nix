@@ -1,9 +1,5 @@
-{
-  inputs,
-  ...
-}:
-{
-  imports = [ inputs.nix-homebrew.darwinModules.nix-homebrew ];
+{inputs, ...}: {
+  imports = [inputs.nix-homebrew.darwinModules.nix-homebrew];
 
   config = {
     # this module allows for the homebrew module to be declertivly managed
@@ -100,6 +96,8 @@
         "zed"
         # Gecko based web browser
         "zen-browser"
+        # Keyboard shortcuts for every button on your screen
+        "homerow"
       ];
     };
   };
