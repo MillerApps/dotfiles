@@ -36,5 +36,7 @@
     just
     atuin
     tree-sitter
+    vhs
+    charm-freeze
   ];
 }
