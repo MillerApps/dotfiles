@@ -48,6 +48,8 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ls='eza --color=always --icons -a'
 # Nvim alias for development of config
 alias nvim-Yoink='NVIM_APPNAME="nvim-Yoink" nvim'
+# Lazygit alias
+alias lg='lazygit'
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
