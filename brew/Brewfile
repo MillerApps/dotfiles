@@ -37,14 +37,6 @@ brew "sqlite"
 brew "python@3.12"
 # Decentralized dependency manager for Cocoa
 brew "carthage"
-# HTTP/2 C Library
-brew "libnghttp2"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# Parser generator tool and incremental parsing library
-brew "tree-sitter"
-# Emacs dependency management
-brew "cask"
 # Object-file caching compiler wrapper
 brew "ccache"
 # Ruby environment tool
@@ -59,6 +51,10 @@ brew "exercism"
 brew "exiftool"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# HTTP/2 C Library
+brew "libnghttp2"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # C/C++ and Java libraries for Unicode and globalization
 brew "icu4c@76"
 # Play, record, convert, and stream audio and video
@@ -145,12 +141,8 @@ cask "appcleaner"
 cask "audacity"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
 cask "bambu-studio"
-# Menu bar icon organiser
-cask "bartender"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
-# Web browser focusing on privacy
-cask "brave-browser"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Tool to remove unnecessary files and folders from disk
@@ -201,8 +193,6 @@ cask "karabiner-elements"
 cask "kindavim"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Multi-platform web browser
-cask "microsoft-edge"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # VPN client
@@ -245,22 +235,14 @@ cask "stats"
 cask "tailscale"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# Disposable email client
-cask "tempbox"
 # Web browser focusing on security
 cask "tor-browser"
-# Git client focusing on power and productivity
-cask "tower"
 # Virtual machines UI using QEMU
 cask "utm"
 # Multimedia player
 cask "vlc"
 # Create, manage, and run virtual machines
 cask "vmware-fusion"
-# Terminal emulator
-cask "wave"
-# Compatibility layer to run Windows applications
-cask "wine-stable"
 # Network protocol analyzer
 cask "wireshark"
 # Install and switch between multiple versions of Xcode
