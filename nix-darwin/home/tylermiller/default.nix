@@ -1,10 +1,6 @@
 # The file that will provide home manager wtf to
 # do with my dotfiles
-{
-  pkgs,
-  inputs,
-  ...
-}: let
+{inputs, ...}: let
   # `self` points to the directory containing flake.nix (nix-darwin/)
   # When using home-manager as a nix-darwin module, we inherit it from inputs
   inherit (inputs) self;
@@ -42,44 +38,6 @@ in {
       ".config/karabiner".source = self + "/../karabiner";
       ".wezterm.lua".source = self + "/../.wezterm.lua";
       ".config/nvim".source = self + "/../nvim";
-    };
-  };
-
-  programs = {
-    neovim = {
-      enable = true;
-      # Needed for 3rd/image to work
-      extraLuaPackages = ps: [ps.magick];
-      extraPackages = [pkgs.imagemagick];
-    };
-
-    git = {
-      enable = true;
-      userName = "MillerApps";
-      userEmail = "tylermiller4.github@proton.me";
-    };
-
-    spicetify = let
-      spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
-    in {
-      enable = true;
-      enabledExtensions = with spicePkgs.extensions; [
-        trashbin
-        history
-        fullAppDisplay
-        shuffle
-      ];
-      enabledCustomApps = with spicePkgs.apps; [
-        marketplace
-      ];
-      theme = spicePkgs.themes.text;
-      colorScheme = "CatppuccinMocha";
-    };
-    gh = {
-      enable = true;
-      extensions = with pkgs; [
-        gh-markdown-preview
-      ];
     };
   };
 }
