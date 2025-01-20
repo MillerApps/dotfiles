@@ -51,3 +51,4 @@ window-width = 220
 clipboard-read = allow
 clipboard-write = allow
 copy-on-select = true
+clipboard-paste-protection = false
