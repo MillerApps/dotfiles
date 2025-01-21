@@ -151,7 +151,7 @@ Language Features relevant to this setup:
 
 The nix-darwin directory is structured as follows:
 
-![Directory Structure](/imgs/dir-structure.png)
+![Directory Structure](./imgs/dir-structure.png)
 
 
 > The modules directory splits the config into modular files, which form the overall Nix-Darwin configuration.
