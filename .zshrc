@@ -46,8 +46,8 @@ alias zconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 # Alias for eza
 alias ls='eza --color=always --icons -a'
-# Nvim alias for development of config
-alias nvim-Yoink='NVIM_APPNAME="nvim-Yoink" nvim'
+# Nvim alias
+alias nv='nvim'
 # Lazygit alias
 alias lg='lazygit'
 
