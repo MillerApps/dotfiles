@@ -2,7 +2,7 @@
   imports = [inputs.nix-homebrew.darwinModules.nix-homebrew];
 
   config = {
-    # this module allows for the homebrew module to be declertivly managed
+    # this module allows for the Homebrew module to be declaratively managed
     nix-homebrew = {
       enable = true;
       # Apple Silicon Only
@@ -30,7 +30,7 @@
       };
       # Must have apps
       casks = [
-        # Termial
+        # Terminal
         "ghostty"
         # AirPods companion app
         "airbuddy"

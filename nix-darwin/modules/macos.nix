@@ -1,5 +1,5 @@
 {config, ...}: {
-  # Macos settings
+  # MacOS settings
   security.pam.enableSudoTouchIdAuth = true;
   system.defaults = {
     dock = {
@@ -52,7 +52,7 @@
           "64" = {
             enabled = false;
           };
-          # set nottification hotkey to F19
+          # set notification hotkey to F19
           # 163 is the id for the notification center
           "163" = {
             enabled = true;

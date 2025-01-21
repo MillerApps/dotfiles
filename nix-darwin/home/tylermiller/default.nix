@@ -5,7 +5,7 @@
   # When using home-manager as a nix-darwin module, we inherit it from inputs
   inherit (inputs) self;
 in {
-  # Import the indivual programs (git, spicetify, neovim) which are in their own
+  # Import the individual programs (git, spicetify, neovim) which are in their own
   # nix files for organization and modularity. If there is a better way to do this
   # open a pull request or issue on the github repo with an explanation.
   # Thanks! Still learning nix and nixos.
