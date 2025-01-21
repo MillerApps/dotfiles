@@ -1,6 +1,10 @@
 # The file that will provide home manager wtf to
 # do with my dotfiles
-{inputs, ...}: let
+{
+  inputs,
+  lib,
+  ...
+}: let
   # `self` points to the directory containing flake.nix (nix-darwin/)
   # When using home-manager as a nix-darwin module, we inherit it from inputs
   inherit (inputs) self;
@@ -47,7 +51,34 @@ in {
       ".config/yazi".source = self + "/../yazi";
       ".config/karabiner".source = self + "/../karabiner";
       ".wezterm.lua".source = self + "/../.wezterm.lua";
-      ".config/nvim".source = self + "/../nvim";
+      # ".config/nvim".source = self + "/../nvim";
+    };
+    activation = {
+      # This ensures our script runs at the right time:
+      # - 'dag' helps control the order of operations
+      # - 'entryAfter' means "run after the specified phase"
+      # - 'writeBoundary' is the phase after Home Manager writes all files
+      # https://nix-community.github.io/home-manager/options.html#opt-home.activation
+      # DAG (Directed Acyclic Graph) is like a one-way recipe:
+      # - Directed: Tasks flow one direction (can't frost before baking)
+      # - Acyclic: No loops allowed (can't bake -> frost -> bake again)
+      #
+      # Here it's simple:
+      # 1. Write all files (writeBoundary)
+      #        ↓
+      # 2. Create symlinks (our script)
+      # https://www.getdbt.com/blog/guide-to-dags
+      #
+      # Custom linking method for neovim configuration:
+      # - Preserves lazy.nvim plugin manager functionality
+      # - Avoids direct Nix store linking which would make the config immutable ie. '".config/nvim".source = self + "/../nvim";'
+      # - Allows for dynamic updates to neovim configuration
+
+      linkNvimConfig = lib.hm.dag.entryAfter ["writeBoundary"] ''
+        echo "Linking nvim config"
+        run mkdir -p ~/.config/nvim
+        run ln -sf ~/dotfiles/nvim/* ~/.config/nvim/
+      '';
     };
   };
 }
