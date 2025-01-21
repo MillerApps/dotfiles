@@ -17,6 +17,7 @@ in {
     ./git.nix
     ./spiceify.nix
     ./neovim.nix
+    ./lazygit.nix
   ];
 
   home = {
