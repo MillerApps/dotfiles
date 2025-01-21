@@ -29,6 +29,13 @@ How it works:
 > This is a first round at integrating nix-darwin, nix-home-manager, and homebrew. This is a work in progress and will be updated as I learn more.
 > If you have any tips or know of a better way to do something, please let me know.
 
+> [!WARNING]
+> If you not looking to dive into the rabbit hole that is Nix, then this type of setup is not for you. It is a steep learning curve, but the benefits are worth it.
+
+## Lets dive the rabbit hole!
+
+![Rabbit Hole](./imgs/rabbit-hole.gif)
+
 ## Table of Contents
 - [Introduction](#nix-darwin-nix-home-manager--homebrew)
 - [Nix Language Overview](#nix-language-overview)
