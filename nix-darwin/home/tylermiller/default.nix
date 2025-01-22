@@ -18,6 +18,7 @@ in {
     ./spiceify.nix
     ./neovim.nix
     ./lazygit.nix
+    ./tmux.nix
   ];
 
   home = {
