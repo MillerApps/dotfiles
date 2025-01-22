@@ -16,14 +16,6 @@
       if [ -f "${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
         source "${pkgs.zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
       fi
-
-
     '';
-
-    variables = {
-      # set paths for powerlevel10k & oh-my-zsh
-      OH_MY_ZSH = "${pkgs.oh-my-zsh}/share/oh-my-zsh";
-      POWERLEVEL10K = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
-    };
   };
 }

@@ -19,6 +19,7 @@ in {
     ./neovim.nix
     ./lazygit.nix
     ./tmux.nix
+    ./zellij.nix
   ];
 
   home = {
