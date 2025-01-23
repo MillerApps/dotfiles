@@ -55,6 +55,7 @@ in {
       ".config/karabiner".source = self + "/../karabiner";
       ".wezterm.lua".source = self + "/../.wezterm.lua";
       # ".config/nvim".source = self + "/../nvim";
+      ".config/zellij".source = self + "/../zellij";
     };
     activation = {
       # This ensures our script runs at the right time:
