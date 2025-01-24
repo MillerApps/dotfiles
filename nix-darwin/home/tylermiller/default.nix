@@ -56,6 +56,7 @@ in {
       ".wezterm.lua".source = self + "/../.wezterm.lua";
       # ".config/nvim".source = self + "/../nvim";
       ".config/zellij".source = self + "/../zellij";
+      ".cofig/aerospace".source = self + "/../aerospace";
     };
     activation = {
       # This ensures our script runs at the right time:
