@@ -5,9 +5,7 @@ switch:
     darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook
     
 # Bootstrap nix-darwin
-# Install Xcode Command Line Tools
 bootstrap:
-	xcode-select --install
 	nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
 
 # Clean unused store entries
