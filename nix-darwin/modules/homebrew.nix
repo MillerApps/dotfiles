@@ -5,8 +5,6 @@
     # this module allows for the Homebrew module to be declaratively managed
     nix-homebrew = {
       enable = true;
-      # Apple Silicon Only
-      enableRosetta = true;
       # User owning the Homebrew prefix
       user = "tylermiller";
 
