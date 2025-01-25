@@ -75,3 +75,4 @@ nixpkgs
 powerlevel
 stateVersion
 sudo
+sSf
