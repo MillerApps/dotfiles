@@ -20,6 +20,10 @@
         "mas"
         "tabiew"
         "otree"
+        "borders"
+      ];
+      taps = [
+        "FelixKratz/formulae"
       ];
       masApps = {
         "ExcalidrawZ" = 6636493997;
