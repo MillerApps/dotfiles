@@ -93,7 +93,7 @@ Language Features relevant to this setup:
 1. **Install the Nix package manager**  
    Run the following command to install Nix:
    ```sh
-   sh <(curl -L https://nixos.org/nix/install)
+   curl -sSf -L https://install.lix.systems/lix | sh -s -- install
    ```
 
 2. **Clone the repository using a temporary Git installation**  
@@ -122,10 +122,13 @@ Language Features relevant to this setup:
 > This installs nix-darwin using the flake feature of nix. This is the recommended way to install nix-darwin.
 > This also assumes you cloned the repo to `~/dotfiles`
 
+   Install xcode tools: 
+   ```sh
+   xcode-select --install
+   ```
 
    Use the Justfile target for `bootstrap`, or directly run:
    ```sh
-   xcode-select --install
    nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
    ```
 
