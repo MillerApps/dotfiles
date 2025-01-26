@@ -35,8 +35,6 @@
       ShowHardDrivesOnDesktop = true;
       ShowMountedServersOnDesktop = true;
       ShowPathbar = true;
-      ShowHardDrivesOnDesktop = true;
-      ShowMountedServersOnDesktop = true;
     };
 
     WindowManager.EnableStandardClickToShowDesktop = false;
