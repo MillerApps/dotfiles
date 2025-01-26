@@ -2,6 +2,7 @@
   # MacOS settings
   security.pam.enableSudoTouchIdAuth = true;
   system.defaults = {
+    SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
     dock = {
       persistent-apps = [
         "/Applications/Zen Browser.app"
@@ -22,6 +23,8 @@
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark";
       "com.apple.swipescrolldirection" = false;
+      "com.apple.trackpad.trackpadCornerClickBehavior" = 1; # TrackpadRightClick
+      NSAutomaticSpellingCorrectionEnabled = false;
     };
 
     trackpad.TrackpadRightClick = true;
@@ -32,18 +35,17 @@
       ShowHardDrivesOnDesktop = true;
       ShowMountedServersOnDesktop = true;
       ShowPathbar = true;
+      ShowHardDrivesOnDesktop = true;
+      ShowMountedServersOnDesktop = true;
     };
+
+    WindowManager.EnableStandardClickToShowDesktop = false;
 
     CustomUserPreferences = {
       "com.apple.finder" = {
         # Set home directory as startup window
         NewWindowTargetPath = "file:///Users/${config.users.users.tylermiller.name}/";
         NewWindowTarget = "PfHm";
-      };
-      "com.apple.WindowManager" = {
-        # Disable stage manager
-        EnableStanardClickToShowDesktop = false;
-        GloballyEnabled = false;
       };
       # useful link for reference: https://gist.github.com/jimratliff/227088cc936065598bedfd91c360334e
       "com.apple.symbolichotkeys" = {
