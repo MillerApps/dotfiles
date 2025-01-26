@@ -62,8 +62,6 @@
         "font-meslo-lg-nerd-font"
         "font-monaspace-nerd-font"
         "font-roboto-mono-nerd-font"
-        # Automated organisation
-        "hazel"
         # Free and open-source media player
         "iina"
         # Menu bar manager
