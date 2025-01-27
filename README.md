@@ -163,8 +163,32 @@ Language Features relevant to this setup:
 
 The nix-darwin directory is structured as follows:
 
-![Directory Structure](./imgs/dir-structure.png)
-
+```sh
+ nix-darwin
+├──  flake.lock
+├──  flake.nix
+├── 󱂵 home
+│   ├──  default.nix
+│   └──  tylermiller
+│       ├──  default.nix
+│       ├──  git.nix
+│       ├──  lazygit.nix
+│       ├──  neovim.nix
+│       ├──  spiceify.nix
+│       ├──  tmux.nix
+│       └──  zellij.nix
+└──  modules
+    ├──  common
+    │   ├──  nix.nix
+    │   ├──  packages.nix
+    │   ├──  system.nix
+    │   ├──  users.nix
+    │   └──  zsh.nix
+    ├──  darwin
+    │   ├──  homebrew.nix
+    │   └──  macos.nix
+    └──  default.nix
+```
 
 > The modules directory splits the config into modular files, which form the overall Nix-Darwin configuration.
 > `default.nix` is the container for all modules. This is automatically sourced by nix-darwin when importing `./modules` in `flake.nix`.
