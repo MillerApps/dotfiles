@@ -5,6 +5,8 @@ tap "nikitabobko/tap"
 brew "act"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Mac App Store command-line interface
 brew "mas"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
@@ -57,6 +59,8 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+# Custom Discord client
+cask "legcord"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # VPN client
