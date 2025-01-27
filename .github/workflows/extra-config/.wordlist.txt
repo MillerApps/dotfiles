@@ -76,3 +76,4 @@ powerlevel
 stateVersion
 sudo
 sSf
+agenix
