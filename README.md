@@ -14,6 +14,8 @@
 </div>
 <br />
 
+[TODO](./TODO.md)
+
 # Nix-Darwin, Nix-Home-Manager, & Homebrew
 
 This repository serves as a guide for setting up and managing my macOS system using Nix-Darwin, Nix Home Manager, and Homebrew. 
