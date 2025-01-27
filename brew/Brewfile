@@ -39,6 +39,8 @@ cask "chatgpt"
 cask "cleanshot"
 # Server and cloud storage browser
 cask "cyberduck"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Productivity app
 cask "dropzone"
 # Desktop client for Ente Photos
@@ -61,6 +63,8 @@ cask "jordanbaird-ice"
 cask "karabiner-elements"
 # Custom Discord client
 cask "legcord"
+# Discover, download, and run local LLMs
+cask "lm-studio"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # VPN client
