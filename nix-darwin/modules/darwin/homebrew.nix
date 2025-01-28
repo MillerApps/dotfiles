@@ -26,7 +26,6 @@
       masApps = {
         "ExcalidrawZ" = 6636493997;
         "Infuse" = 1136220934;
-        "Amphetamine" = 937984704;
         "Final Cut Pro" = 424389933;
         "Keka" = 470158793;
       };
