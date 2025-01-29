@@ -1,5 +1,6 @@
 tap "felixkratz/formulae"
 tap "homebrew/bundle"
+tap "homebrew/services"
 tap "nikitabobko/tap"
 # Run your GitHub Actions locally
 brew "act"
@@ -93,7 +94,6 @@ cask "tor-browser"
 cask "zed"
 # Gecko based web browser
 cask "zen-browser"
-mas "Amphetamine", id: 937984704
 mas "ExcalidrawZ", id: 6636493997
 mas "Final Cut Pro", id: 424389933
 mas "Infuse", id: 1136220934
