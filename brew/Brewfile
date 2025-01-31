@@ -6,6 +6,8 @@ tap "nikitabobko/tap"
 brew "act"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Mac App Store command-line interface
@@ -40,6 +42,8 @@ cask "chatgpt"
 cask "cleanshot"
 # Server and cloud storage browser
 cask "cyberduck"
+# Virtual monitor for screen sharing
+cask "deskpad"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Productivity app
