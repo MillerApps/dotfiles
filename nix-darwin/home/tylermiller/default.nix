@@ -14,12 +14,9 @@ in {
   # open a pull request or issue on the github repo with an explanation.
   # Thanks! Still learning nix and nixos.
   imports = [
-    ./git.nix
     ./spiceify.nix
-    ./neovim.nix
-    ./lazygit.nix
-    ./tmux.nix
-    ./zellij.nix
+    ./cli/default.nix
+    ./shell/default.nix
   ];
 
   home = {
