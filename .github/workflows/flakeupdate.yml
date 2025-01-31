@@ -3,7 +3,7 @@ name: Upadte Flake Inputs
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * 5"
+    - cron: "0 1 * * 5" # 1AM on Friday 
 
 jobs:
   update-lockfile:
@@ -19,6 +19,7 @@ jobs:
           source-url: https://install.lix.systems/lix/lix-installer-x86_64-linux
 
       - name: Update Lockfile
+        working-directory: ./nix-darwin # Ensure correct directory
         run: nix flake update
 
       - name: Commit and Push
