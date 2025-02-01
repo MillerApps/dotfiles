@@ -3,7 +3,7 @@ name: Upadte Flake Inputs
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * 7" # 1AM on Sunday
+    - cron: "0 1 * * 0" # 1AM on Sunday
 
 jobs:
   update-lockfile:
