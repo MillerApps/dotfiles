@@ -68,14 +68,14 @@ cask "jordanbaird-ice"
 cask "karabiner-elements"
 # Custom Discord client
 cask "legcord"
-# Discover, download, and run local LLMs
-cask "lm-studio"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # VPN client
 cask "mullvadvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Get up and running with large language models locally
+cask "ollama"
 # Client for Proton Drive
 cask "proton-drive"
 # Client for Proton Mail and Proton Calendar
