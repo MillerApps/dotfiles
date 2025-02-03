@@ -66,6 +66,8 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+# Application launcher
+cask "leader-key"
 # Custom Discord client
 cask "legcord"
 # Tool to control external monitor brightness & volume
