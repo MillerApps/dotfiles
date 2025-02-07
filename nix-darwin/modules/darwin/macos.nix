@@ -6,7 +6,6 @@
     dock = {
       persistent-apps = [
         "/Applications/Zen Browser.app"
-        "/Applications/Proton Mail.app"
         "/Applications/Signal.app"
         "/Applications/Ghostty.app"
       ];
