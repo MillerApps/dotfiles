@@ -88,6 +88,8 @@ cask "proton-pass"
 cask "protonvpn"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Open source virtual/remote desktop application
+cask "rustdesk"
 # Instant messaging application focusing on security
 cask "signal"
 # System monitor for the menu bar
