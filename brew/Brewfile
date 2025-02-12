@@ -2,8 +2,6 @@ tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikitabobko/tap"
-# Run your GitHub Actions locally
-brew "act"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Like neofetch, but much faster because written mostly in C
