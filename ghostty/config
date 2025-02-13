@@ -6,6 +6,8 @@ window-title-font-family = 'MonaspiceKr Nerd Font Mono'
 # Themeing
 theme = catppuccin-mocha
 background-opacity = 0.8
+# Icon
+macos-icon = xray
 # Window padding
 window-padding-x = 10
 window-padding-y = 10
