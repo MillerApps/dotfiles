@@ -1,6 +1,7 @@
 tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "millerapps/tap", "git@github.com:MillerApps/homebrew-tap.git"
 tap "nikitabobko/tap"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
@@ -20,6 +21,8 @@ brew "sniffnet"
 brew "tabiew"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
+# Tool to convert a Wallpaper's color scheme & more
+brew "millerapps/tap/gowall"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
 # AirPods companion app
@@ -104,8 +107,12 @@ cask "tor-browser"
 cask "zed"
 # Gecko based web browser
 cask "zen-browser"
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
 mas "ExcalidrawZ", id: 6636493997
 mas "Final Cut Pro", id: 424389933
 mas "Infuse", id: 1136220934
 mas "Keka", id: 470158793
+mas "Pixelmator Pro", id: 1289583905
 mas "Xcode", id: 497799835
