@@ -1,7 +1,6 @@
 tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "millerapps/tap", "git@github.com:MillerApps/homebrew-tap.git"
 tap "nikitabobko/tap"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
@@ -9,6 +8,8 @@ brew "cowsay"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Tool to convert a Wallpaper's color scheme / palette
+brew "gowall"
 # Mac App Store command-line interface
 brew "mas"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
@@ -21,8 +22,6 @@ brew "sniffnet"
 brew "tabiew"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
-# Tool to convert a Wallpaper's color scheme & more
-brew "millerapps/tap/gowall"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
 # AirPods companion app
@@ -69,6 +68,8 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+# GPU-based terminal emulator
+cask "kitty"
 # Application launcher
 cask "leader-key"
 # Custom Discord client
