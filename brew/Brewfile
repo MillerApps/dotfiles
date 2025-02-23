@@ -48,6 +48,8 @@ cask "cyberduck"
 cask "deskpad"
 # App to build and share containerised applications and microservices
 cask "docker"
+# Downloads videos from different websites
+cask "downie"
 # Productivity app
 cask "dropzone"
 # Desktop client for Ente Photos
@@ -68,8 +70,6 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
-# GPU-based terminal emulator
-cask "kitty"
 # Application launcher
 cask "leader-key"
 # Custom Discord client
