@@ -70,6 +70,8 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+# GPU-based terminal emulator
+cask "kitty"
 # Application launcher
 cask "leader-key"
 # Custom Discord client
