@@ -40,6 +40,8 @@ cask "bazecor"
 cask "bettermouse"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Screen capturing tool
 cask "cleanshot"
 # Server and cloud storage browser
