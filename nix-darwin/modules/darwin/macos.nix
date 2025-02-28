@@ -8,6 +8,7 @@
         "/Applications/Zen Browser.app"
         "/Applications/Signal.app"
         "/Applications/Ghostty.app"
+        "/Applications/Obsidian.app"
       ];
       minimize-to-application = true;
       persistent-others = [
