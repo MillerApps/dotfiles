@@ -18,6 +18,8 @@ brew "otree"
 brew "sl"
 # Cross-platform application to monitor your network traffic
 brew "sniffnet"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # A window border system for macOS
