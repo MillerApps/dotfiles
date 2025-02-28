@@ -7,6 +7,11 @@
       ignores = [
         ".DS_Store"
       ];
+      extraConfig = {
+        pull = {
+          rebase = true;
+        };
+      };
     };
     gh = {
       enable = true;
