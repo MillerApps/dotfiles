@@ -25,6 +25,18 @@ return {
       notify_jump = true,
       notify_end = true,
     },
+    image = {
+      enabled = true,
+      doc = {
+        enabled = true,
+        inline = false,
+        -- render the image in a floating window
+        -- only used if `opts.inline` is disabled
+        float = true,
+        max_width = 80,
+        max_height = 40,
+      },
+    },
   },
   keys = {
     {
