@@ -15,6 +15,9 @@ export PATH="/opt/homebrew/sbin:$PATH"
 # Navigate to directory
 cd "$BASE_BACKUP_DIR" || exit 1
 
+# Ensure the latest from remote
+git pull
+
 # Wallpaper backup
 # Path to store the timestamp of the last wallpaper change
 timestamp_file="$WALLPAPER_BACKUP_DIR/last_wallpaper_change.txt"
@@ -60,7 +63,6 @@ cd "$BREW_BACKUP_DIR" && brew bundle dump --describe --force --no-restart && ech
 # Git commit for Brewfile
 cd "$BASE_BACKUP_DIR" || exit 1
 if git status --porcelain | grep .; then
-    git pull
     git add .
     git commit -m "chore: Auto-update"
     git push
