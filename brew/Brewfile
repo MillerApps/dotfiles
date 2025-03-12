@@ -8,6 +8,8 @@ brew "cowsay"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Tool to convert a Wallpaper's color scheme / palette
 brew "gowall"
 # Mac App Store command-line interface
