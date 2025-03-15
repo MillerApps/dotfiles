@@ -3,6 +3,23 @@
     lazygit = {
       enable = true;
       settings = {
+        customCommands = [
+          {
+            key = "E";
+            description = "Add empty commit";
+            context = "commits";
+            prompts = [
+              {
+                type = "input";
+                title = "Enter commit message";
+                initialValue = "";
+                key = "message";
+              }
+            ];
+            command = "git commit --allow-empty -m 'empty: {{.Form.message}}'";
+            loadingText = "Committing empty commit...";
+          }
+        ];
         gui = {
           theme = {
             activeBorderColor = ["#fab387" "bold"];
