@@ -89,9 +89,6 @@ eval "$(atuin init zsh)"
 # Adds suggestions as you type
 # source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# The fuck to fix messed up commands
-eval $(thefuck --alias)
-
 # Zoxide
 eval "$(zoxide init zsh)"
 alias cd='z'
