@@ -22,13 +22,15 @@
     glow
     yazi
     zoxide
-    thefuck
     zsh-autosuggestions
     zsh-syntax-highlighting
     lua
     go
     serpl
-    nixd
+    # Apparently this is not compatible with lix but worked until today
+    # https://github.com/NixOS/nixpkgs/issues/358329
+    # nixd
+    nil
     alejandra
     ripgrep
     zsh-powerlevel10k

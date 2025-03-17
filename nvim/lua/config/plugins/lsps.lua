@@ -83,19 +83,20 @@ return {
             },
           },
         },
-        -- Nix (requires `nixd` to be installed, done via nix-darwin in my case)
-        -- this could be better, but something is not working somewhere for me
-        -- when adding the options {} table to the setup call
-        -- TODO: Revist later
-        require('lspconfig').nixd.setup {
-          cmd = { 'nixd' },
+        -- Nix LSP using nil instead of nixd
+        require('lspconfig').nil_ls.setup {
+          cmd = { 'nil' },
           settings = {
-            nixd = {
-              nixpkgs = {
-                expr = 'import <nixpkgs> { }',
-              },
+            ['nil'] = {
               formatting = {
                 command = { 'alejandra' },
+              },
+              nix = {
+                flake = {
+                  autoEvalInputs = true, -- Automatically evaluate flake inputs
+                },
+                -- You can add nixPath if needed
+                -- nixPath = { "nixpkgs=flake:nixpkgs" },
               },
             },
           },
