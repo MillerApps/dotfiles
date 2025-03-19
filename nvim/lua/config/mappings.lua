@@ -78,3 +78,10 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
+
+-- save file
+map('n', '<C-s>', '<cmd>w<cr>')
+-- save and quit
+map('n', '<C-x>', '<cmd>x<cr>')
+-- Quit all
+map('n', '<C-q>', '<cmd>qa<cr>')
