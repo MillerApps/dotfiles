@@ -5,7 +5,7 @@
     SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
     dock = {
       persistent-apps = [
-        "/Applications/Zen Browser.app"
+        "/Applications/Zen.app"
         "/Applications/Signal.app"
         "/Applications/Ghostty.app"
         "/Applications/Obsidian.app"
