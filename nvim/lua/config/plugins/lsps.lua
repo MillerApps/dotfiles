@@ -116,6 +116,9 @@ return {
           'rust-analyzer',
           'lua-language-server',
           'stylua', -- e.g. for Lua formatting
+          'gopls', -- e.g. for Go
+          'bash-language-server', -- e.g. for Bash
+          'markdown-oxide', -- e.g. for Markdown
         },
         auto_update = false,
         run_on_start = true,
