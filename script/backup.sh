@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # setup backup_directory path
 BASE_BACKUP_DIR=~/dotfiles
