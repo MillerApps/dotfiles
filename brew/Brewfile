@@ -14,6 +14,8 @@ brew "ffmpeg"
 brew "gowall"
 # Mac App Store command-line interface
 brew "mas"
+# Manage multiple Node.js versions
+brew "nvm"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
 brew "otree"
 # Prints a steam locomotive if you type sl instead of ls
@@ -68,6 +70,8 @@ cask "font-monaspace-nerd-font"
 cask "font-roboto-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Free and open-source image editor
+cask "gimp"
 # Keyboard shortcuts for every button on your screen
 cask "homerow"
 # Free and open-source media player
@@ -76,6 +80,8 @@ cask "iina"
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+# Open-source keystroke visualiser
+cask "keycastr"
 # GPU-based terminal emulator
 cask "kitty"
 # Application launcher
@@ -125,5 +131,6 @@ mas "Infuse", id: 1136220934
 mas "Ivory", id: 6444602274
 mas "Keka", id: 470158793
 mas "Keynote", id: 409183694
+mas "Paste", id: 967805235
 mas "Pixelmator Pro", id: 1289583905
 mas "Xcode", id: 497799835
