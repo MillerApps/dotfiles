@@ -48,6 +48,8 @@ cask "bettermouse"
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Tool to remove unnecessary files and folders from disk
+cask "cleanmymac"
 # Screen capturing tool
 cask "cleanshot"
 # Server and cloud storage browser
