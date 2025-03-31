@@ -98,7 +98,7 @@
         # Keyboard shortcuts for every button on your screen
         "homerow"
         # Tiling window manager
-        "aerospace"
+        # "aerospace"
       ];
     };
   };
