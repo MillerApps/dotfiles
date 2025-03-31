@@ -4,6 +4,8 @@ tap "homebrew/services"
 tap "nikitabobko/tap"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Command-line DNS Client for Humans
+brew "doggo"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
@@ -100,6 +102,8 @@ cask "mullvadvpn"
 cask "obsidian"
 # Get up and running with large language models locally
 cask "ollama"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
 # WebKit based web browser
 cask "orion"
 # Client for Proton Drive
