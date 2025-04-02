@@ -34,8 +34,6 @@ brew "tabiew"
 brew "viu"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
 # AirPods companion app
 cask "airbuddy"
 # Menu bar tool to limit maximum charging percentage
@@ -90,8 +88,6 @@ cask "jordanbaird-ice"
 cask "karabiner-elements"
 # Open-source keystroke visualiser
 cask "keycastr"
-# Application launcher
-cask "leader-key"
 # Custom Discord client
 cask "legcord"
 # Tool to control external monitor brightness & volume
