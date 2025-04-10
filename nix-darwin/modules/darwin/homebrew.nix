@@ -75,8 +75,8 @@
         "obsidian"
         # Client for Proton Drive
         "proton-drive"
-        # Client for Proton Mail and Proton Calendar
-        "proton-mail"
+        # Bridge for Proton Mail
+        "proton-bridge"
         # Desktop client for Proton Pass
         "proton-pass"
         # VPN client focusing on security
