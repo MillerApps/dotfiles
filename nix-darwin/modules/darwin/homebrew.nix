@@ -76,7 +76,7 @@
         # Client for Proton Drive
         "proton-drive"
         # Bridge for Proton Mail
-        "proton-bridge"
+        "proton-mail-bridge"
         # Desktop client for Proton Pass
         "proton-pass"
         # VPN client focusing on security
