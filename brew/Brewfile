@@ -104,8 +104,8 @@ cask "onyx"
 cask "orion"
 # Client for Proton Drive
 cask "proton-drive"
-# Client for Proton Mail and Proton Calendar
-cask "proton-mail"
+# Bridges Proton Mail to email clients supporting IMAP and SMTP protocols
+cask "proton-mail-bridge"
 # Desktop client for Proton Pass
 cask "proton-pass"
 # VPN client focusing on security
@@ -120,8 +120,12 @@ cask "signal"
 cask "stats"
 # Mesh VPN based on WireGuard
 cask "tailscale"
+# Customizable email client
+cask "thunderbird"
 # Web browser focusing on security
 cask "tor-browser"
+# Wine wrapper built with SwiftUI
+cask "whisky"
 # Multiplayer code editor
 cask "zed"
 # Gecko based web browser
