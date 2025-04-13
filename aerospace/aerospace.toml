@@ -152,6 +152,11 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
+if.app-id                       = 'app.zen-browser.zen'
+if.window-title-regex-substring = 'Picture-in-Picture'
+run                             = ['layout floating', 'move-node-to-workspace 3']
+
+[[on-window-detected]]
 if.app-id = 'org.whispersystems.signal-desktop'
 run = ['layout floating', 'move-node-to-workspace 3' ]
 
