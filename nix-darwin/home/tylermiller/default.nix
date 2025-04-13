@@ -79,6 +79,10 @@ in {
         echo "Linking nvim config"
         run mkdir -p ~/.config/nvim
         run ln -sf ~/dotfiles/nvim/* ~/.config/nvim/
+
+        echo "linking aerospace config"
+        run mkdir -p ~/.config/aerospace
+        run ln -sf ~/dotfiles/aerospace/* ~/.config/aerospace/
       '';
     };
   };

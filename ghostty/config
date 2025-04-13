@@ -34,7 +34,7 @@ custom-shader = shaders/cubes.glsl
 
 
 # MacOS
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 macos-window-shadow = false
 macos-option-as-alt = true
 # Deletion
