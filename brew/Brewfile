@@ -34,6 +34,8 @@ brew "tabiew"
 brew "viu"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
 # AirPods companion app
 cask "airbuddy"
 # Menu bar tool to limit maximum charging percentage
@@ -130,3 +132,17 @@ cask "whisky"
 cask "zed"
 # Gecko based web browser
 cask "zen-browser"
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
+mas "Calcbot", id: 931657367
+mas "Dark Reader for Safari", id: 1438243180
+mas "ExcalidrawZ", id: 6636493997
+mas "Final Cut Pro", id: 424389933
+mas "Infuse", id: 1136220934
+mas "Ivory", id: 6444602274
+mas "Keka", id: 470158793
+mas "Keynote", id: 409183694
+mas "Paste", id: 967805235
+mas "Pixelmator Pro", id: 1289583905
+mas "Xcode", id: 497799835
