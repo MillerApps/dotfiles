@@ -14,6 +14,7 @@
       persistent-others = [
         # From what i saw on https://mynixos.com/nix-darwin/option/system.defaults.dock.persistent-others
         # this should not be Necessary ~/Downloads/ should work but nope
+        "/Users/tylermiller/Applications/"
         "/Users/tylermiller/Downloads/"
       ];
       show-recents = false;
