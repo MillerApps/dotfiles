@@ -1,4 +1,7 @@
 {config, ...}: {
+  # Set the primary user
+  # https://github.com/nix-darwin/nix-darwin/blob/b9e580c1130307c3aee715956a11824c0d8cdc5e/CHANGELOG#L1
+  system.primaryUser = "tylermiller";
   # MacOS settings
   security.pam.services.sudo_local.touchIdAuth = true;
   system.defaults = {
