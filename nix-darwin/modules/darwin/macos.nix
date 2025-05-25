@@ -91,10 +91,10 @@
 
   system.activationScripts.postActivation.text = ''
     # Following line should allow us to avoid a logout/login cycle
-    /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+    sudo -u tylermiller /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
     # Get the absolute path to the image
-    IMAGE_PATH="$HOME/dotfiles/wallpaper/Desktop.png"
+    IMAGE_PATH="Users/tylermiller/dotfiles/wallpaper/Desktop.png"
     echo "Setting desktop background to image at: $IMAGE_PATH"
 
     # AppleScript command to set the desktop background
