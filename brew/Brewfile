@@ -95,7 +95,7 @@ cask "legcord"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # VPN client
-cask "mullvadvpn"
+cask "mullvad-vpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Get up and running with large language models locally
