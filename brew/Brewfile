@@ -63,7 +63,7 @@ cask "cyberduck"
 # Virtual monitor for screen sharing
 cask "deskpad"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Downloads videos from different websites
 cask "downie"
 # Productivity app
@@ -99,7 +99,7 @@ cask "mullvad-vpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Get up and running with large language models locally
-cask "ollama"
+cask "ollama-app"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # WebKit based web browser
@@ -121,7 +121,7 @@ cask "signal"
 # System monitor for the menu bar
 cask "stats"
 # Mesh VPN based on WireGuard
-cask "tailscale"
+cask "tailscale-app"
 # Customizable email client
 cask "thunderbird"
 # Web browser focusing on security
