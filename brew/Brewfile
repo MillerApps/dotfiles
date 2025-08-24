@@ -74,7 +74,7 @@ cask "ente"
 cask "ente-auth"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
-cask "font-monaspace-nerd-font"
+cask "font-monaspice-nerd-font"
 cask "font-roboto-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
@@ -150,4 +150,5 @@ mas "Pages", id: 409201541
 mas "Paste", id: 967805235
 mas "Pixelmator Pro", id: 1289583905
 mas "Prime Video", id: 545519333
+mas "Proton Pass for Safari", id: 6502835663
 mas "Xcode", id: 497799835
