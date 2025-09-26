@@ -4,7 +4,7 @@ font-size = 20
 window-title-font-family = 'MonaspiceKr Nerd Font Mono'
 
 # Themeing
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 background-opacity = 0.8
 # Icon
 macos-icon = xray
