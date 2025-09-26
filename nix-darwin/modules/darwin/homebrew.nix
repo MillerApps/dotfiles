@@ -70,7 +70,7 @@
         # Tool to control external monitor brightness & volume
         "monitorcontrol"
         # VPN client
-        "mullvadvpn"
+        "mullvad-vpn"
         # Knowledge base that works on top of a local folder of plain text Markdown files
         "obsidian"
         # Client for Proton Drive
@@ -88,13 +88,13 @@
         # System monitor for the menu bar
         "stats"
         # Mesh VPN based on WireGuard
-        "tailscale"
+        "tailscale-app"
         # Web browser focusing on security
         "tor-browser"
         # Multiplayer code editor
         "zed"
         # Gecko based web browser
-        "zen-browser"
+        "zen"
         # Keyboard shortcuts for every button on your screen
         "homerow"
         # Tiling window manager
