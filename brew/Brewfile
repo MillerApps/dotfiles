@@ -126,6 +126,8 @@ cask "tailscale-app"
 cask "thunderbird"
 # Web browser focusing on security
 cask "tor-browser"
+# Open-source BitTorrent client
+cask "transmission"
 # Wine wrapper built with SwiftUI
 cask "whisky"
 # Multiplayer code editor
