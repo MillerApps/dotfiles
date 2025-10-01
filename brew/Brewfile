@@ -32,6 +32,8 @@ brew "superfile"
 brew "tabiew"
 # Simple terminal image viewer written in Rust
 brew "viu"
+# Library to create, extract, and modify Windows Imaging files
+brew "wimlib"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
 # AeroSpace is an i3-like tiling window manager for macOS
