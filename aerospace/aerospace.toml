@@ -151,14 +151,14 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-[[on-window-detected]]
-if.app-id                       = 'app.zen-browser.zen'
-if.window-title-regex-substring = 'Picture-in-Picture'
-run                             = ['layout floating', 'move-node-to-workspace 3']
+# [[on-window-detected]]
+# if.app-id                       = 'app.zen-browser.zen'
+# if.window-title-regex-substring = 'Picture-in-Picture'
+# run                             = ['layout floating', 'move-node-to-workspace 2']
 
-[[on-window-detected]]
-if.app-id = 'org.whispersystems.signal-desktop'
-run = ['layout floating', 'move-node-to-workspace 3' ]
+# [[on-window-detected]]
+# if.app-id = 'org.whispersystems.signal-desktop'
+# run = ['layout floating', 'move-node-to-workspace 2' ]
 
 [[on-window-detected]]
 # FIX: this is a workaround for https://github.com/nikitabobko/AeroSpace/issues/68
@@ -172,4 +172,4 @@ run = 'move-node-to-workspace 1'
 [workspace-to-monitor-force-assignment]
 1 = 'Studio Display'
 2 = 'Built-in Retina Display'
-3 = 'LG HDR 4K'
+# 3 = 'LG HDR 4K'
