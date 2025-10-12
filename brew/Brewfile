@@ -6,6 +6,8 @@ tap "nikitabobko/tap"
 brew "cowsay"
 # Command-line DNS Client for Humans
 brew "doggo"
+# Utility for exporting data from Ente and decrypt the export from Ente Auth
+brew "ente-cli"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
