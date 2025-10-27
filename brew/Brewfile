@@ -64,6 +64,8 @@ cask "cleanmymac"
 cask "cleanshot"
 # Server and cloud storage browser
 cask "cyberduck"
+# Convert potentially dangerous PDFs or Office documents into safe PDFs
+cask "dangerzone"
 # Virtual monitor for screen sharing
 cask "deskpad"
 # App to build and share containerised applications and microservices
