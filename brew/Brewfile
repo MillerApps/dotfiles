@@ -143,20 +143,12 @@ cask "zen"
 mas "Affinity Designer 2", id: 1616831348
 mas "Affinity Photo 2", id: 1616822987
 mas "Affinity Publisher 2", id: 1606941598
-mas "Calcbot", id: 931657367
 mas "Dark Reader for Safari", id: 1438243180
 mas "ExcalidrawZ", id: 6636493997
-mas "Final Cut Pro", id: 424389933
 mas "Folder Preview", id: 6698876601
 mas "Infuse", id: 1136220934
 mas "Ivory", id: 6444602274
-mas "Keka", id: 470158793
-mas "Keynote", id: 409183694
 mas "Markdown Preview", id: 6739955340
 mas "Messenger", id: 1480068668
-mas "Pages", id: 409201541
-mas "Paste", id: 967805235
 mas "Pixelmator Pro", id: 1289583905
-mas "Prime Video", id: 545519333
 mas "Proton Pass for Safari", id: 6502835663
-mas "Xcode", id: 497799835
