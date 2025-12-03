@@ -48,6 +48,8 @@ cask "aldente"
 cask "alt-tab"
 # Application uninstaller
 cask "appcleaner"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # 3D model slicing software for 3D printers, maintained by Bambu Lab
 cask "bambu-studio"
 # Graphical configurator for Dygma Raise keyboards
