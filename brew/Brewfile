@@ -60,8 +60,6 @@ cask "bettermouse"
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
-# Tool to remove unnecessary files and folders from disk
-cask "cleanmymac"
 # Screen capturing tool
 cask "cleanshot"
 # Server and cloud storage browser
@@ -136,6 +134,8 @@ cask "thunderbird"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
+# Virtual machines UI using QEMU
+cask "utm"
 # Wine wrapper built with SwiftUI
 cask "whisky"
 # Multiplayer code editor
