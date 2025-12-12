@@ -1,3 +1,4 @@
+tap "deskflow/tap"
 tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/services"
@@ -66,6 +67,8 @@ cask "cleanshot"
 cask "cyberduck"
 # Convert potentially dangerous PDFs or Office documents into safe PDFs
 cask "dangerzone"
+# Mouse and keyboard sharing utility
+cask "deskflow"
 # Virtual monitor for screen sharing
 cask "deskpad"
 # App to build and share containerised applications and microservices
