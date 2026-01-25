@@ -19,6 +19,8 @@ brew "ffmpeg"
 brew "gowall"
 # Mac App Store command-line interface
 brew "mas"
+# Deep clean and optimize your Mac
+brew "mole"
 # Manage multiple Node.js versions
 brew "nvm"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
