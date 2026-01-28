@@ -158,7 +158,11 @@ run                             = ['layout floating', 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'org.whispersystems.signal-desktop'
-run = ['layout floating', 'move-node-to-workspace 3' ]
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'ru.keepcoder.Telegram'
+run = 'layout floating'
 
 [[on-window-detected]]
 # FIX: this is a workaround for https://github.com/nikitabobko/AeroSpace/issues/68
