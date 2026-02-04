@@ -21,6 +21,8 @@ brew "gowall"
 brew "mas"
 # Deep clean and optimize your Mac
 brew "mole"
+# Port scanning utility for large networks
+brew "nmap"
 # Manage multiple Node.js versions
 brew "nvm"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
@@ -67,6 +69,8 @@ cask "claude"
 cask "claude-code"
 # Screen capturing tool
 cask "cleanshot"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Server and cloud storage browser
 cask "cyberduck"
 # Convert potentially dangerous PDFs or Office documents into safe PDFs
@@ -163,3 +167,4 @@ mas "Markdown Preview", id: 6739955340
 mas "Messenger", id: 1480068668
 mas "Pixelmator Pro", id: 1289583905
 mas "Proton Pass for Safari", id: 6502835663
+mas "Termius", id: 1176074088
