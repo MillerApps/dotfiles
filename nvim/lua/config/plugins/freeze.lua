@@ -1,5 +1,8 @@
 return {
   'charm-and-friends/freeze.nvim',
+  keys = {
+    { '<leader>fc', '<cmd>Freeze<cr>', mode = 'v', desc = 'Code image with Freeze' },
+  },
   config = function()
     require('freeze').setup {
       command = 'freeze',
@@ -10,5 +13,4 @@ return {
       theme = 'catppuccin-mocha',
     }
   end,
-  vim.keymap.set('v', '<leader>fc', '<cmd>Freeze<cr>', { desc = 'Code imagewith Freeze' }),
 }

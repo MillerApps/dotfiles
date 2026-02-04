@@ -19,7 +19,7 @@ return {
       { 'j-hui/fidget.nvim', opts = {} },
 
       -- Improved support for setting up Lua development in Neovim configs
-      { 'folke/neodev.nvim', opts = {} },
+      { 'folke/lazydev.nvim', ft = 'lua', opts = {} },
     },
     config = function()
       ----------------------------------------------------------------------------
@@ -64,27 +64,29 @@ return {
       ----------------------------------------------------------------------------
       local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+      -- Set default capabilities for all servers
+      vim.lsp.config('*', { capabilities = capabilities })
+
       ----------------------------------------------------------------------------
       --  Servers to Enable / Configure
       ----------------------------------------------------------------------------
+      -- Mason-managed servers are auto-enabled by mason-lspconfig.
+      -- External servers are enabled manually below.
       local servers = {
-        -- Rust
         rust_analyzer = {},
-        -- SourceKit (Swift)
-        require('lspconfig').sourcekit.setup {
-          cmd = { '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp' },
-        },
-        -- Lua
         lua_ls = {
           settings = {
             Lua = {
               completion = { callSnippet = 'Replace' },
-              -- diagnostics = { disable = { 'missing-fields' } },
             },
           },
         },
-        -- Nix LSP using nil instead of nixd
-        require('lspconfig').nil_ls.setup {
+        -- SourceKit (Swift) — installed via Xcode, not Mason
+        sourcekit = {
+          cmd = { '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp' },
+        },
+        -- Nix LSP — installed via nix, not Mason
+        nil_ls = {
           cmd = { 'nil' },
           settings = {
             ['nil'] = {
@@ -93,49 +95,49 @@ return {
               },
               nix = {
                 flake = {
-                  autoEvalInputs = true, -- Automatically evaluate flake inputs
+                  autoEvalInputs = true,
                 },
-                -- You can add nixPath if needed
-                -- nixPath = { "nixpkgs=flake:nixpkgs" },
               },
             },
           },
         },
       }
 
+      local external_servers = { 'sourcekit', 'nil_ls' }
+
+      -- Apply per-server config via vim.lsp.config (merges with lsp/ defaults)
+      for name, config in pairs(servers) do
+        vim.lsp.config(name, config)
+      end
+
       ----------------------------------------------------------------------------
       --  Mason Setup
       ----------------------------------------------------------------------------
       require('mason').setup()
 
-      -- Install the servers above (plus any extra tools you want)
       require('mason-tool-installer').setup {
         ensure_installed = {
-          -- These names match the Mason package names, so adjust as needed:
-          -- 'rust-analyzer', 'lua-language-server', etc.
           'rust-analyzer',
           'lua-language-server',
-          'stylua', -- e.g. for Lua formatting
-          'gopls', -- e.g. for Go
-          'bash-language-server', -- e.g. for Bash
-          'markdown-oxide', -- e.g. for Markdown
+          'stylua',
+          'gopls',
+          'bash-language-server',
+          'markdown-oxide',
         },
         auto_update = false,
         run_on_start = true,
       }
 
+      -- mason-lspconfig installs servers; automatic_enable (default: true)
+      -- calls vim.lsp.enable() for each installed mason server.
       require('mason-lspconfig').setup {
-        -- Make sure these server names match the table keys in `servers`
-        ensure_installed = vim.tbl_keys(servers),
-
-        handlers = {
-          function(server_name)
-            local server = servers[server_name] or {}
-            server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-            require('lspconfig')[server_name].setup(server)
-          end,
-        },
+        ensure_installed = { 'rust_analyzer', 'lua_ls' },
       }
+
+      -- Enable servers installed outside of Mason
+      for _, name in ipairs(external_servers) do
+        vim.lsp.enable(name)
+      end
     end,
   },
 }

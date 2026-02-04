@@ -7,6 +7,7 @@ return {
       require('catppuccin').setup {
         integrations = {
           barbar = true,
+          blink_cmp = true,
         },
       }
       vim.cmd.colorscheme 'catppuccin'

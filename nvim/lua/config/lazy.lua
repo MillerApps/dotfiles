@@ -4,11 +4,13 @@
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim
 --------------------------------------------------------------------------------
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
-if not vim.loop.fs_stat(lazypath) then
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
   vim.fn.system { 'git', 'clone', '--filter=blob:none', '--branch=stable', lazyrepo, lazypath }
 end
 vim.opt.rtp:prepend(lazypath)
+
+vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { noremap = true, silent = true })
 
 --------------------------------------------------------------------------------
 --  Configure and Install Plugins via Lazy
@@ -23,8 +25,4 @@ require('lazy').setup {
   -- Import Custom Plugins from 'lua/custom/plugins/*.lua'
   --------------------------------------------------------------------------------
   { import = 'config.plugins' },
-  --------------------------------------------------------------------------------
-  -- set keybindings
-  --------------------------------------------------------------------------------
-  vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { noremap = true, silent = true }),
 }
