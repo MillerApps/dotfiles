@@ -1,3 +1,4 @@
+tap "charmbracelet/tap"
 tap "deskflow/tap"
 tap "felixkratz/formulae"
 tap "homebrew/bundle"
@@ -41,6 +42,8 @@ brew "tabiew"
 brew "viu"
 # Library to create, extract, and modify Windows Imaging files
 brew "wimlib"
+# A powerful terminal-based AI assistant for developers, providing intelligent coding assistance directly in your terminal.
+brew "charmbracelet/tap/crush"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
 # AeroSpace is an i3-like tiling window manager for macOS
@@ -167,4 +170,4 @@ mas "Markdown Preview", id: 6739955340
 mas "Messenger", id: 1480068668
 mas "Pixelmator Pro", id: 1289583905
 mas "Proton Pass for Safari", id: 6502835663
-mas "Termius", id: 1176074088
+mas "Termix", id: 6752672071
