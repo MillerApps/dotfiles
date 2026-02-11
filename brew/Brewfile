@@ -88,6 +88,8 @@ cask "docker-desktop"
 cask "downie"
 # Productivity app
 cask "dropzone"
+# Matrix collaboration client
+cask "element"
 # Desktop client for Ente Photos
 cask "ente"
 # Desktop client for Ente Auth
@@ -170,6 +172,7 @@ mas "Infuse", id: 1136220934
 mas "Ivory", id: 6444602274
 mas "Markdown Preview", id: 6739955340
 mas "Messenger", id: 1480068668
+mas "Paperparrot", id: 1663665267
 mas "Pixelmator Pro", id: 1289583905
 mas "Proton Pass for Safari", id: 6502835663
 mas "Termix", id: 6752672071
