@@ -4,8 +4,13 @@ tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikitabobko/tap"
+tap "steipete/tap"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Command-line DNS Client for Humans
 brew "doggo"
 # Utility for exporting data from Ente and decrypt the export from Ente Auth
@@ -46,6 +51,10 @@ brew "wimlib"
 brew "charmbracelet/tap/crush"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
+# Grep the GIF. Stick the landing
+brew "steipete/tap/gifgrep"
+# Privacy-focused app for managing your finances
+cask "actual"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "aerospace"
 # AirPods companion app
@@ -82,8 +91,6 @@ cask "dangerzone"
 cask "deskflow"
 # Virtual monitor for screen sharing
 cask "deskpad"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
 # Downloads videos from different websites
 cask "downie"
 # Productivity app
