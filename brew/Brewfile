@@ -127,6 +127,8 @@ cask "localsend"
 cask "monitorcontrol"
 # VPN client
 cask "mullvad-vpn"
+# Free and open-source RSS reader
+cask "netnewswire"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Get up and running with large language models locally
@@ -180,7 +182,6 @@ mas "Folder Preview", id: 6698876601
 mas "Infuse", id: 1136220934
 mas "Ivory", id: 6444602274
 mas "Markdown Preview", id: 6739955340
-mas "Messenger", id: 1480068668
 mas "Paperparrot", id: 1663665267
 mas "Pixelmator Pro", id: 1289583905
 mas "Proton Pass for Safari", id: 6502835663
