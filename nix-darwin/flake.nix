@@ -27,10 +27,6 @@
 
     nix-homebrew = {
       url = "github:zhaofengli/nix-homebrew";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        nix-darwin.follows = "nix-darwin";
-      };
     };
 
     spicetify-nix = {
