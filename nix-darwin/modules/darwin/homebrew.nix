@@ -59,7 +59,7 @@
         "ente-auth"
         "font-jetbrains-mono-nerd-font"
         "font-meslo-lg-nerd-font"
-        "font-monaspace-nerd-font"
+        "font-monaspice-nerd-font"
         "font-roboto-mono-nerd-font"
         # Free and open-source media player
         "iina"
