@@ -12,6 +12,7 @@
     stateVersion = 5;
   };
 
+
   environment.variables = {
     # set paths for powerlevel10k & oh-my-zsh
     OH_MY_ZSH = "${pkgs.oh-my-zsh}/share/oh-my-zsh";
