@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikitabobko/tap"
 tap "steipete/tap"
+tap "surge-downloader/tap"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Apjanke's fork of the classic cowsay project
@@ -43,6 +44,8 @@ brew "sniffnet"
 brew "superfile"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
+# General purpose fuzzy finder TUI
+brew "television"
 # Simple terminal image viewer written in Rust
 brew "viu"
 # Library to create, extract, and modify Windows Imaging files
@@ -155,6 +158,8 @@ cask "rustdesk"
 cask "signal"
 # System monitor for the menu bar
 cask "stats"
+# Blazing fast TUI download manager built in Go for power users
+cask "surge"
 # Real time file synchronisation software
 cask "syncthing-app"
 # Mesh VPN based on WireGuard
