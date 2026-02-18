@@ -2,16 +2,16 @@
   programs = {
     git = {
       enable = true;
-      userName = "MillerApps";
-      userEmail = "tylermiller4.github@proton.me";
-      ignores = [
-        ".DS_Store"
-      ];
-      extraConfig = {
+      settings = {
+        user.name = "MillerApps";
+        user.email = "tylermiller4.github@proton.me";
         pull = {
           rebase = true;
         };
       };
+      ignores = [
+        ".DS_Store"
+      ];
     };
     gh = {
       enable = true;
