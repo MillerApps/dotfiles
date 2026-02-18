@@ -12,6 +12,7 @@ jobs:
     - uses: actions/checkout@v4
     - uses: DeterminateSystems/nix-installer-action@main
       with:
+        determinate: false
         source-url: https://install.lix.systems/lix/lix-installer-aarch64-darwin
     - uses: DeterminateSystems/magic-nix-cache-action@main
     - name: Build Darwin Configuration
