@@ -55,6 +55,17 @@ in {
       ".config/zellij".source = self + "/../zellij";
     };
     activation = {
+      # Home Manager refuses to clobber existing symlinks. Our custom
+      # nvim linker creates ~/.config/nvim/init.lua as a symlink, which
+      # collides with the HM-managed init.lua during checkLinkTargets.
+      # Remove it pre-check so activation can proceed, then relink later.
+      removeNvimInitSymlink = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
+        target="$HOME/.config/nvim/init.lua"
+        if [ -L "$target" ]; then
+          run rm -f "$target"
+        fi
+      '';
+
       # This ensures our script runs at the right time:
       # - 'dag' helps control the order of operations
       # - 'entryAfter' means "run after the specified phase"
@@ -75,7 +86,7 @@ in {
       # - Avoids direct Nix store linking which would make the config immutable ie. '".config/nvim".source = self + "/../nvim";'
       # - Allows for dynamic updates to neovim configuration
 
-      linkNvimConfig = lib.hm.dag.entryAfter ["writeBoundary"] ''
+      linkNvimConfig = lib.hm.dag.entryAfter ["linkGeneration"] ''
         echo "Linking nvim config"
         run mkdir -p ~/.config/nvim
         run ln -sf ~/dotfiles/nvim/* ~/.config/nvim/
