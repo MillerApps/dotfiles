@@ -14,7 +14,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Lix
-        uses: DeterminateSystems/nix-installer-action@main
+        run: |
+          curl -sSf -L https://install.lix.systems/lix | sh -s -- install
+          echo "/nix/var/nix/profiles/default/bin" >> $GITHUB_PATH
 
       - name: Update Lockfile
         working-directory: ./nix-darwin # Ensure correct directory
