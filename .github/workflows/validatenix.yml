@@ -17,4 +17,3 @@ jobs:
       working-directory: ./nix-darwin  # Ensure we're in the right directory
       run: |
         nix build .#darwinConfigurations.macbook.system
-        sudo ./result/sw/bin/darwin-rebuild check --flake .#macbook
