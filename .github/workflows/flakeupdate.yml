@@ -13,11 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Lix
-        uses: DeterminateSystems/nix-installer-action@main
-        with:
-          determinate: false
-          source-url: https://install.lix.systems/lix/lix-installer-x86_64-linux
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@95f009f8cba987d36d7e3396d29de81b2883654a
 
       - name: Update Lockfile
         working-directory: ./nix-darwin # Ensure correct directory
