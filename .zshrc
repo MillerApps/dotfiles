@@ -127,3 +127,6 @@ export NVM_DIR="$HOME/.nvm"
 # Add GO/bin to PATH
 export PATH="$HOME/go/bin:$PATH"
 
+# simple workaround for editing files over ssh with nvim
+alias sshedit='_f() { local f="/tmp/ssh-$(date +%s)-$(basename "$1")"; scp "$1" "$f" && nvim "$f" && scp "$f" "$1" && rm "$f"; }; _f'
+
