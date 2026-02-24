@@ -165,6 +165,10 @@ if.app-id = 'ru.keepcoder.Telegram'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
 # FIX: this is a workaround for https://github.com/nikitabobko/AeroSpace/issues/68
 # this was also observed in:
 # - https://github.com/ghostty-org/ghostty/issues/1840
