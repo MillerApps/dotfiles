@@ -125,6 +125,8 @@ cask "jordanbaird-ice"
 cask "karabiner-elements"
 # Open-source keystroke visualiser
 cask "keycastr"
+# Utility that shows the latest app updates
+cask "latest"
 # Custom Discord client
 cask "legcord"
 # Open-source cross-platform alternative to AirDrop
