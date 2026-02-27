@@ -89,6 +89,8 @@ cask "claude-code"
 cask "cleanshot"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# Menu bar usage monitor for Codex and Claude
+cask "steipete/tap/codexbar"
 # Server and cloud storage browser
 cask "cyberduck"
 # Convert potentially dangerous PDFs or Office documents into safe PDFs
@@ -157,6 +159,8 @@ cask "proton-mail-bridge"
 cask "proton-pass"
 # VPN client focusing on security
 cask "protonvpn"
+# HTTP debugging proxy
+cask "proxyman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Open source virtual/remote desktop application
