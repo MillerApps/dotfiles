@@ -46,7 +46,7 @@
                 _CFURLString = "file:///Applications/";
                 _CFURLStringType = 15;
               };
-              displayas = 1;
+              displayas = 2;
               showas = 2;
             };
             tile-type = "directory-tile";
@@ -58,7 +58,7 @@
                 _CFURLStringType = 15;
               };
               arrangement = 2;
-              displayas = 1;
+              displayas = 2;
               showas = 2;
             };
             tile-type = "directory-tile";
