@@ -14,12 +14,6 @@
         "/Applications/Obsidian.app"
       ];
       minimize-to-application = true;
-      persistent-others = [
-        # From what i saw on https://mynixos.com/nix-darwin/option/system.defaults.dock.persistent-others
-        # this should not be Necessary ~/Downloads/ should work but nope
-        "/Applications/"
-        "/Users/tylermiller/Downloads/"
-      ];
       show-recents = false;
       tilesize = 50;
     };
@@ -44,6 +38,33 @@
     WindowManager.EnableStandardClickToShowDesktop = false;
 
     CustomUserPreferences = {
+      "com.apple.dock" = {
+        persistent-others = [
+          {
+            tile-data = {
+              file-data = {
+                _CFURLString = "file:///Applications/";
+                _CFURLStringType = 15;
+              };
+              displayas = 1;
+              showas = 2;
+            };
+            tile-type = "directory-tile";
+          }
+          {
+            tile-data = {
+              file-data = {
+                _CFURLString = "file:///Users/tylermiller/Downloads/";
+                _CFURLStringType = 15;
+              };
+              arrangement = 2;
+              displayas = 1;
+              showas = 2;
+            };
+            tile-type = "directory-tile";
+          }
+        ];
+      };
       "com.apple.finder" = {
         # Set home directory as startup window
         NewWindowTargetPath = "file:///Users/${config.users.users.tylermiller.name}/";
