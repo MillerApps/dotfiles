@@ -48,6 +48,9 @@ export VISUAL=nvim; export EDITOR="$VISUAL"
 # Note: Add GO/bin to PATH
 export PATH="$HOME/go/bin:$PATH"
 
+# Add Proton pass cli to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # Section: Tool Initialization
 # Note: ---- FZF -----
 
