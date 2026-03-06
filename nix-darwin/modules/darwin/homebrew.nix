@@ -19,6 +19,14 @@
         "tabiew"
         "otree"
         "borders"
+        "opencode"
+        "ripgrep"
+        "fd"
+        "colima"
+        "docker"
+        "gowall"
+        "taproom"
+        "namp"
       ];
       taps = [
         "FelixKratz/formulae"
