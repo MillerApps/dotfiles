@@ -50,6 +50,8 @@ brew "superfile"
 brew "tabiew"
 # General purpose fuzzy finder TUI
 brew "television"
+# Simplified and community-driven man pages
+brew "tldr"
 # Simple terminal image viewer written in Rust
 brew "viu"
 # Library to create, extract, and modify Windows Imaging files
