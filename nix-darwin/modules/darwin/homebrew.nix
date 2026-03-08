@@ -26,7 +26,7 @@
         "docker"
         "gowall"
         "taproom"
-        "namp"
+        "nmap"
       ];
       taps = [
         "FelixKratz/formulae"
