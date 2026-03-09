@@ -40,6 +40,8 @@ brew "otree"
 brew "pngquant"
 # Terminal slideshow tool
 brew "presenterm"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Cross-platform application to monitor your network traffic
