@@ -8,6 +8,7 @@ tap "homebrew/services"
 tap "nikitabobko/tap"
 tap "steipete/tap"
 tap "surge-downloader/tap"
+tap "theboredteam/boring-notch"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Apjanke's fork of the classic cowsay project
@@ -88,6 +89,8 @@ cask "bambu-studio"
 cask "bazecor"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
+# Not so boring notch That Rocks 🎸🎶 
+cask "theboredteam/boring-notch/boring-notch"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
