@@ -64,14 +64,14 @@
       "locked": {
         "lastModified": 1773787887,
         "narHash": "sha256-ydbtn6Cf/8v3U85lIRCAOeGimIwrmMk4pINVGWcUTvU=",
-        "ref": "refs/heads/test",
+        "owner": "millerapps",
+        "repo": "nix-homebrew",
         "rev": "931d0c2c08e69503b83f3871dafa1f0db631a4fa",
-        "revCount": 123,
-        "type": "git",
-        "url": "file:///Users/tylermiller/Devloper/nix-homebrew"
+        "type": "github"
       },
       "original": {
         "owner": "millerapps",
+        "ref": "test",
         "repo": "nix-homebrew",
         "type": "github"
       }
