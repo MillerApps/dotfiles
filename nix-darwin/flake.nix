@@ -26,7 +26,7 @@
     };
 
     nix-homebrew = {
-      url = "github:zhaofengli/nix-homebrew";
+      url = "github:millerapps/nix-homebrew";
     };
 
     spicetify-nix = {
