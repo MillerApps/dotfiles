@@ -62,15 +62,17 @@
         "brew-src": "brew-src"
       },
       "locked": {
-        "lastModified": 1773708961,
-        "narHash": "sha256-WddD4wAm+4mvJKSXm9a3VaIO9FLXjlUT5GmeD6T+7Z8=",
-        "owner": "millerapps",
-        "repo": "nix-homebrew",
-        "rev": "a92efd76ad15167e0771192d35e288689f68a265",
-        "type": "github"
+        "lastModified": 1773787887,
+        "narHash": "sha256-ydbtn6Cf/8v3U85lIRCAOeGimIwrmMk4pINVGWcUTvU=",
+        "ref": "refs/heads/test",
+        "rev": "931d0c2c08e69503b83f3871dafa1f0db631a4fa",
+        "revCount": 123,
+        "type": "git",
+        "url": "file:///Users/tylermiller/Devloper/nix-homebrew"
       },
       "original": {
         "owner": "millerapps",
+        "ref": "test",
         "repo": "nix-homebrew",
         "type": "github"
       }
