@@ -72,7 +72,6 @@
       },
       "original": {
         "owner": "millerapps",
-        "ref": "test",
         "repo": "nix-homebrew",
         "type": "github"
       }
