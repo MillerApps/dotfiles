@@ -17,8 +17,6 @@ if [[ $TERM == "xterm-kitty" ]]; then
 EOF
  fi
 # Note: End Kitty Re-center
- set -o vi
-
 # Section: Oh-My-Zsh
 # Note: Path to your oh-my-zsh installation.
 export ZSH=$OH_MY_ZSH
@@ -37,6 +35,9 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Enable vi keybindings after Oh My Zsh sets its defaults.
+bindkey -v
 
 # Section: Environment and Paths
 # Note: Homebrew
