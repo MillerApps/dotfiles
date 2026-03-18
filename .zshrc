@@ -17,6 +17,7 @@ if [[ $TERM == "xterm-kitty" ]]; then
 EOF
  fi
 # Note: End Kitty Re-center
+ set -o vi
 
 # Section: Oh-My-Zsh
 # Note: Path to your oh-my-zsh installation.
