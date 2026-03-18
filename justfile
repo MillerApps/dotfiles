@@ -3,9 +3,14 @@
 # Switch to the current flake configuration
 switch:
     darwin-rebuild switch --flake ~/dotfiles/nix-darwin#macbook
-    
+
+# Install Homebrew if it is missing
+bootstrap-homebrew:
+    nix run "path:{{env_var('HOME')}}/dotfiles/nix-darwin#install-homebrew"
+
 # Bootstrap nix-darwin
 bootstrap:
+	nix run "path:{{env_var('HOME')}}/dotfiles/nix-darwin#install-homebrew"
 	nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
 
 # Clean unused store entries

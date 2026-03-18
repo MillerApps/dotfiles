@@ -1,35 +1,31 @@
-{inputs, ...}: {
-  imports = [inputs.nix-homebrew.darwinModules.nix-homebrew];
-
+{
   config = {
-    # this module allows for the Homebrew module to be declaratively managed
-    nix-homebrew = {
-      enable = true;
-      # User owning the Homebrew prefix
-      user = "tylermiller";
-
-      autoMigrate = true;
-    };
-
     # Homebrew
     homebrew = {
       enable = true;
+      onActivation = {
+        autoUpdate = false;
+        upgrade = false;
+        cleanup = "none";
+      };
       brews = [
         "mas"
         "tabiew"
         "otree"
-        "borders"
+        "FelixKratz/formulae/borders"
         "opencode"
         "ripgrep"
         "fd"
         "colima"
         "docker"
         "gowall"
-        "taproom"
+        "gromgit/brewtils/taproom"
         "nmap"
       ];
       taps = [
         "FelixKratz/formulae"
+        "gromgit/brewtils"
+        "nikitabobko/tap"
       ];
       masApps = {
         "ExcalidrawZ" = 6636493997;
@@ -106,7 +102,7 @@
         # Keyboard shortcuts for every button on your screen
         "homerow"
         # Tiling window manager
-        "aerospace"
+        "nikitabobko/tap/aerospace"
       ];
     };
   };

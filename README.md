@@ -25,7 +25,7 @@ How it works:
 - The Nix package manager is used as the primary way to handle needed clitools, Languages, and apps.
 - Nix-Darwin sets up the system based on the flake.nix and the correlating files in the nix-darwin directory.
 - Nix-Home-Manager hooks into Nix-Darwin to handle the .config files and other .files in the home directory.
-- Homebrew is used to install macOS apps and fonts. This is handled by Nix-Darwin's homebrew module. Homebrew is also installed via [Nix-Homebrew](https://github.com/zhaofengli/nix-homebrew).
+- Homebrew is used to install macOS apps and fonts. This is handled by Nix-Darwin's homebrew module, and a small `nix run` bootstrap command installs Homebrew if it is missing.
 
 > [!NOTE]
 > This is a first round at integrating nix-darwin, nix-home-manager, and homebrew. This is a work in progress and will be updated as I learn more.
@@ -129,6 +129,12 @@ Language Features relevant to this setup:
    xcode-select --install
    ```
 
+   Install Homebrew once if it is not already present:
+   ```sh
+   nix run "path:$HOME/dotfiles/nix-darwin#install-homebrew"
+   ```
+
+4. **Bootstrap nix-darwin**  
    Use the Justfile target for `bootstrap`, or directly run:
    ```sh
    nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix-darwin#macbook
@@ -148,7 +154,8 @@ Language Features relevant to this setup:
 <summary><b>Click to view Justfile commands</b></summary>
 
 - `switch`: Switch to the current flake configuration
-- `bootstrap`: Bootstrap nix-darwin and install Xcode Command Line Tools
+- `bootstrap-homebrew`: Install Homebrew with the flake bootstrap script
+- `bootstrap`: Install Homebrew if needed, then bootstrap nix-darwin
 - `clean`: Remove unused store entries
 - `clean-all`: Remove all unused store entries, including old generations
 - `update`: Update flake inputs
@@ -187,6 +194,8 @@ The nix-darwin directory is structured as follows:
     ├──  darwin
     │   ├──  homebrew.nix
     │   └──  macos.nix
+    ├──  pkgs
+    │   └──  homebrew-bootstrap.nix
     └──  default.nix
 ```
 
@@ -218,6 +227,9 @@ A collection of modular files that define specific aspects of the system or user
   - Sets up Homebrew through nix‐darwin.
   - Declares which Homebrew packages (taps, casks, and even Mac App Store apps) you want installed automatically.
   - By listing them here, nix‐darwin ensures they’re always present, keeps them updated, and so on.
+- `homebrew-bootstrap.nix`
+  - Exposes a `nix run` command for installing Homebrew before the first `darwin-rebuild switch`.
+  - Uses the official Homebrew installer and exits immediately when Homebrew is already present.
 - `macos.nix`
   - Tweaks macOS‐specific settings, such as:
   - Enabling sudo with Touch ID.

@@ -25,17 +25,24 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-homebrew = {
-      url = "github:zhaofengli/nix-homebrew";
-    };
-
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs: {
+  outputs = inputs@{self, nixpkgs, ...}: let
+    systems = [
+      "aarch64-darwin"
+      "x86_64-darwin"
+    ];
+
+    forAllSystems = f:
+      builtins.listToAttrs (map (system: {
+          name = system;
+          value = f system;
+        }) systems);
+  in {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#macbook
     darwinConfigurations."macbook" = inputs.nix-darwin.lib.darwinSystem {
@@ -52,5 +59,20 @@
         })
       ];
     };
+
+    packages = forAllSystems (system: let
+      pkgs = import nixpkgs {inherit system;};
+    in {
+      install-homebrew = pkgs.callPackage ./pkgs/homebrew-bootstrap.nix {};
+      default = self.packages.${system}.install-homebrew;
+    });
+
+    apps = forAllSystems (system: {
+      install-homebrew = {
+        type = "app";
+        program = "${self.packages.${system}.install-homebrew}/bin/install-homebrew";
+      };
+      default = self.apps.${system}.install-homebrew;
+    });
   };
 }
