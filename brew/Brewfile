@@ -3,8 +3,6 @@ tap "charmbracelet/tap"
 tap "deskflow/tap"
 tap "felixkratz/formulae"
 tap "gromgit/brewtils"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "nikitabobko/tap"
 tap "steipete/tap"
 tap "surge-downloader/tap"
@@ -35,14 +33,16 @@ brew "mole"
 brew "nmap"
 # Manage multiple Node.js versions
 brew "nvm"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Command-line tool to view objects (JSON/YAML/TOML) in TUI tree widget
 brew "otree"
 # PNG image optimizing utility
 brew "pngquant"
 # Terminal slideshow tool
 brew "presenterm"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Prints a steam locomotive if you type sl instead of ls
@@ -61,8 +61,6 @@ brew "tldr"
 brew "viu"
 # Library to create, extract, and modify Windows Imaging files
 brew "wimlib"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode"
 # A powerful terminal-based AI assistant for developers, providing intelligent coding assistance directly in your terminal.
 brew "charmbracelet/tap/crush"
 # A window border system for macOS
@@ -205,3 +203,28 @@ cask "wireshark-app"
 cask "zed"
 # Gecko based web browser
 cask "zen"
+mas "Affinity Designer 2", id: 1616831348
+mas "Affinity Photo 2", id: 1616822987
+mas "Affinity Publisher 2", id: 1606941598
+mas "Calcbot", id: 931657367
+mas "Dark Reader for Safari", id: 1438243180
+mas "ExcalidrawZ", id: 6636493997
+mas "Final Cut Pro", id: 424389933
+mas "Folder Preview", id: 6698876601
+mas "Ice Cubes", id: 6444915884
+mas "Infuse", id: 1136220934
+mas "Ivory", id: 6444602274
+mas "Keka", id: 470158793
+mas "Keynote", id: 409183694
+mas "Markdown Preview", id: 6739955340
+mas "Numbers", id: 361304891
+mas "Pages", id: 409201541
+mas "Pages", id: 361309726
+mas "Paperparrot", id: 1663665267
+mas "Paste", id: 967805235
+mas "Pixelmator Pro", id: 1289583905
+mas "Prime Video", id: 545519333
+mas "Proton Pass for Safari", id: 6502835663
+mas "Telegram", id: 747648890
+mas "Termix", id: 6752672071
+mas "Xcode", id: 497799835
