@@ -570,12 +570,18 @@ This process captures:
 | Normal | `<C-l>` | Move focus to the right split |
 | Normal | `<C-j>` | Move focus to the lower split |
 | Normal | `<C-k>` | Move focus to the upper split |
+| Normal | `<A-h>` | Indent current line left |
 | Normal | `<A-j>` | Move current line down |
 | Normal | `<A-k>` | Move current line up |
+| Normal | `<A-l>` | Indent current line right |
+| Visual | `<A-h>` | Indent selected lines left |
 | Visual | `<A-j>` | Move selected lines down |
 | Visual | `<A-k>` | Move selected lines up |
+| Visual | `<A-l>` | Indent selected lines right |
+| Insert | `<A-h>` | Indent current line left and return to insert mode |
 | Insert | `<A-j>` | Move current line down and return to insert mode |
 | Insert | `<A-k>` | Move current line up and return to insert mode |
+| Insert | `<A-l>` | Indent current line right and return to insert mode |
 | Normal | `<C-s>` | Save file |
 | Normal | `<C-x>` | Save and quit |
 | Normal | `<C-q>` | Quit all |

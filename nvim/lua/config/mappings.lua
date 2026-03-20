@@ -31,16 +31,22 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Move lines and selections
 -- Normal mode: move the current line
+map('n', '<A-h>', '<<', { desc = 'Indent line left' })
 map('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move line down' })
 map('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move line up' })
+map('n', '<A-l>', '>>', { desc = 'Indent line right' })
 
 -- Visual mode: move the selected block
+map('v', '<A-h>', '<gv', { desc = 'Indent selection left' })
 map('v', '<A-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
 map('v', '<A-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
+map('v', '<A-l>', '>gv', { desc = 'Indent selection right' })
 
 -- Insert mode: move the current line and return to insert mode
+map('i', '<A-h>', '<Esc><<gi', { desc = 'Indent line left' })
 map('i', '<A-j>', '<Esc>:m .+1<CR>==gi', { desc = 'Move line down' })
 map('i', '<A-k>', '<Esc>:m .-2<CR>==gi', { desc = 'Move line up' })
+map('i', '<A-l>', '<Esc>>>gi', { desc = 'Indent line right' })
 
 -- nvimtree
 -- NOTE: This is what gives easy file navigation toggles
