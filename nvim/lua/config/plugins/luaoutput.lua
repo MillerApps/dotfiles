@@ -1,6 +1,0 @@
-return {
-  {
-    'MillerApps/luaoutput',
-    opts = {},
-  },
-}
