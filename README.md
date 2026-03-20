@@ -58,6 +58,15 @@ How it works:
 	- [Function Key Codes](#function-key-codes)
 	- [Easier way](#easier-way)
 	- [Nix Configuration Example](#nix-configuration-example)
+- [Neovim Keybinds](#neovim-keybinds)
+	- [Core Editing and Navigation](#core-editing-and-navigation)
+	- [File Trees and File Managers](#file-trees-and-file-managers)
+	- [Buffer Management](#buffer-management)
+	- [Search and Telescope](#search-and-telescope)
+	- [LSP](#lsp)
+	- [Git, Terminal, and Utility Tools](#git-terminal-and-utility-tools)
+	- [Notes, Images, and Writing](#notes-images-and-writing)
+	- [Debugging](#debugging)
 - [Resources - learning](#resources---learning)
 
 ## Nix Language Overview
@@ -543,6 +552,147 @@ This process captures:
   };
 };
 ```
+
+## Neovim Keybinds
+
+`<leader>` is mapped to `Space`.
+
+### Core Editing and Navigation
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `<Esc>` | Clear search highlight |
+| Normal | `[d` | Go to previous diagnostic |
+| Normal | `]d` | Go to next diagnostic |
+| Normal | `<leader>e` | Show diagnostic float |
+| Normal | `<leader>q` | Open diagnostic quickfix list |
+| Normal | `<C-h>` | Move focus to the left split |
+| Normal | `<C-l>` | Move focus to the right split |
+| Normal | `<C-j>` | Move focus to the lower split |
+| Normal | `<C-k>` | Move focus to the upper split |
+| Normal | `<A-j>` | Move current line down |
+| Normal | `<A-k>` | Move current line up |
+| Visual | `<A-j>` | Move selected lines down |
+| Visual | `<A-k>` | Move selected lines up |
+| Insert | `<A-j>` | Move current line down and return to insert mode |
+| Insert | `<A-k>` | Move current line up and return to insert mode |
+| Normal | `<C-s>` | Save file |
+| Normal | `<C-x>` | Save and quit |
+| Normal | `<C-q>` | Quit all |
+| Insert | `<C-j>` | Accept Copilot suggestion |
+| Normal | `<leader>l` | Open `:Lazy` |
+
+### File Trees and File Managers
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `<C-n>` | Toggle NvimTree |
+| Normal | `<leader>E` | Focus NvimTree |
+| Normal | `-` | Open parent directory with Oil |
+| Normal | `<leader>-` | Open Yazi at the current file |
+| Normal | `<leader>cw` | Open Yazi in the current working directory |
+| Normal | `<C-y>` | Resume the last Yazi session |
+
+### Buffer Management
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `<A-,>` | Go to previous buffer |
+| Normal | `<A-.>` | Go to next buffer |
+| Normal | `<A-<>` | Move buffer left |
+| Normal | `<A->>` | Move buffer right |
+| Normal | `<A-1>` | Go to buffer 1 |
+| Normal | `<A-2>` | Go to buffer 2 |
+| Normal | `<A-3>` | Go to buffer 3 |
+| Normal | `<A-4>` | Go to buffer 4 |
+| Normal | `<A-5>` | Go to buffer 5 |
+| Normal | `<A-6>` | Go to buffer 6 |
+| Normal | `<A-7>` | Go to buffer 7 |
+| Normal | `<A-8>` | Go to buffer 8 |
+| Normal | `<A-9>` | Go to buffer 9 |
+| Normal | `<A-0>` | Go to last buffer |
+| Normal | `<A-p>` | Pin or unpin buffer |
+| Normal | `<A-c>` | Close buffer |
+| Normal | `<C-p>` | Pick buffer |
+| Normal | `<Space>bb` | Sort buffers by buffer number |
+| Normal | `<Space>bd` | Sort buffers by directory |
+| Normal | `<Space>bl` | Sort buffers by language |
+| Normal | `<Space>bw` | Sort buffers by window number |
+
+### Search and Telescope
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `<leader>sh` | Search help tags |
+| Normal | `<leader>sk` | Search keymaps |
+| Normal | `<leader>sf` | Search files |
+| Normal | `<leader>ss` | Search Telescope pickers |
+| Normal | `<leader>sw` | Search current word |
+| Normal | `<leader>sg` | Live grep project |
+| Normal | `<leader>sd` | Search diagnostics |
+| Normal | `<leader>sr` | Resume last Telescope picker |
+| Normal | `<leader>s.` | Search recent files |
+| Normal | `<leader><leader>` | Find existing buffers |
+| Normal | `<leader>/` | Fuzzy search current buffer |
+| Normal | `<leader>s/` | Live grep open files |
+| Normal | `<leader>sn` | Search Neovim config files |
+
+Inside Telescope pickers, use `<C-/>` in insert mode or `?` in normal mode to show picker-local help.
+
+### LSP
+
+These mappings are buffer-local and only become available after an LSP attaches.
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `gd` | Go to definition |
+| Normal | `gr` | Go to references |
+| Normal | `gI` | Go to implementation |
+| Normal | `gD` | Go to declaration |
+| Normal | `K` | Show hover documentation |
+| Normal | `<leader>D` | Show type definitions |
+| Normal | `<leader>ds` | Search document symbols |
+| Normal | `<leader>ws` | Search workspace symbols |
+| Normal | `<leader>rn` | Rename symbol |
+| Normal | `<leader>ca` | Code action |
+
+### Git, Terminal, and Utility Tools
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal, Visual | `<leader>gB` | Open Git browse |
+| Normal | `<leader>gb` | Show Git blame for current line |
+| Normal | `<leader>gf` | Open LazyGit file history |
+| Normal | `<leader>gg` | Open LazyGit |
+| Normal | `<leader>gl` | Open LazyGit log for cwd |
+| Normal | `<leader>un` | Dismiss all notifications |
+| Normal, Terminal | `<A-t>` | Toggle floating terminal |
+| Normal, Terminal | `]]` | Jump to next reference |
+| Normal, Terminal | `[[` | Jump to previous reference |
+| Normal | `<leader>dd` | Enable dim mode |
+| Normal | `<leader>do` | Disable dim mode |
+
+### Notes, Images, and Writing
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `<leader>of` | Search Obsidian files |
+| Normal | `<leader>os` | Quick switch Obsidian note |
+| Normal | `<leader>on` | Create new Obsidian note |
+| Normal | `<leader>ol` | Follow Obsidian link |
+| Normal | `<leader>ob` | Show Obsidian backlinks |
+| Normal | `<leader>ot` | Browse Obsidian tags |
+| Normal | `<leader>p` | Paste image from system clipboard |
+| Visual | `<leader>fc` | Create a code image with Freeze |
+
+### Debugging
+
+| Mode | Keybind | Action |
+|------|---------|--------|
+| Normal | `<leader>bt` | Toggle breakpoint |
+| Normal | `<leader>bc` | Continue debugger |
+| Normal | `<leader>bx` | Terminate debugger |
+| Normal | `<leader>bo` | Step over |
 
 ## Resources - learning
 
