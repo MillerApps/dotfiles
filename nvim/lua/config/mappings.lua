@@ -29,6 +29,19 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Move lines and selections
+-- Normal mode: move the current line
+map('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move line down' })
+map('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move line up' })
+
+-- Visual mode: move the selected block
+map('v', '<A-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
+map('v', '<A-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
+
+-- Insert mode: move the current line and return to insert mode
+map('i', '<A-j>', '<Esc>:m .+1<CR>==gi', { desc = 'Move line down' })
+map('i', '<A-k>', '<Esc>:m .-2<CR>==gi', { desc = 'Move line up' })
+
 -- nvimtree
 -- NOTE: This is what gives easy file navigation toggles
 
