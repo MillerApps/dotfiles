@@ -1,10 +1,9 @@
 tap "anomalyco/tap"
-tap "barutsrb/tap"
 tap "charmbracelet/tap"
 tap "deskflow/tap"
 tap "felixkratz/formulae"
 tap "gromgit/brewtils"
-tap "karinushka/paneru"
+tap "millerapps/paneru"
 tap "nikitabobko/tap"
 tap "steipete/tap"
 tap "surge-downloader/tap"
@@ -70,7 +69,7 @@ brew "felixkratz/formulae/borders"
 # Interactive TUI for Homebrew
 brew "gromgit/brewtils/taproom"
 # A sliding, tiling window manager for MacOS.
-brew "karinushka/paneru/paneru"
+brew "millerapps/paneru/paneru"
 # Grep the GIF. Stick the landing
 brew "steipete/tap/gifgrep"
 # Privacy-focused app for managing your finances
@@ -159,8 +158,6 @@ cask "netnewswire"
 cask "obsidian"
 # Get up and running with large language models locally
 cask "ollama-app"
-# Tiling window manager for macOS with Niri-inspired column-based layout
-cask "barutsrb/tap/omniwm"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # AI coding agent desktop client
