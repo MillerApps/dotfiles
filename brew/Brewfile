@@ -5,6 +5,7 @@ tap "felixkratz/formulae"
 tap "gromgit/brewtils"
 tap "millerapps/paneru"
 tap "nikitabobko/tap"
+tap "sheeki03/tap"
 tap "steipete/tap"
 tap "surge-downloader/tap"
 tap "theboredteam/boring-notch"
@@ -70,6 +71,8 @@ brew "felixkratz/formulae/borders"
 brew "gromgit/brewtils/taproom"
 # A sliding, tiling window manager for MacOS.
 brew "millerapps/paneru/paneru"
+# Terminal security - catches homograph attacks, pipe-to-shell, ANSI injection
+brew "sheeki03/tap/tirith"
 # Grep the GIF. Stick the landing
 brew "steipete/tap/gifgrep"
 # Privacy-focused app for managing your finances
