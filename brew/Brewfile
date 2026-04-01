@@ -117,8 +117,6 @@ cask "dangerzone"
 cask "deskpad"
 # Downloads videos from different websites
 cask "downie"
-# Productivity app
-cask "dropzone"
 # Matrix collaboration client
 cask "element"
 # Desktop client for Ente Photos
