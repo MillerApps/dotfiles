@@ -133,6 +133,8 @@ cask "font-roboto-mono-nerd-font"
 cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
+# Chromium-based web browser
+cask "helium-browser"
 # Keyboard shortcuts for every button on your screen
 cask "homerow"
 # Free and open-source media player
