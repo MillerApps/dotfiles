@@ -155,6 +155,8 @@ cask "legcord"
 cask "localsend"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Smooths scrolling and set mouse scroll directions independently
+cask "mos@beta"
 # VPN client
 cask "mullvad-vpn"
 # Free and open-source RSS reader
