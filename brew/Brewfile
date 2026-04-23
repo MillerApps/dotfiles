@@ -153,6 +153,8 @@ cask "latest"
 cask "legcord"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
+# Software for Logitech devices
+cask "logi-options+"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
