@@ -14,7 +14,7 @@ brew "colima"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # Command-line DNS Client for Humans
 brew "doggo"
 # Utility for exporting data from Ente and decrypt the export from Ente Auth
