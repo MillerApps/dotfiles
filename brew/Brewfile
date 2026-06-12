@@ -1,14 +1,14 @@
-tap "anomalyco/tap"
-tap "charmbracelet/tap"
-tap "deskflow/tap"
-tap "felixkratz/formulae"
-tap "gromgit/brewtils"
-tap "millerapps/paneru"
-tap "nikitabobko/tap"
-tap "sheeki03/tap"
-tap "steipete/tap"
-tap "surge-downloader/tap"
-tap "theboredteam/boring-notch"
+tap "anomalyco/tap", trusted: true
+tap "charmbracelet/tap", trusted: true
+tap "deskflow/tap", trusted: true
+tap "felixkratz/formulae", trusted: true
+tap "gromgit/brewtils", trusted: true
+tap "millerapps/paneru", trusted: true
+tap "nikitabobko/tap", trusted: true
+tap "sheeki03/tap", trusted: true
+tap "steipete/tap", trusted: true
+tap "surge-downloader/tap", trusted: true
+tap "theboredteam/boring-notch", trusted: true
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Apjanke's fork of the classic cowsay project
@@ -44,7 +44,7 @@ brew "presenterm"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
-brew "ruby"
+brew "ruby", link: false
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Cross-platform application to monitor your network traffic
