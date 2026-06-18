@@ -7,7 +7,7 @@ tap "millerapps/paneru", trusted: true
 tap "nikitabobko/tap", trusted: true
 tap "sheeki03/tap", trusted: true
 tap "steipete/tap", trusted: true
-tap "surge-downloader/tap", trusted: true
+tap "surgedm/tap"
 tap "theboredteam/boring-notch", trusted: true
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
@@ -193,8 +193,8 @@ cask "rustdesk"
 cask "signal"
 # System monitor for the menu bar
 cask "stats"
-# Blazing fast TUI download manager built in Go for power users
-cask "surge-downloader/tap/surge"
+# Network toolbox
+cask "surge"
 # Real time file synchronisation software
 cask "syncthing-app"
 # Mesh VPN based on WireGuard
@@ -230,8 +230,8 @@ mas "Keka", id: 470158793
 mas "Keynote", id: 409183694
 mas "Markdown Preview", id: 6739955340
 mas "Numbers", id: 361304891
-mas "Pages", id: 361309726
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Paperparrot", id: 1663665267
 mas "Paste", id: 967805235
 mas "Pixelmator Pro", id: 1289583905
