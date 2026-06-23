@@ -3,11 +3,11 @@ tap "charmbracelet/tap", trusted: true
 tap "deskflow/tap", trusted: true
 tap "felixkratz/formulae", trusted: true
 tap "gromgit/brewtils", trusted: true
-tap "millerapps/paneru", trusted: true
+tap "millerapps/paneru", "https://github.com/MillerApps/homebrew-paneru", trusted: true
 tap "nikitabobko/tap", trusted: true
 tap "sheeki03/tap", trusted: true
 tap "steipete/tap", trusted: true
-tap "surgedm/tap"
+tap "surgedm/tap", "https://github.com/SurgeDM/homebrew-tap.git"
 tap "theboredteam/boring-notch", trusted: true
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
