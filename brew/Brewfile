@@ -95,7 +95,7 @@ cask "bambu-studio"
 cask "bazecor"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
-# Not so boring notch That Rocks 🎸🎶 
+# Not so boring notch That Rocks
 cask "theboredteam/boring-notch/boring-notch"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
