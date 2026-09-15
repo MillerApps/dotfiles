@@ -67,8 +67,6 @@
         "font-roboto-mono-nerd-font"
         # Free and open-source media player
         "iina"
-        # Menu bar manager
-        "jordanbaird-ice"
         # Keyboard customiser
         "karabiner-elements"
         # Tool to control external monitor brightness & volume
