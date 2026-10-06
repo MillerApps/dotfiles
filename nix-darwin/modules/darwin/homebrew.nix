@@ -41,10 +41,6 @@
         "airbuddy"
         # Menu bar tool to limit maximum charging percentage
         "aldente"
-        # Enable Windows-like alt-tab
-        "alt-tab"
-        # Application uninstaller
-        "appcleaner"
         # 3D model slicing software for 3D printers, maintained by Bambu Lab
         "bambu-studio"
         # Utility improving 3rd party mouse performance and functionalities
@@ -93,6 +89,8 @@
         "tailscale-app"
         # Web browser focusing on security
         "tor-browser"
+        # Menu bar toolkit with keep-awake, clipboard manager, and more
+        "vorssaint"
         # Multiplayer code editor
         "zed"
         # Gecko based web browser
