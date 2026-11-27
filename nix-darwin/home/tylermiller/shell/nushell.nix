@@ -1,6 +1,7 @@
 {
   programs.nushell = {
     enable = true;
+    loadSessionVariables = false;
     configFile.text = ''
       $env.config.show_banner = false
 
