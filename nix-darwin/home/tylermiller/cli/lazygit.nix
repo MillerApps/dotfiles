@@ -31,7 +31,9 @@
             unstagedChangesColor = ["#f38ba8"];
             defaultFgColor = ["#cdd6f4"];
             searchingActiveBorderColor = ["#f9e2af"];
-            authorColors = ["*" "#b4befe"];
+            authorColors = {
+              "*" = "#b4befe";
+            };
           };
         };
       };
