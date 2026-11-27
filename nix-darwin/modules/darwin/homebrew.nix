@@ -43,8 +43,6 @@
         "aldente"
         # 3D model slicing software for 3D printers, maintained by Bambu Lab
         "bambu-studio"
-        # Utility improving 3rd party mouse performance and functionalities
-        "bettermouse"
         # OpenAI's official ChatGPT desktop app
         "chatgpt"
         # Screen capturing tool
@@ -83,8 +81,6 @@
         "raycast"
         # Instant messaging application focusing on security
         "signal"
-        # System monitor for the menu bar
-        "stats"
         # Mesh VPN based on WireGuard
         "tailscale-app"
         # Web browser focusing on security

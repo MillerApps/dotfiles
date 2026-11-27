@@ -93,8 +93,6 @@ cask "balenaetcher"
 cask "bambu-studio"
 # Graphical configurator for Dygma Raise keyboards
 cask "bazecor"
-# Utility improving 3rd party mouse performance and functionalities
-cask "bettermouse"
 # Not so boring notch That Rocks
 cask "theboredteam/boring-notch/boring-notch"
 # OpenAI's official ChatGPT desktop app
@@ -191,8 +189,6 @@ cask "raycast"
 cask "rustdesk"
 # Instant messaging application focusing on security
 cask "signal"
-# System monitor for the menu bar
-cask "stats"
 # Network toolbox
 cask "surge"
 # Real time file synchronisation software
