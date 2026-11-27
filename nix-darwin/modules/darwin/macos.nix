@@ -13,6 +13,7 @@
         "/Applications/Ghostty.app"
         "/Applications/Rex.app"
         "/Applications/Obsidian.app"
+        "/Applications/Grok Bot.app"
       ];
       minimize-to-application = true;
       show-recents = false;
