@@ -11,6 +11,7 @@
         "/Applications/Zen.app"
         "/Applications/Signal.app"
         "/Applications/Ghostty.app"
+        "/Applications/Rex.app"
         "/Applications/Obsidian.app"
       ];
       minimize-to-application = true;
