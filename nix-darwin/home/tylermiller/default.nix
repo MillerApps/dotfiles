@@ -1,6 +1,7 @@
 # The file that will provide home manager wtf to
 # do with my dotfiles
 {
+  config,
   inputs,
   lib,
   ...
@@ -49,7 +50,9 @@ in {
       ".config/ghostty".source = self + "/../ghostty";
       ".p10k.zsh".source = self + "/../.p10k.zsh";
       ".config/yazi".source = self + "/../yazi";
-      ".config/karabiner".source = self + "/../karabiner";
+      # Keep Karabiner's config in the repo, but out of the Nix store so
+      # Karabiner-Elements can save edits through its UI.
+      ".config/karabiner".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/karabiner";
       ".wezterm.lua".source = self + "/../.wezterm.lua";
       # ".config/nvim".source = self + "/../nvim";
       ".config/zellij".source = self + "/../zellij";
