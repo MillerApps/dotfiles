@@ -16,6 +16,8 @@
 
 [TODO](./TODO.md)
 
+[Neovim Keybind Cheat Sheet](./nvim-keybinds.md)
+
 # Nix-Darwin, Nix-Home-Manager, & Homebrew
 
 This repository serves as a guide for setting up and managing my macOS system using Nix-Darwin, Nix Home Manager, and Homebrew. 
@@ -58,6 +60,7 @@ How it works:
 	- [Function Key Codes](#function-key-codes)
 	- [Easier way](#easier-way)
 	- [Nix Configuration Example](#nix-configuration-example)
+- [Neovim Keybind Cheat Sheet](./nvim-keybinds.md)
 - [Neovim Keybinds](#neovim-keybinds)
 	- [Core Editing and Navigation](#core-editing-and-navigation)
 	- [File Trees and File Managers](#file-trees-and-file-managers)
@@ -556,6 +559,8 @@ This process captures:
 ## Neovim Keybinds
 
 `<leader>` is mapped to `Space`.
+
+For a shorter version grouped by daily use, see the [Neovim Keybind Cheat Sheet](./nvim-keybinds.md).
 
 ### Core Editing and Navigation
 
