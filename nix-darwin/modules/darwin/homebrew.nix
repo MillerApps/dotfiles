@@ -77,6 +77,8 @@
         "deskpad"
         # Downloads videos from different websites
         "downie"
+        # Menu bar manager
+        "dimble"
         # Productivity app
         "dropzone"
         # Matrix collaboration client
